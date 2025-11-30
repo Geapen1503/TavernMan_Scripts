@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public enum NPCID
+{
+    BodyGuard1,
+    IndianGangster1,
+    Survivalist1,
+    MrWong,
+    JarodScavenger,
+    DrugLord1,
+    DrugGangsta1,
+    Theo,
+    PaulieFontiniApe,
+    EvilJarod,
+    BodyGuard2,
+    BodyGuard3,
+    BodyGuard4,
+    BodyGuard5,
+    BodyGuard6,
+    BodyGuard7,
+    BodyGuard8,
+    Survivalist2,
+    ManInACoat,
+    Balthazar,
+    Yakuza,
+    IndianInKurta,
+    TechArmyGuy,
+    Doctor1,
+    GreenDressSinger,
+    FatTurkishMan,
+    AfghanMan1,
+    IndianInKurta2,
+    NeilusTheSinger,
+    Farmer1,
+    Worker1,
+    Gangster1,
+    Major1,
+    TavernBoss,
+    Barman,
+    TavernManDecoy,
+}

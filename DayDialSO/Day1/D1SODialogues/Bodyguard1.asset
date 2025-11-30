@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: Bodyguard1
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: Anyway 4 dollar's a pound
+    buttonText: What..?
+  - dialogueText: These guys on either side of me their asleep
+    buttonText: Don't say that
+  - dialogueText: One day they'll talk, when the demo will be more advanced
+    buttonText: Which demo ?
+  - dialogueText: Right now they're sleeping with the fishes
+    buttonText: No
