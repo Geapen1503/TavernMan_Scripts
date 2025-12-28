@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
     [Header("Fade Settings")]
     public float fadeDuration = 1f;
 
+    private bool playerIsInTavern;
+
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -26,6 +28,7 @@ public class AudioManager : MonoBehaviour
         ExitTavern();
     }
 
+    // When you have time rewrite theses 4 methods it looks awful
     public void PauseEnvironmentSounds()
     {
         foreach (var cricket in cricketsSoundManager.Crickets) cricket.Pause(); 
@@ -38,8 +41,17 @@ public class AudioManager : MonoBehaviour
     {
         foreach (var cricket in cricketsSoundManager.Crickets) cricket.UnPause(); 
         foreach (var waves in wavesSoundManager.Waves) waves.UnPause();
-        foreach (var tavernSounds in tavernSoundManager.Sounds) tavernSounds.UnPause();
-        jukeboxManager.IsActive = true;
+
+        if (playerIsInTavern == true)
+        {
+            jukeboxManager.IsActive = true;
+            foreach (var tavernSounds in tavernSoundManager.Sounds) tavernSounds.UnPause();
+        }
+        else
+        {
+            jukeboxManager.IsActive = false;
+            foreach (var tavernSounds in tavernSoundManager.Sounds) tavernSounds.Pause();
+        }
     }
 
     public void EnterTavern()
@@ -47,6 +59,8 @@ public class AudioManager : MonoBehaviour
         foreach (var tavernSounds in tavernSoundManager.Sounds) tavernSounds.UnPause();
         foreach (var cricket in cricketsSoundManager.Crickets) StartCoroutine(FadeOut(cricket, fadeDuration));
         foreach (var waves in wavesSoundManager.waves) waves.Pause();
+
+        playerIsInTavern = true;
 
         jukeboxManager.IsActive = true;
         jukeboxManager.StartJukebox();
@@ -57,6 +71,8 @@ public class AudioManager : MonoBehaviour
         foreach (var tavernSounds in tavernSoundManager.Sounds) tavernSounds.Pause();
         foreach (var cricket in cricketsSoundManager.Crickets) StartCoroutine(FadeIn(cricket, fadeDuration, 0.018f));
         foreach (var waves in wavesSoundManager.waves) waves.UnPause();
+
+        playerIsInTavern = false;
         jukeboxManager.IsActive = false;
     }
 

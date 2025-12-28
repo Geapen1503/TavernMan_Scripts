@@ -21,11 +21,12 @@ public class JukeboxManager : MonoBehaviour
     private AudioClip vinylCrackleClip;
 
     private bool isRunning = false;
+    private bool clipsPreloaded = false;
 
     private void Start()
     {
         LoadResources();
-        
+        StartCoroutine(PreloadAudioClipsAndMaybeStart());
     }
 
     void LoadResources()
@@ -43,6 +44,12 @@ public class JukeboxManager : MonoBehaviour
     {
         if (!isRunning)
         {
+            if (!clipsPreloaded)
+            {
+                StartCoroutine(PreloadAudioClipsAndMaybeStart());
+                return;
+            }
+
             isRunning = true;
             StartCoroutine(JukeboxLoop());
         }
@@ -61,7 +68,7 @@ public class JukeboxManager : MonoBehaviour
     void PlayInsertSFX()
     {
         if (!IsActive) return;
-        audioSource.volume = 0.04f;
+        audioSource.volume = 0.1f;
         audioSource.PlayOneShot(diskInsertClip);
     }
 
@@ -81,6 +88,56 @@ public class JukeboxManager : MonoBehaviour
         audioSource.loop = true;
         audioSource.clip = vinylCrackleClip;
         audioSource.Play();
+    }
+
+    IEnumerator PreloadAudioClipsAndMaybeStart()
+    {
+        List<AudioClip> toLoad = new List<AudioClip>();
+        toLoad.AddRange(musicClips);
+        if (diskInsertClip != null) toLoad.Add(diskInsertClip);
+        if (vinylCrackleClip != null) toLoad.Add(vinylCrackleClip);
+
+        float overallTimeout = 10f; 
+        float startedAt = Time.realtimeSinceStartup;
+
+        foreach (var clip in toLoad)
+        {
+            if (clip == null) continue;
+
+            if (clip.loadState == AudioDataLoadState.Loaded) continue;
+
+            bool started = clip.LoadAudioData();
+            if (!started) Debug.LogWarning($"Jukebox: cannot launch LoadAudioData() for {clip.name}");
+        }
+
+        bool allLoaded = false;
+        while (true)
+        {
+            allLoaded = true;
+            foreach (var clip in toLoad)
+            {
+                if (clip == null) continue;
+                if (clip.loadState != AudioDataLoadState.Loaded)
+                {
+                    allLoaded = false;
+                    break;
+                }
+            }
+
+            if (allLoaded) break;
+
+            if (Time.realtimeSinceStartup - startedAt > overallTimeout)
+            {
+                Debug.LogWarning("Jukebox: timeout when preloading audio clips. Some clips might not be ready and can cause latency.");
+                break;
+            }
+
+            yield return null;
+        }
+
+        clipsPreloaded = true;
+
+        if (IsActive) StartJukebox();
     }
 
     IEnumerator JukeboxLoop()
