@@ -16,7 +16,7 @@ MonoBehaviour:
   sequence:
   - dialogueText: Anyway 4 dollar's a pound
     buttonText: What..?
-  - dialogueText: These guys on either side of me their asleep
+  - dialogueText: These guys on either side of me they're asleep
     buttonText: Don't say that
   - dialogueText: One day they'll talk, when the demo will be more advanced
     buttonText: Which demo ?

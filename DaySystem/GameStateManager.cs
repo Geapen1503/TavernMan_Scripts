@@ -35,6 +35,8 @@ public class GameStateManager : MonoBehaviour
         yield return new WaitForSeconds(daysMenu.displayTime + daysMenu.fadeDuration);
 
         playerInput.UnfreezeInputs();
+
+        currentDay.StartDay();
     }
 
 }

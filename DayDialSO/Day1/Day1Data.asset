@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Day1Data
   m_EditorClassIdentifier: 
   dayID: 0
+  missions:
+  - {fileID: 11400000, guid: 0192c269e6830864aa88544c51550bc3, type: 2}
+  - {fileID: 11400000, guid: cf5f1ef770b401b448f19696b3530f56, type: 2}
   dialogues:
   - {fileID: 11400000, guid: 41818bd51bfa1704a8a1d07d7199f516, type: 2}

@@ -5,6 +5,6 @@ using UnityEngine;
 public class DayData : ScriptableObject
 {
     public DayID dayID;
-    public List<Mission> missions;
+    public List<MissionSO> missions;
     public List<DialogueSO> dialogues;
 }
