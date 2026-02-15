@@ -79,9 +79,13 @@ public class PlayerUI : MonoBehaviour
                 ? currentLine.duration
                 : baseDelay + (currentLine.text.Length * timePerChar);
 
+            // Display
             tavernManDialogue.text = "T : " + currentLine.text;
-
             yield return new WaitForSeconds(finalDuration);
+
+            // And breath (in the air)
+            tavernManDialogue.text = string.Empty;
+            yield return new WaitForSeconds(0.3f);
         }
 
         tavernManDialogue.text = string.Empty;
