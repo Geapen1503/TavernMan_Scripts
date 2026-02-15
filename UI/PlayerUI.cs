@@ -22,7 +22,7 @@ public class PlayerUI : MonoBehaviour
     private int frameCount;
     private bool previousFpsState;
 
-    private Queue<string> dialogueQueue = new Queue<string>();
+    private Queue<DialogueLine> dialogueQueue = new Queue<DialogueLine>();
     private bool isProcessingDialogue = false;
 
     public static PlayerUI Instance { get; private set; }
@@ -51,31 +51,37 @@ public class PlayerUI : MonoBehaviour
     }
 
     /* Tavern Man Dialogues methods */
-    public void InjectDialogueToTavernMan(string dialogue)
+    public void InjectDialogueToTavernMan(string dialogue, float customDuration = 0f)
     {
-        dialogueQueue.Enqueue(dialogue);
+        DialogueLine newLine = new DialogueLine { text = dialogue, duration = customDuration };
+        dialogueQueue.Enqueue(newLine);
 
         if (!isProcessingDialogue) StartCoroutine(ProcessDialogueQueue());
     }
 
-    public void InjectSequenceToTavernMan(string[] sequence)
+    public void InjectSequenceToTavernMan(DialogueLine[] sequence, float initialDelay = 0f)
     {
-        foreach (string line in sequence) dialogueQueue.Enqueue(line);
-        if (!isProcessingDialogue) StartCoroutine(ProcessDialogueQueue());
+        foreach (DialogueLine line in sequence) dialogueQueue.Enqueue(line);
+        if (!isProcessingDialogue) StartCoroutine(ProcessDialogueQueue(initialDelay));
     }
 
-    private IEnumerator ProcessDialogueQueue()
+    private IEnumerator ProcessDialogueQueue(float delayBeforeStart = 0f)
     {
         isProcessingDialogue = true;
 
+        if (delayBeforeStart > 0) yield return new WaitForSeconds(delayBeforeStart);
+
         while (dialogueQueue.Count > 0)
         {
-            string currentLine = dialogueQueue.Dequeue();
-            float duration = baseDelay + (currentLine.Length * timePerChar);
+            DialogueLine currentLine = dialogueQueue.Dequeue();
 
-            tavernManDialogue.text = "T : " + currentLine;
+            float finalDuration = currentLine.duration > 0
+                ? currentLine.duration
+                : baseDelay + (currentLine.text.Length * timePerChar);
 
-            yield return new WaitForSeconds(duration);
+            tavernManDialogue.text = "T : " + currentLine.text;
+
+            yield return new WaitForSeconds(finalDuration);
         }
 
         tavernManDialogue.text = string.Empty;

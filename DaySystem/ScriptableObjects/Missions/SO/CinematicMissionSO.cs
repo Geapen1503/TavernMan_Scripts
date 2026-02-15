@@ -8,25 +8,35 @@ using UnityEngine.Playables;
 public class CinematicMissionSO : MissionSO
 {
     [Header("Configuration")]
-    public CinematicID cinematicKey; 
-    public string[] dialogueSequence;
+    public float startDelay = 0f;
+    public DialogueLine[] dialogueSequence;
 
     protected override void MissionContentPlaying()
     {
-        PlayableDirector director = CinematicManager.Instance.GetDirector(cinematicKey);
+        PlayableDirector director = CinematicManager.Instance.GetDirector(this);
 
         if (director != null)
         {
-            PlayerUI.Instance.InjectSequenceToTavernMan(dialogueSequence);
+            PlayerUI.Instance.InjectSequenceToTavernMan(dialogueSequence, startDelay);
             director.Play();
 
-            CinematicManager.Instance.StartCoroutine(EndMissionAfterDelay((float)director.duration));
+            CinematicManager.Instance.StartCoroutine(EndMissionAfterDelay(director));
         }
     }
 
-    private IEnumerator EndMissionAfterDelay(float delay)
+    private IEnumerator EndMissionAfterDelay(PlayableDirector director)
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds((float)director.duration);
+
+        yield return null;
+
         CompleteMission();
     }
+}
+
+[System.Serializable]
+public struct DialogueLine
+{
+    public string text;
+    public float duration;
 }

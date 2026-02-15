@@ -7,16 +7,16 @@ public class CinematicManager : MonoBehaviour
     [System.Serializable]
     public struct CinematicMapping
     {
-        public CinematicID id;
+        public CinematicMissionSO mission;
         public PlayableDirector director;
     }
 
     public static CinematicManager Instance { get; private set; }
     [SerializeField] private List<CinematicMapping> mappings;
 
-    public PlayableDirector GetDirector(CinematicID id)
+    public PlayableDirector GetDirector(CinematicMissionSO mission)
     {
-        var mapping = mappings.Find(m => m.id == id);
+        var mapping = mappings.Find(m => m.mission == mission);
         return mapping.director;
     }
 

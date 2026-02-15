@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missionState: 0
   cinematicKey: {fileID: 11400000, guid: c94f9a7f20da5a04385cd541bcbac57c, type: 2}
+  startDelay: 18
   dialogueSequence:
-  - where am I ?
-  - the dream of the island far away again ?
-  - nah it looks better
-  - let's check where that smoke is coming from
+  - text: I didn't knew where I was
+    duration: 3
+  - text: but I was there for sure
+    duration: 3
+  - text: I figured out I should check the smoke coming from the island
+    duration: 5

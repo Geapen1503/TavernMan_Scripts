@@ -5,6 +5,12 @@ public abstract class MissionSO : ScriptableObject
 {
     [HideInInspector] public MissionState missionState = MissionState.NotStarted;
 
+    private void OnEnable() // You might want to rethink that if you want to code a savegame system
+    {
+        missionState = MissionState.NotStarted;
+        // I've done it like that to prevent already played missions from not starting (especially cutscenes)
+    }
+
     public void StartMission()
     {
         if (missionState != MissionState.NotStarted) return;
