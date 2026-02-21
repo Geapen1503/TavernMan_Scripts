@@ -79,7 +79,7 @@ public abstract class NPC : MonoBehaviour
         if (!isTalkable || dialogue == null) return;
         StartCoroutine(TriggerDialogRoutine());
 
-        DialogueUIManager.Instance.StartDialogueSequence(dialogue.sequence);
+        DialogueUIManager.Instance.StartDialogueSequence(dialogue.sequence, npc);
     }
 
     private IEnumerator TriggerDialogRoutine()

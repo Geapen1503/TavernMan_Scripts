@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ddb04a8029f804aa11096befc94022, type: 3}
   m_Name: D1C1_Intro
   m_EditorClassIdentifier: 
-  missionState: 0
-  cinematicKey: {fileID: 11400000, guid: c94f9a7f20da5a04385cd541bcbac57c, type: 2}
-  startDelay: 18
+  missionState: 2
+  startDelay: 5
   dialogueSequence:
-  - text: I didn't knew where I was
+  - text: I didn't knew who brought me here.
     duration: 3
-  - text: but I was there for sure
-    duration: 3
-  - text: I figured out I should check the smoke coming from the island
+  - text: No memories. Just the taste of salt and bad decisions.
     duration: 5
+  - text: At the center of the island, there was a bar.
+    duration: 4
+  - text: There's always a bar when something's gone wrong.
+    duration: 5
+  - text: Smoke rising into the night... like a signal for the damned.
+    duration: 6
