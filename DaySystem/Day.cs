@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class Day : MonoBehaviour
 {
+    public static Day Instance { get; private set; }
+
     public DayData data;
+    public static System.Action<NPCID> OnAnyDialogueEnded;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
     public void StartDay()
     {
         StartCoroutine(StartDayRoutine());
-        // Note to myself: this is just a prototype, you ought to write a coroutine that
-        // ask the MissionSO if the mission is over before we call the next mission.StartMission();
     }
 
     private IEnumerator StartDayRoutine()
@@ -33,7 +44,20 @@ public class Day : MonoBehaviour
 
     public DialogueSO GetDialogueForNPC(NPCID npcID)
     {
+        foreach (MissionSO mission in data.missions)
+        {
+            if (mission.missionState == MissionState.InProgress && mission is TalkToNPCMissionSO talkMission)
+            {
+                if (talkMission.targetNpc == npcID) return talkMission.npcDialogue;
+            }
+        }
+
+        // Default dialogue for the day
         return data.dialogues.Find(d => d.npc == npcID);
+    }
+    public void NotifyDialogueEnded(NPCID npcID)
+    {
+        OnAnyDialogueEnded?.Invoke(npcID);
     }
 
     public DayID GetDayId() { return data.dayID; }

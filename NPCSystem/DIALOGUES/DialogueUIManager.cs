@@ -32,6 +32,7 @@ public class DialogueUIManager : MonoBehaviour
 
     private List<DialogueEntry> dialogueSequence;
     private int currentDialogueIndex = 0;
+    private NPCID currentInteractingNPC;
 
 
     private void Awake()
@@ -66,10 +67,11 @@ public class DialogueUIManager : MonoBehaviour
         if (mainCanvas != null && mainCanvas.enabled == true) mainCanvas.enabled = false;
     }
 
-    public void StartDialogueSequence(List<DialogueEntry> entries)
+    public void StartDialogueSequence(List<DialogueEntry> entries, NPCID npcID)
     {
         if (entries == null || entries.Count == 0) return;
 
+        currentInteractingNPC = npcID;
         dialogueSequence = entries;
         currentDialogueIndex = 0;
 
@@ -105,5 +107,7 @@ public class DialogueUIManager : MonoBehaviour
 
         var playerInput = Invector.vCharacterController.vThirdPersonInput.Instance;
         if (playerInput != null) playerInput.UnfreezeInputs();
+        
+        if (Day.Instance != null) Day.Instance.NotifyDialogueEnded(currentInteractingNPC);
     }
 }
