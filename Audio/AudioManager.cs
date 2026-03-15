@@ -12,6 +12,11 @@ public class AudioManager : MonoBehaviour
     public TavernSoundManager tavernSoundManager;
     public JukeboxManager jukeboxManager;
 
+    [Header("Lightning Manager")]
+    public Light globalLightning;
+    public float lightningOutsideTavern = 1.3f;
+    public float lightningInsideTavern = 0.3f;
+
     [Header("Fade Settings")]
     public float fadeDuration = 1f;
 
@@ -28,7 +33,12 @@ public class AudioManager : MonoBehaviour
         ExitTavern();
     }
 
-    // When you have time rewrite theses 4 methods it looks awful
+    public void ChangeEnvLightningIntensity(float lightningIntensity)
+    {
+        StartCoroutine(FadeLightning(lightningIntensity, fadeDuration));
+    }
+
+    // When you have time, rewrite theses 4 methods it looks awful
     public void PauseEnvironmentSounds()
     {
         foreach (var cricket in cricketsSoundManager.Crickets) cricket.Pause(); 
@@ -64,6 +74,8 @@ public class AudioManager : MonoBehaviour
 
         jukeboxManager.IsActive = true;
         jukeboxManager.StartJukebox();
+
+        ChangeEnvLightningIntensity(lightningInsideTavern);
     }
 
     public void ExitTavern()
@@ -74,6 +86,8 @@ public class AudioManager : MonoBehaviour
 
         playerIsInTavern = false;
         jukeboxManager.IsActive = false;
+
+        ChangeEnvLightningIntensity(lightningOutsideTavern);
     }
 
     IEnumerator FadeOut(AudioSource audioSource, float duration)
@@ -97,5 +111,20 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
         audioSource.volume = targetVolume;
+    }
+
+    IEnumerator FadeLightning(float targetIntensity, float duration)
+    {
+        float startIntensity = globalLightning.intensity;
+        float time = 0f;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+            globalLightning.intensity = Mathf.Lerp(startIntensity, targetIntensity, time / duration);
+            yield return null;
+        }
+
+        globalLightning.intensity = targetIntensity;
     }
 }

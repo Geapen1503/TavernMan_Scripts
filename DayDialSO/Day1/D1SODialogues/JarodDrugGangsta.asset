@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
-  m_Name: Bodyguard1
+  m_Name: JarodDrugGangsta
   m_EditorClassIdentifier: 
-  npc: 0
+  npc: 6
   sequence:
-  - dialogueText: You're new here. I can usually tell
-    buttonText: Guess I am
-  - dialogueText: Nothing wrong with that. First nights are always like this
-    buttonText: Seems so
+  - dialogueText: We're good for now.
+    buttonText: Sure

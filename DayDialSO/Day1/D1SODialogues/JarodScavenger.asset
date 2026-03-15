@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: JarodScavenger
+  m_EditorClassIdentifier: 
+  npc: 4
+  sequence:
+  - dialogueText: ...Sea's quiet tonight
+    buttonText: Yeah
+  - dialogueText: It was quiet like that before it blew
+    buttonText: Blew?
+  - dialogueText: The island
+    buttonText: Exploded?
+  - dialogueText: Yeah
+    buttonText: You were there?
+  - dialogueText: Me, 57, and everybody else
+    buttonText: 57?
+  - dialogueText: That's what we called him
+    buttonText: Why?
+  - dialogueText: Some kind of codename. It just stuck
+    buttonText: What happened?
+  - dialogueText: Something went wrong. Then it went loud.
+    buttonText: Loud how?
+  - dialogueText: Windows gone. Ground shaking. Sky lit up.
+    buttonText: And 57?
+  - dialogueText: Kept saying he had to stop him
+    buttonText: Stop who?
+  - dialogueText: ...
+    buttonText: You know
+  - dialogueText: Doesn't matter now
+    buttonText: It does to me
+  - dialogueText: Not to you
+    buttonText: Why not?
+  - dialogueText: Because you're still here
+    buttonText: What does that mean?
+  - dialogueText: It means he didn't stop him
+    buttonText: Did he die?
+  - dialogueText: He didn't flee
+    buttonText: You did
+  - dialogueText: Yeah
+    buttonText: Why?
+  - dialogueText: I'm not him.
+    buttonText: And now?
+  - dialogueText: Now I watch the sea. When it gets this quiet... I pay attention
+    buttonText: Why?
+  - dialogueText: That's how it was before.
+    buttonText: Before what?

@@ -31,5 +31,12 @@ MonoBehaviour:
   - dialogueText: Some days, that means pouring drinks. Some days... it means something
       else.
     buttonText: ...Like what?
-  - dialogueText: You'll see. For now start by
-    buttonText: Nothing.
+  - dialogueText: You'll see. For now... go serve some beer to those rats in the
+      corner.
+    buttonText: Which rats?
+  - dialogueText: The ones pretending to be businessmen. Then go upstairs... pour
+      some liquid courage for those overdressed Scottish drunks.
+    buttonText: Anyone else?
+  - dialogueText: And that filthy peasant by the red curtains. Selling trash to the
+      worker like he owns the place. Make him pay first.
+    buttonText: I'm on it.

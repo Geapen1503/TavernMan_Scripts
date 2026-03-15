@@ -40,4 +40,5 @@ public enum NPCID
     TavernBoss,
     Barman,
     TavernManDecoy,
+    SingingLady,
 }
