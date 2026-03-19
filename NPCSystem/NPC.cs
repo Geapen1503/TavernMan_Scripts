@@ -23,9 +23,17 @@ public abstract class NPC : MonoBehaviour
 
     private bool isPlayerInRange = false;
 
+    private vThirdPersonController playerController;
+    private vThirdPersonInput playerInput;
+
     void Start()
     {
         CheckIfPlayerValid();
+
+        playerController = vThirdPersonController.Instance;
+        playerInput = vThirdPersonInput.Instance;
+        if (playerController == null || playerInput == null) Debug.LogError($"{name}: vThirdPersonController.Instance vThirdPersonInput.Instance is NULL.");
+
         InitializeNPC(defaultAnchor);
     }
 
@@ -88,7 +96,6 @@ public abstract class NPC : MonoBehaviour
 
         DialogueUIManager.Instance.MoveCanvasToNPC(dialogueAnchor);
 
-        var playerInput = Invector.vCharacterController.vThirdPersonInput.Instance;
         if (playerInput != null) yield return StartCoroutine(playerInput.FreezeInputsAndMoveToAnchor(playerDialAnchor));
 
         var playerCam = FPCam.Instance;
@@ -102,18 +109,12 @@ public abstract class NPC : MonoBehaviour
 
         IsPlayerInRange = true;
 
-        if (PlayerUI.Instance != null) PlayerUI.Instance.ShowPressKey("Press T");
+        if (PlayerUI.Instance != null) PlayerUI.Instance.ShowPressKey("Press " + playerInput.talkInput);
 
         // Notify the player controller via the singleton
-        var player = Invector.vCharacterController.vThirdPersonController.Instance;
-        if (player != null)
+        if (playerController != null)
         {
-            player.SetCurrentNPC(this);
-        }
-        else
-        {
-            var fallback = FindObjectOfType<Invector.vCharacterController.vThirdPersonController>();
-            if (fallback != null) fallback.SetCurrentNPC(this);
+            playerController.SetCurrentNPC(this);
         }
     }
 
@@ -126,15 +127,9 @@ public abstract class NPC : MonoBehaviour
 
         if (PlayerUI.Instance != null) PlayerUI.Instance.HidePressKey();
 
-        var player = Invector.vCharacterController.vThirdPersonController.Instance;
-        if (player != null)
+        if (playerController != null)
         {
-            player.ClearCurrentNPC(this);
-        }
-        else
-        {
-            var fallback = FindObjectOfType<Invector.vCharacterController.vThirdPersonController>();
-            if (fallback != null) fallback.ClearCurrentNPC(this);
+            playerController.ClearCurrentNPC(this);
         }
     }
 
