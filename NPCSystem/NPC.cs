@@ -88,6 +88,8 @@ public abstract class NPC : MonoBehaviour
         StartCoroutine(TriggerDialogRoutine());
 
         DialogueUIManager.Instance.StartDialogueSequence(dialogue.sequence, npc);
+
+        if (PlayerUI.Instance != null) PlayerUI.Instance.HidePressKey();
     }
 
     private IEnumerator TriggerDialogRoutine()
@@ -109,7 +111,10 @@ public abstract class NPC : MonoBehaviour
 
         IsPlayerInRange = true;
 
-        if (PlayerUI.Instance != null) PlayerUI.Instance.ShowPressKey("Press " + playerInput.talkInput);
+        if (PlayerUI.Instance != null && DialogueUIManager.Instance.IsInDialogue == false)
+        {
+            PlayerUI.Instance.ShowPressKey("Press " + playerInput.talkInput);
+        }
 
         // Notify the player controller via the singleton
         if (playerController != null)
