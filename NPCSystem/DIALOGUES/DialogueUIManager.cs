@@ -71,6 +71,8 @@ public class DialogueUIManager : MonoBehaviour
     {
         if (entries == null || entries.Count == 0) return;
 
+        IsInDialogue = true;
+
         currentInteractingNPC = npcID;
         dialogueSequence = entries;
         currentDialogueIndex = 0;
@@ -98,6 +100,8 @@ public class DialogueUIManager : MonoBehaviour
 
     private void EndDialogueSequence()
     {
+        IsInDialogue = false;
+
         HideCanvas();
         dialogueSequence = null;
         currentDialogueIndex = 0;
@@ -110,4 +114,6 @@ public class DialogueUIManager : MonoBehaviour
         
         if (Day.Instance != null) Day.Instance.NotifyDialogueEnded(currentInteractingNPC);
     }
+
+    public bool IsInDialogue { get; private set; }
 }
