@@ -8,6 +8,7 @@ public class Day : MonoBehaviour
 
     public DayData data;
     public static System.Action<NPCID> OnAnyDialogueEnded;
+    public static System.Action<NPCID> OnAnyNPCServed;
 
     private void Awake()
     {
@@ -58,6 +59,11 @@ public class Day : MonoBehaviour
     public void NotifyDialogueEnded(NPCID npcID)
     {
         OnAnyDialogueEnded?.Invoke(npcID);
+    }
+
+    public void NotifyNPCServed(NPCID npcID)
+    {
+        OnAnyNPCServed?.Invoke(npcID);
     }
 
     public DayID GetDayId() { return data.dayID; }

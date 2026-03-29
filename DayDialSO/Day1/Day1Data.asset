@@ -15,6 +15,7 @@ MonoBehaviour:
   dayID: 0
   missions:
   - {fileID: 11400000, guid: cf5f1ef770b401b448f19696b3530f56, type: 2}
+  - {fileID: 11400000, guid: 4008ad02e0a622548a51ff98cffd1c27, type: 2}
   dialogues:
   - {fileID: 11400000, guid: 41818bd51bfa1704a8a1d07d7199f516, type: 2}
   - {fileID: 11400000, guid: 225debb529451ce47b1d93ae583e0a73, type: 2}
