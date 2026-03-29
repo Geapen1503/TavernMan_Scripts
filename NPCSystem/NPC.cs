@@ -17,6 +17,7 @@ public abstract class NPC : MonoBehaviour
 
     [Header("Interaction Settings")]
     public bool isTalkable = true;
+    [HideInInspector] public bool isServeable = false;
     public BoxCollider dialogDetectorCol;
     public DialogueAnchor dialogueAnchor;
     public PlayerDialAnchor playerDialAnchor;
@@ -28,6 +29,8 @@ public abstract class NPC : MonoBehaviour
 
     void Start()
     {
+        if (GameStateManager.Instance != null) GameStateManager.Instance.RegisterNPC(npc, this);
+
         CheckIfPlayerValid();
 
         playerController = vThirdPersonController.Instance;
@@ -35,6 +38,8 @@ public abstract class NPC : MonoBehaviour
         if (playerController == null || playerInput == null) Debug.LogError($"{name}: vThirdPersonController.Instance vThirdPersonInput.Instance is NULL.");
 
         InitializeNPC(defaultAnchor);
+
+        RefreshInteractionState();
     }
 
     public virtual void InitializeNPC(NPCAnchor anchor)
@@ -92,6 +97,22 @@ public abstract class NPC : MonoBehaviour
         if (PlayerUI.Instance != null) PlayerUI.Instance.HidePressKey();
     }
 
+    public void Serve()
+    {
+        if (!isServeable) return;
+        if (PlayerUI.Instance != null) PlayerUI.Instance.HidePressKey();
+
+        Day.Instance.NotifyNPCServed(this.npc);
+    }
+
+    public void RefreshInteractionState()
+    {
+        if (dialogDetectorCol == null) return;
+        bool shouldBeActive = isTalkable || isServeable;
+
+        dialogDetectorCol.enabled = shouldBeActive;
+    }
+
     private IEnumerator TriggerDialogRoutine()
     {
         Debug.Log($"{name}: NPC's Talking!");
@@ -106,14 +127,17 @@ public abstract class NPC : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (!isTalkable) return;
+        if (!isTalkable && !isServeable) return;
         if (!other.CompareTag("Player")) return;
 
         IsPlayerInRange = true;
 
         if (PlayerUI.Instance != null && DialogueUIManager.Instance.IsInDialogue == false)
         {
-            PlayerUI.Instance.ShowPressKey("Press " + playerInput.talkInput);
+            string prompt = isServeable ?
+            "Press " + playerInput.talkInput + " to serve" :
+            "Press " + playerInput.talkInput + " to talk";
+            PlayerUI.Instance.ShowPressKey(prompt);
         }
 
         // Notify the player controller via the singleton
@@ -125,7 +149,7 @@ public abstract class NPC : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (!isTalkable) return;
+        if (!isTalkable && !isServeable) return;
         if (!other.CompareTag("Player")) return;
 
         IsPlayerInRange = false;
@@ -148,6 +172,11 @@ public abstract class NPC : MonoBehaviour
         if (isTalkable && !dialogDetectorCol) Debug.LogWarning($"{name}: Talkable NPC without a dialogDetectorCol assigned.");
         if (isTalkable && !dialogueAnchor) Debug.LogWarning($"{name}: Talkable NPC without a dialogueAnchor assigned.");
         if (isTalkable && !playerDialAnchor) Debug.LogWarning($"{name}: Talkable NPC without a playerDialAnchor assigned.");
+    }
+
+    protected virtual void OnDestroy()
+    {
+        if (GameStateManager.Instance != null) GameStateManager.Instance.UnregisterNPC(npc);
     }
 
     public bool IsPlayerInRange { get => isPlayerInRange; set => isPlayerInRange = value; }

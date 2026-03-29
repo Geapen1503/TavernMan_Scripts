@@ -4,8 +4,18 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
+    public static GameStateManager Instance { get; private set; }
+
     public Day currentDay;
     public DaysMenu daysMenuUI;
+
+    private Dictionary<NPCID, NPC> _npcRegistry = new Dictionary<NPCID, NPC>();
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -39,4 +49,20 @@ public class GameStateManager : MonoBehaviour
         currentDay.StartDay();
     }
 
+    public void RegisterNPC(NPCID id, NPC npc)
+    {
+        if (!_npcRegistry.ContainsKey(id)) _npcRegistry.Add(id, npc);
+        else _npcRegistry[id] = npc;
+    }
+
+    public void UnregisterNPC(NPCID id)
+    {
+        if (_npcRegistry.ContainsKey(id)) _npcRegistry.Remove(id);
+    }
+
+    public NPC GetNPC(NPCID id)
+    {
+        _npcRegistry.TryGetValue(id, out NPC npc);
+        return npc;
+    }
 }
