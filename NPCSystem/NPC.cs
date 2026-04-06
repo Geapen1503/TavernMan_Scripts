@@ -100,7 +100,16 @@ public abstract class NPC : MonoBehaviour
     public void Serve()
     {
         if (!isServeable) return;
+
+        DrinkType currentDrink = Day.Instance.GetCurrentServiceType();
+
+        if (FPCam.Instance != null) FPCam.Instance.SetServingMode(true);
         if (PlayerUI.Instance != null) PlayerUI.Instance.HidePressKey();
+
+        ServiceManager.Instance.PlayServeAnimation(currentDrink, () => {
+            if (FPCam.Instance != null) FPCam.Instance.SetServingMode(false);
+            Day.Instance.NotifyNPCServed(this.npc);
+        });
 
         Day.Instance.NotifyNPCServed(this.npc);
     }

@@ -66,5 +66,17 @@ public class Day : MonoBehaviour
         OnAnyNPCServed?.Invoke(npcID);
     }
 
+    public DrinkType GetCurrentServiceType()
+    {
+        foreach (MissionSO mission in data.missions)
+        {
+            if (mission.missionState == MissionState.InProgress && mission is ServeDrinksMissionSO serveMission)
+            {
+                return serveMission.drinkType;
+            }
+        }
+        return DrinkType.Beer;
+    }
+
     public DayID GetDayId() { return data.dayID; }
 }

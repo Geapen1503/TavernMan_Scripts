@@ -7,5 +7,6 @@ public enum DrinkType
     Beer,
     Bourbon,
     Whisky,
-    Rum
+    Rum,
+    Meal
 }

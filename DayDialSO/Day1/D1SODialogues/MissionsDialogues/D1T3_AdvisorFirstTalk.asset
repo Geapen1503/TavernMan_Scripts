@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T3_AdvisorFirstTalk
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: You're holding up. Most guys look like they've seen a ghost after
+      ten minutes with this job
+    buttonText: I'm fine
+  - dialogueText: Good. It's better to be a ghost yourself in a place like this.
+      You see things, but nobody sees you
+    buttonText: I see plenty
+  - dialogueText: I bet. But the Boss... he only lets you see what he wants. He's
+      got you cleaning glass while the island moves right under your nose
+    buttonText: The island?
+  - dialogueText: There are things out there. Pills... Tucked away where the tourists
+      don't go. If you can handle them for me, you're more than just a waiter
+    buttonText: Handle them?
+  - dialogueText: A trust exercise. Keep your mouth shut and your eyes wide open.
+      We'll talk about the details when...
+    buttonText: When?
+  - dialogueText: Wait... Don't look now, but the Boss is waving at you. He's got
+      that "next job" look.
+    buttonText: He wants me?
+  - dialogueText: Yeah. Move. Whatever he says, just nod. We'll finish this conversation
+      when the smoke clears
+    buttonText: I'm moving

@@ -51,6 +51,8 @@ public class ServeDrinksMissionSO : MissionSO
             CompleteMission();
         }
     }
+
+    public DrinkType GetDrinkType() => drinkType;
 }
 
 public struct ServeDialoguesLine
