@@ -14,6 +14,11 @@ public class FPCam : MonoBehaviour
     private bool lockOnDialogue = false;
     private bool lockOnPauseMenu = false;
 
+    [Header("Serving Settings")]
+    private bool isServing = false;
+    public float servingMinPitch = -20f;
+    public float servingMaxPitch = 25f;
+
     //private GameObject oldGrabbableObject = null;
     private GameObject[] grabbableGameObjects;
 
@@ -49,7 +54,11 @@ public class FPCam : MonoBehaviour
         float mouseY = Input.GetAxisRaw("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        float min = isServing ? servingMinPitch : -90f;
+        float max = isServing ? servingMaxPitch : 90f;
+
+        xRotation = Mathf.Clamp(xRotation, min, max);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
@@ -119,6 +128,13 @@ public class FPCam : MonoBehaviour
         playerBody.rotation = Quaternion.Euler(0f, targetYaw, 0f);
         xRotation = targetPitch;
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+    }
+
+    public void SetServingMode(bool active)
+    {
+        isServing = active;
+
+        if (isServing) xRotation = Mathf.Clamp(xRotation, servingMinPitch, servingMaxPitch);
     }
 
 

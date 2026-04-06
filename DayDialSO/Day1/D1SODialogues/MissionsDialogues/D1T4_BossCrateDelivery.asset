@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T4_BossCrateDelivery
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Ahhhh, my TavernMan... you are here. Still dry behind the ears,
+      I see.
+    buttonText: Still here...
+  - dialogueText: 'Remember when I talked about delivery? About the sea giving and
+      taking? '
+    buttonText: Maybe
+  - dialogueText: Well, the tide just brought in a fresh problem. And it's sitting
+      on the deck right now
+    buttonText: What is it?
+  - dialogueText: It's the soul of the party, kid. If those bottles soak in the moonlight
+      too long... the spirit turns sour.
+    buttonText: Alcohol I guess
+  - dialogueText: Pure liquid gold! If those bottles stay in the moonlight, they'll
+      turn to vinegar before the first pour.
+    buttonText: I'll go
+  - dialogueText: Good. Move those bones to the deck. Bring the crates to the stockroom.
+      Two trips. No breaks.
+    buttonText: Two trips... Okay
+  - dialogueText: And don't drop 'em. If I hear glass breaking, I'll use your head
+      as a cork.
+    buttonText: Understood
+  - dialogueText: Now get out. I don't pay you to stare at the stars.
+    buttonText: Moving
+  - dialogueText: Actually... I don't pay you at all. Now move!
+    buttonText: Yeah...
