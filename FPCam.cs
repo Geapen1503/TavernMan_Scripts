@@ -19,6 +19,13 @@ public class FPCam : MonoBehaviour
     public float servingMinPitch = -20f;
     public float servingMaxPitch = 25f;
 
+    [Header("Carrying Settings")]
+    private bool isCarryingObject = false;
+    public float carryMinPitch = -50f; 
+    public float carryMaxPitch = 50f;
+
+    [HideInInspector] public bool isGrabbingSystemActive = false;
+
     //private GameObject oldGrabbableObject = null;
     private GameObject[] grabbableGameObjects;
 
@@ -38,14 +45,13 @@ public class FPCam : MonoBehaviour
     {
         thisCam = GetComponent<Camera>();
         Cursor.lockState = CursorLockMode.Locked;
-        //CheckGrabbableObjectOutline();
     }
 
     void Update()
     {
         if (lockOnDialogue == false && LockOnPauseMenu == false) CameraInputs();
 
-        // HighlightGameObject();
+        if (isGrabbingSystemActive) HighlightGameObject();
     }
 
     public virtual void CameraInputs()
@@ -55,8 +61,19 @@ public class FPCam : MonoBehaviour
 
         xRotation -= mouseY;
 
-        float min = isServing ? servingMinPitch : -90f;
-        float max = isServing ? servingMaxPitch : 90f;
+        float min = -90f;
+        float max = 90f;
+
+        if (isServing)
+        {
+            min = servingMinPitch;
+            max = servingMaxPitch;
+        }
+        else if (isCarryingObject)
+        {
+            min = carryMinPitch;
+            max = carryMaxPitch;
+        }
 
         xRotation = Mathf.Clamp(xRotation, min, max);
 
@@ -137,18 +154,26 @@ public class FPCam : MonoBehaviour
         if (isServing) xRotation = Mathf.Clamp(xRotation, servingMinPitch, servingMaxPitch);
     }
 
+    public void SetCarryingMode(bool active)
+    {
+        isCarryingObject = active;
+
+        if (isCarryingObject) xRotation = Mathf.Clamp(xRotation, carryMinPitch, carryMaxPitch);
+    }
+
 
     #region Grabbable bs
 
     public virtual void DisableOutlineFromGrabbable(GameObject[] pGrabbableGameObjects)
     {
+        if (pGrabbableGameObjects == null) return;
+
         foreach (GameObject grabbable in pGrabbableGameObjects)
         {
-            if (grabbable.GetComponent<Outline>() != null)
-            {
-                Outline grabbableOutline = grabbable.GetComponent<Outline>();
-                grabbableOutline.enabled = false;
-            }
+            if (grabbable == null) continue;
+
+            Outline grabbableOutline = grabbable.GetComponent<Outline>();
+            if (grabbableOutline != null) grabbableOutline.enabled = false;
         }
     }
 
@@ -159,12 +184,14 @@ public class FPCam : MonoBehaviour
 
         foreach (GameObject grabbable in localGrabbableGameObjects)
         {
-            if (grabbable.GetComponent<Outline>() == null) grabbable.AddComponent<Outline>();
-            Outline grabbableOutline = grabbable.GetComponent<Outline>();
+            if (grabbable == null) continue;
 
-            grabbableOutline.enabled = false;
-            grabbableOutline.OutlineColor = new Color(1.0f, 0.5f, 0.0f, 1.0f);
-            grabbableOutline.OutlineWidth = 3.0f;
+            Outline outline = grabbable.GetComponent<Outline>();
+            if (outline == null) outline = grabbable.AddComponent<Outline>();
+
+            outline.enabled = false;
+            outline.OutlineColor = new Color(1.0f, 0.5f, 0.0f, 1.0f);
+            outline.OutlineWidth = 3.0f;
         }
     }
 
@@ -176,12 +203,11 @@ public class FPCam : MonoBehaviour
         {
             Outline outlineTargeted = grabbableObjectTargeted.GetComponent<Outline>();
 
-            outlineTargeted.enabled = true;
+            if (outlineTargeted != null) outlineTargeted.enabled = true;
             //oldGrabbableObject = grabbableObjectTargeted;
         }
         else
         {
-
             DisableOutlineFromGrabbable(grabbableGameObjects);
         }
 
@@ -212,6 +238,12 @@ public class FPCam : MonoBehaviour
         {
             return null;
         }
+    }
+
+    public void ForceDisableAllOutlines()
+    {
+        isGrabbingSystemActive = false;
+        DisableOutlineFromGrabbable(grabbableGameObjects);
     }
 
     #endregion
