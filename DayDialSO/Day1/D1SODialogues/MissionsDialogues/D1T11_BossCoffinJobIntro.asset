@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T11_BossCoffinJobIntro
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Ah, My favorite worker! Listen, I've got a beautiful opportunity
+      for those muscles of yours.
+    buttonText: A job?
+  - dialogueText: Just a little crate in the stockroom. Nothing hard, really. Just
+      some heavy lifting to keep the blood flowing.
+    buttonText: Like before?
+  - dialogueText: Easier! It's just been sitting there, taking up space, collecting
+      dust. I'm tired of seeing its face.
+    buttonText: Heavy?
+  - dialogueText: It's just old inventory. I've been meaning to clear it out for
+      days.
+    buttonText: Where?
+  - dialogueText: Take it to the shore. The sea can gives things. Things like you.
+      But sometimes, it also takes things.
+    buttonText: Throw it in?
+  - dialogueText: Give it to the waves. A little snack for the crabs. I want my floor
+      space back.
+    buttonText: I'll do it
+  - dialogueText: Good. Don't attract the gulls. I want it done without a sound.
+    buttonText: Quietly then...
+  - dialogueText: Now get going. That crate isn't going to walk itself into the water!
+    buttonText: I'm going
