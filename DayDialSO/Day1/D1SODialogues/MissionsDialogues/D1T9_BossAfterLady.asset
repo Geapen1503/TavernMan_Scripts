@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T9_BossAfterLady
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Look at you... standing there waiting for a bone to chew on.
+    buttonText: Any jobs?
+  - dialogueText: Nothing. The floor is clean, the glasses are full, and the sea
+      is quiet.
+    buttonText: Nothing?
+  - dialogueText: You're free again, TavernMan. See? I'm a generous man after all.
+    buttonText: Generous?
+  - dialogueText: It's a great job in the end... you're free all the time. No orders,
+      no crates, no shouting.
+    buttonText: For how long?
+  - dialogueText: Until the tide turns or I get bored of looking at your face.
+    buttonText: I'll wait
+  - dialogueText: Go on... wander around. Blend with the shadows. Just don't go breaking
+      anything.
+    buttonText: Understood
+  - dialogueText: And stay away from the poker table for tonight. I'm not in the
+      mood for a loser's face.
+    buttonText: Moving now

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T6_LadyIntro
+  m_EditorClassIdentifier: 
+  npc: 36
+  sequence:
+  - dialogueText: Another face I don't recognize... I guess the Boss finally found
+      a replacement for the last one
+    buttonText: Just working...
+  - dialogueText: Is that what they call it now? I used to call it "performing" but
+      the Boss... he prefers the sound of that machine over there
+    buttonText: The jukebox?
+  - dialogueText: Yeah... the jukebox sings and I just stand here like a ghost in
+      a pretty dress waiting for a spotlight that never turns on
+    buttonText: He wants latin
+  - dialogueText: Latin? He's been dreaming about those drums for months now... he
+      hates how the Jazz starts to sound after midnight
+    buttonText: Can you play it?
+  - dialogueText: I'd love to... believe me... but that machine only eats what it's
+      fed and we don't have the disks for it
+    buttonText: No disks?
+  - dialogueText: He ordered them a lifetime ago but on this island... things have
+      a way of getting lost between the waves and the shore
+    buttonText: Where are they?
+  - dialogueText: Somewhere out there in the dark... probably still sitting on a
+      boat or rotting in a crate that never made it to the dock
+    buttonText: I'll find them
+  - dialogueText: Maybe... but for now we're stuck with these trumpets until the
+      sea decides to be kind
+    buttonText: We'll see

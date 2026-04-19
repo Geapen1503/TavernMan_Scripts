@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T8_LadyDisksRecap
+  m_EditorClassIdentifier: 
+  npc: 36
+  sequence:
+  - dialogueText: You're back... did the Boss actually give you a straight answer
+      for once
+    buttonText: I have a plan
+  - dialogueText: A plan... that sounds like a lot of effort for a place that never
+      changes
+    buttonText: Poker
+  - dialogueText: Poker? You're going to sit at that table just to get some music
+      disks
+    buttonText: If I win
+  - dialogueText: Be careful up there... I've seen a lot of guys walk up those stairs
+      with a full wallet and crawl down an hour later
+    buttonText: I'll be fine
+  - dialogueText: Maybe... but the Boss says a lot of things when he's bored... he
+      usually forgets his promises by morning
+    buttonText: He said "later"
+  - dialogueText: '"Later" is his favorite word... it''s what he tells me every time
+      I ask when I can start singing again'
+    buttonText: Not this time
+  - dialogueText: Well... I hope you're luckier than I am... because these jazz records
+      are starting to feel like a life sentence
+    buttonText: We'll see
+  - dialogueText: Good luck... you're going to need it if you're playing against
+      the regulars
+    buttonText: Thanks

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T7_BossDisksTalk
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: You're back. Did she stop the Jazz? I can still hear those damn
+      trumpets crying.
+    buttonText: No disks
+  - dialogueText: No disks? What is she talking about? I ordered that Latin noise
+      months ago.
+    buttonText: You paid?
+  - dialogueText: Ah... right. The delivery fee. Those pirates wanted a fortune just
+      to move some plastic.
+    buttonText: So pay them
+  - dialogueText: Pay? With what? I'm running a Tavern, not a charity for sailors.
+      It's too expensive.
+    buttonText: Poker?
+  - dialogueText: Poker? You think you're a swordfish now? That table upstairs eats
+      men like you for breakfast.
+    buttonText: I can win
+  - dialogueText: Tell you what... if you win big at the table, I'll use the house
+      cut to pay for your music.
+    buttonText: Deal.
+  - dialogueText: But not tonight. The air is too heavy and the players are too sober.
+      We're not in a hurry.
+    buttonText: When then?
+  - dialogueText: Soon. For now, just keep your hands clean and your ears shut.
+    buttonText: Fine
