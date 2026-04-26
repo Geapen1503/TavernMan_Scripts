@@ -15,11 +15,11 @@ MonoBehaviour:
   dayID: 0
   missions:
   - {fileID: 11400000, guid: cf5f1ef770b401b448f19696b3530f56, type: 2}
+  - {fileID: 11400000, guid: b668afd226182134ebe30c4ee2a79e94, type: 2}
   - {fileID: 11400000, guid: 4008ad02e0a622548a51ff98cffd1c27, type: 2}
   - {fileID: 11400000, guid: 58bace143ac3d1a42a7b71c364b604d6, type: 2}
   - {fileID: 11400000, guid: c1cd856ce311c27428be6749a5fc2bdc, type: 2}
   - {fileID: 11400000, guid: aabe3aa616d0a3e4ba6eedfa9a49541f, type: 2}
-  - {fileID: 11400000, guid: b668afd226182134ebe30c4ee2a79e94, type: 2}
   - {fileID: 11400000, guid: 3ce3f23f63a4d8347a46181b8eeacfe3, type: 2}
   - {fileID: 11400000, guid: 2a5acc3357bad8643b9402782f9f6ac8, type: 2}
   - {fileID: 11400000, guid: 389efb0b3b8169d438e5db5a98586f73, type: 2}
@@ -27,6 +27,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 365fbdd7a354ee347921c2cb668c7bbd, type: 2}
   - {fileID: 11400000, guid: ebf0e53f29978ce40b82f97cb3b3f84c, type: 2}
   - {fileID: 11400000, guid: 9b3bd65f160801847aa99d32a7230ed1, type: 2}
+  - {fileID: 11400000, guid: 0a7c54e7fbccb214897f62d3b7487810, type: 2}
+  - {fileID: 11400000, guid: 1b7e84401cb644d4d89e0e18a4d86d62, type: 2}
   dialogues:
   - {fileID: 11400000, guid: 41818bd51bfa1704a8a1d07d7199f516, type: 2}
   - {fileID: 11400000, guid: 225debb529451ce47b1d93ae583e0a73, type: 2}

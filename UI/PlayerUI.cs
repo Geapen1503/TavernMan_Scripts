@@ -51,9 +51,9 @@ public class PlayerUI : MonoBehaviour
     }
 
     /* Tavern Man Dialogues methods */
-    public void InjectDialogueToTavernMan(string dialogue, float customDuration = 0f)
+    public void InjectDialogueToTavernMan(string dialogue, float customDuration = 0f, float customPause = 0f)
     {
-        DialogueLine newLine = new DialogueLine { text = dialogue, duration = customDuration };
+        DialogueLine newLine = new DialogueLine{ text = dialogue, duration = customDuration, pauseAfterDuration = customPause };
         dialogueQueue.Enqueue(newLine);
 
         if (!isProcessingDialogue) StartCoroutine(ProcessDialogueQueue());
@@ -85,7 +85,8 @@ public class PlayerUI : MonoBehaviour
 
             // And breath (in the air)
             tavernManDialogue.text = string.Empty;
-            yield return new WaitForSeconds(0.3f);
+            float totalPause = 0.3f + currentLine.pauseAfterDuration;
+            yield return new WaitForSeconds(totalPause);
         }
 
         tavernManDialogue.text = string.Empty;

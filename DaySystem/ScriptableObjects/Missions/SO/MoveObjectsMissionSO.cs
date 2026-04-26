@@ -38,7 +38,7 @@ public class MoveObjectsMissionSO : MissionSO
     "Another small job for a small man on a small island.",
     "The list gets shorter, but the air stays just as thick.",
     "Finished. Now for the next headache.",
-    "Task complete. If only everything in life was this simple.",
+    "Task complete. If only everything was this simple.",
     "Done. The island hasn't moved, but at least this did.",
     "Task finished. The heat remains.",
     "Moving stuff around... the story of my life.",
@@ -107,7 +107,13 @@ public class MoveObjectsMissionSO : MissionSO
 
     private void FinalizeSingleTask(MoveObjectsMissionManager.MoveTaskRefs completedTask, List<MoveObjectsMissionManager.MoveTaskRefs> allTasks)
     {
-        if (completedTask.objectInScene != null) Destroy(completedTask.objectInScene);
+        if (completedTask.objectInScene != null)
+        {
+            var playerController = vThirdPersonController.Instance;
+            if (playerController != null) playerController.DetachObjectFromRightHand(completedTask.objectInScene); 
+
+            Destroy(completedTask.objectInScene);
+        }
 
         _completedTasks = _completedTasks + 1;
 

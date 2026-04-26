@@ -39,4 +39,5 @@ public struct DialogueLine
 {
     public string text;
     public float duration;
+    public float pauseAfterDuration;
 }
