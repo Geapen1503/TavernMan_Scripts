@@ -141,7 +141,7 @@ public abstract class NPC : MonoBehaviour
 
         IsPlayerInRange = true;
 
-        if (PlayerUI.Instance != null && DialogueUIManager.Instance.IsInDialogue == false)
+        if (PlayerUI.Instance != null && DialogueUIManager.Instance.IsInDialogue == false && playerInput.canGrab == false)
         {
             string prompt = isServeable ?
             "Press " + playerInput.talkInput + " to serve" :
