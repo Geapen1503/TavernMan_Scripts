@@ -6,6 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Game/Missions/Move Objects")]
 public class MoveObjectsMissionSO : MissionSO
 {
+    public bool allowThrowing = false;
+    public float throwForce = 12f;
+
     [Header("Player Feedbacks")]
     public string[] onTaskCompletedDialogues = {
     "That’s where it stays.",
@@ -83,6 +86,9 @@ public class MoveObjectsMissionSO : MissionSO
         if (vThirdPersonInput.Instance != null)
         {
             vThirdPersonInput.Instance.canGrab = true;
+
+            vThirdPersonInput.Instance.allowThrowing = this.allowThrowing;
+            vThirdPersonInput.Instance.throwForce = this.throwForce;
         }
     }
 
@@ -135,17 +141,27 @@ public class MoveObjectsMissionSO : MissionSO
 
         if (_completedTasks < allTasks.Count)
         {
-            string randomDialogue = onTaskCompletedDialogues[Random.Range(0, onTaskCompletedDialogues.Length)];
-            PlayerUI.Instance.InjectDialogueToTavernMan(randomDialogue, 3.5f);
+            if (onTaskCompletedDialogues != null && onTaskCompletedDialogues.Length > 0)
+            {
+                string randomDialogue = onTaskCompletedDialogues[Random.Range(0, onTaskCompletedDialogues.Length)];
+                PlayerUI.Instance.InjectDialogueToTavernMan(randomDialogue, 3.5f);
+            }
         }
 
         if (_completedTasks >= allTasks.Count)
         {
             if (FPCam.Instance != null) FPCam.Instance.ForceDisableAllOutlines();
-            if (vThirdPersonInput.Instance != null) vThirdPersonInput.Instance.canGrab = false;
+            if (vThirdPersonInput.Instance != null)
+            { 
+                vThirdPersonInput.Instance.canGrab = false;
+                vThirdPersonInput.Instance.allowThrowing = false;
+            }
 
-            string randomEndingDialogue = onMissionFinishedDialogues[Random.Range(0, onMissionFinishedDialogues.Length)];
-            PlayerUI.Instance.InjectDialogueToTavernMan(randomEndingDialogue, 3.0f);
+            if (onMissionFinishedDialogues != null && onMissionFinishedDialogues.Length > 0)
+            {
+                string randomEndingDialogue = onMissionFinishedDialogues[Random.Range(0, onMissionFinishedDialogues.Length)];
+                PlayerUI.Instance.InjectDialogueToTavernMan(randomEndingDialogue, 3.0f);
+            }
 
             CompleteMission();
         }

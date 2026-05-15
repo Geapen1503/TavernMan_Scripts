@@ -12,6 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ddb04a8029f804aa11096befc94022, type: 3}
   m_Name: D1C2_DiscoveringCoffin
   m_EditorClassIdentifier: 
-  missionState: 0
-  startDelay: 0
-  dialogueSequence: []
+  missionState: 2
+  startDelay: 12
+  dialogueSequence:
+  - text: Ah... Fuck
+    duration: 3
+    pauseAfterDuration: 1
+  - text: From the moment I first set foot on this island, I knew the tropical breeze
+      was just a mask for the stench of something rotten.
+    duration: 9
+    pauseAfterDuration: 0.8
+  - text: The Boss called it "old inventory." But inventory doesn't have glassy eyes
+      staring back at you from the dark.
+    duration: 9
+    pauseAfterDuration: 0.8
+  - text: Seeing it there, wedged between the crates of cheap rum and the smell of
+      rot... it was a cocktail of bad luck and spilled blood.
+    duration: 10
+    pauseAfterDuration: 0.8
+  - text: I was no longer just cleaning tables. I was scrubbing the stains of a story
+      I never asked to read.
+    duration: 8
+    pauseAfterDuration: 1.5
+  - text: I needed to know what kind of mess the Boss had dragged me into. I needed
+      him to give me a straight answer for once
+    duration: 8
+    pauseAfterDuration: 0
