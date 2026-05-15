@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T12_BossTalkAfterSeeingBody
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Back already? Your hands look too clean for a man who just met
+      the sea.
+    buttonText: A frickin' body
+  - dialogueText: It's a very loud word for such a quiet guest.
+    buttonText: It's a corpse
+  - dialogueText: It's inventory. Expired, I'll admit. But inventory nonetheless.
+    buttonText: This is insane
+  - dialogueText: What's insane is keeping it in my stockroom. It's starting to spoil
+      the vintage.
+    buttonText: I won't move it.
+  - dialogueText: You will. Unless you want to be the next one waiting for a delivery.
+    buttonText: Is that a threat?
+  - dialogueText: It's a career advice. Moving it makes you a worker. Keeping it
+      makes you a witness.
+    buttonText: Too risky
+  - dialogueText: Risk is the salt in the soup, kid. Now, take that clutter to the
+      waves.
+    buttonText: It's heavy
+  - dialogueText: Drag it. Roll it. I don't care, the sand is soft and the moon is
+      blind tonight.
+    buttonText: Fine...
+  - dialogueText: Just make sure it finds the deep water. I don't want it visiting
+      the beach tomorrow.
+    buttonText: I'll handle it
+  - dialogueText: Good. Do it quietly. I have a reputation to protect.
+    buttonText: Moving it.
+  - dialogueText: And TavernMan? If you see a walrus... tell him dinner is on the
+      house.
+    buttonText: Yeah whatever...

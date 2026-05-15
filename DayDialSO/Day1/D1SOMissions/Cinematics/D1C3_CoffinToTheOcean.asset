@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ddb04a8029f804aa11096befc94022, type: 3}
+  m_Name: D1C3_CoffinToTheOcean
+  m_EditorClassIdentifier: 
+  missionState: 2
+  startDelay: 2
+  dialogueSequence:
+  - text: The Boss wanted me to feed the ocean. A final drink for a guest who'd overstayed
+      his welcome
+    duration: 8
+    pauseAfterDuration: 2
+  - text: Every inch of this sand felt like a mile. A heavy, rotten mile.
+    duration: 7
+    pauseAfterDuration: 2.5
+  - text: I wasn't just clearing tables anymore. I was burying the evidence of a
+      life I didn't recognize.
+    duration: 8.5
+    pauseAfterDuration: 6
+  - text: The guy in the suit is waiting. He asked for those pills, and this might
+      be the perfect moment to get them.
+    duration: 8
+    pauseAfterDuration: 2
+  - text: If I'm already dancing with the devil under the moonlight, I might as well
+      finish the song.
+    duration: 7.5
+    pauseAfterDuration: 3
+  - text: One job for the Boss, one for the suit. Two sides of the same crooked coin.
+    duration: 7
+    pauseAfterDuration: 2.5
+  - text: The pills are out here. Somewhere past the palms, where the waves try to
+      wash away the sins of the island.
+    duration: 9
+    pauseAfterDuration: 3.5
+  - text: First, I drown the evidence. Then, I find that box.
+    duration: 6
+    pauseAfterDuration: 2.5
+  - text: In this place, the waves are the only ones with a long term memory
+    duration: 7
+    pauseAfterDuration: 0

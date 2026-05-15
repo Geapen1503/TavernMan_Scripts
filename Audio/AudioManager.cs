@@ -75,7 +75,7 @@ public class AudioManager : MonoBehaviour
         jukeboxManager.IsActive = true;
         jukeboxManager.StartJukebox();
 
-        ChangeEnvLightningIntensity(lightningInsideTavern);
+        // ChangeEnvLightningIntensity(lightningInsideTavern);
     }
 
     public void ExitTavern()
@@ -87,7 +87,7 @@ public class AudioManager : MonoBehaviour
         playerIsInTavern = false;
         jukeboxManager.IsActive = false;
 
-        ChangeEnvLightningIntensity(lightningOutsideTavern);
+        // ChangeEnvLightningIntensity(lightningOutsideTavern);
     }
 
     IEnumerator FadeOut(AudioSource audioSource, float duration)
