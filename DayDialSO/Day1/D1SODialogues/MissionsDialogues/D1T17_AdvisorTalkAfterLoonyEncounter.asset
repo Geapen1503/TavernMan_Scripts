@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T17_AdvisorTalkAfterLoonyEncounter
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: Back already. Did the loony give you a headache or a lead?
+    buttonText: I don't know
+  - dialogueText: Tell me. Every word. Even the ones that don't make sense
+    buttonText: Silver and dust...
+  - dialogueText: A gap in the straw? Where the island stopped breathing?
+    buttonText: Exactly
+  - dialogueText: I know that spot. Past the palms, where the grass gives up and
+      the sand takes over.
+    buttonText: The beach?
+  - dialogueText: Right of the tavern. There's a setup there. Some old frames and
+      canvas facing the tide.
+    buttonText: Chairs?
+  - dialogueText: A vantage point. Someone spent a lot of time sitting there, watching
+      the horizon.
+    buttonText: Watching what?
+  - dialogueText: That's what you're going to find out. It's the only place the Boss
+      doesn't look.
+    buttonText: Why not?
+  - dialogueText: Too much light. He prefers the shadows of the bar. Go. See what's
+      left in the dust.
+    buttonText: I'm going
+  - dialogueText: And keep those pills handy. You might need to see more than just
+      the sand.
+    buttonText: I'll go

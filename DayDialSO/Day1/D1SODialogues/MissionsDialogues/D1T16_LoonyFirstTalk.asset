@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T16_LoonyFirstTalk
+  m_EditorClassIdentifier: 
+  npc: 4
+  sequence:
+  - dialogueText: You're looking for something the sea won't bring back.
+    buttonText: Maybe
+  - dialogueText: Don't bother with the waves. The moon... it's too bright tonight.
+      It burns the water.
+    buttonText: Burns it?
+  - dialogueText: Yeah. Makes it look like silver. Everything else stays in the dark.
+    buttonText: The dark?
+  - dialogueText: Past the palms. Where the grass turns to dust.
+    buttonText: The beach?
+  - dialogueText: There's a gap in the straw. Like the island stopped breathing right
+      there.
+    buttonText: A gap?
+  - dialogueText: Just a few sticks and some fabric. Watching the horizon.
+    buttonText: Watching?
+  - dialogueText: They're waiting for the stars to fall. Or for someone to sit down.
+    buttonText: Sit down?
+  - dialogueText: Go see for yourself. While the moon is still staring at us.
+    buttonText: I'm going
+  - dialogueText: Don't trip on the roots... they're reaching for you tonight.
+    buttonText: I'll watch out

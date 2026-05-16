@@ -33,6 +33,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5dfcb7075f3f9894c8a9f73d756c7fdd, type: 2}
   - {fileID: 11400000, guid: da2529052e3e4b34fa15247f798a4ba9, type: 2}
   - {fileID: 11400000, guid: a9b8bdb4967cd0d42833663b1cd21a41, type: 2}
+  - {fileID: 11400000, guid: 90beb5180d3a85e458f0785a7683a734, type: 2}
+  - {fileID: 11400000, guid: 5f07f4f297624344a9847a2e7bf46518, type: 2}
+  - {fileID: 11400000, guid: 454538f45e27ca149b05cbb6f0c413c8, type: 2}
+  - {fileID: 11400000, guid: 62c136959f344854dbea81361c7f121d, type: 2}
+  - {fileID: 11400000, guid: d5883475d17ee53428ecfeda619eab0f, type: 2}
+  - {fileID: 11400000, guid: c2d59650ed057114aaa3c1bc7452fe91, type: 2}
+  - {fileID: 11400000, guid: 2b1b3006c806bd94c9e4592e807b6365, type: 2}
+  - {fileID: 11400000, guid: b56ebb5ccd181aa48b148303c8dd719a, type: 2}
   dialogues:
   - {fileID: 11400000, guid: 41818bd51bfa1704a8a1d07d7199f516, type: 2}
   - {fileID: 11400000, guid: 225debb529451ce47b1d93ae583e0a73, type: 2}

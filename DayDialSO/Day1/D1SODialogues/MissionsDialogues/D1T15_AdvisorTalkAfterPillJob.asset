@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D1T15_AdvisorTalkAfterPillJob
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: You handled that box well. Most would've fumbled it in the dark.
+    buttonText: I'm efficient
+  - dialogueText: Good. You've earned my trust with that box. It's about more than
+      just deliveries.
+    buttonText: Your trust?
+  - dialogueText: More than you know. Now, you need to see this island for what it
+      really is.
+    buttonText: Explain
+  - dialogueText: Take one. These pills... they peel back the night. They let you
+      see the strings.
+    buttonText: No thanks
+  - dialogueText: Don't be a fool. Knowledge is the only weapon you've got in this
+      shithole.
+    buttonText: I refuse
+  - dialogueText: Still playing it safe? You trust my tasks, but you don't trust
+      me.
+    buttonText: Exactly
+  - dialogueText: Heh. Fair enough. In this bar, paranoia is a survival skill. Let
+      me prove my worth.
+    buttonText: How?
+  - dialogueText: Look up. See that loony pacing on the balcony? The one talking
+      to the stars.
+    buttonText: I see him
+  - dialogueText: My gut says he's got a piece of the puzzle. A secret the Boss forgot
+      to bury.
+    buttonText: A puzzle?
+  - dialogueText: Go. Talk to him. If he babbles nonsense, I'm a liar. If not...
+      we talk again.
+    buttonText: I'm going
+  - dialogueText: Don't take too long. Truth has a habit of disappearing when the
+      sun rises.
+    buttonText: Understood
