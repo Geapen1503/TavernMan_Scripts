@@ -6,7 +6,8 @@ public class GameSettingsData
 {
     public int resolutionWidth;
     public int resolutionHeight;
-    public bool isFullScreen;
+    public DisplayMode displayMode;
+    public int qualityIndex;
     public bool vSync;
 
     // Default settings right here:
@@ -15,7 +16,15 @@ public class GameSettingsData
         resolutionWidth = Screen.currentResolution.width;
         resolutionHeight = Screen.currentResolution.height;
 
-        isFullScreen = true;
+        displayMode = DisplayMode.Borderless;
+        qualityIndex = QualitySettings.GetQualityLevel();
         vSync = true;
     }
+}
+
+public enum DisplayMode
+{
+    Windowed,
+    Borderless,
+    Fullscreen
 }

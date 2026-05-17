@@ -77,35 +77,58 @@ public class SettingsManager : MonoBehaviour
         ApplySettingsToSystem(CurrentSettings);
         SaveSettingsToDisk();
 
-        OnSettingsApplied?.Invoke(); 
+        if (OnSettingsApplied != null) OnSettingsApplied.Invoke();
     }
 
-    public void ResetPendingSettings()
+    public void ResetPendingSettingsToFactory()
     {
         PendingSettings = new GameSettingsData();
 
-        ApplyPendingSettings();
+        if (OnSettingsApplied != null) OnSettingsApplied.Invoke();
+
+        Debug.Log("[SettingsManager] Pending settings reset to factory. Waiting for Apply.");
     }
 
     private void ApplySettingsToSystem(GameSettingsData settings)
     {
-        Screen.SetResolution(settings.resolutionWidth, settings.resolutionHeight, settings.isFullScreen);
+        FullScreenMode unityMode = GetUnityMode(settings.displayMode);
+        Screen.SetResolution(settings.resolutionWidth, settings.resolutionHeight, unityMode);
 
         // Here we'll apply other settings later, just like that :
         // QualitySettings.SetQualityLevel(settings.qualityIndex);
         // QualitySettings.vSyncCount = settings.vSync ? 1 : 0;
 
-        Debug.Log("[SettingsManager] Settings applying to engine.");
+        Debug.Log("[SettingsManager] Settings applied directly to engine.");
+    }
+
+    private FullScreenMode GetUnityMode(DisplayMode mode)
+    {
+        switch (mode)
+        {
+            case DisplayMode.Windowed:
+                return FullScreenMode.Windowed;
+
+            case DisplayMode.Borderless:
+                return FullScreenMode.FullScreenWindow;
+
+            case DisplayMode.Fullscreen:
+                return FullScreenMode.ExclusiveFullScreen;
+
+            default:
+                return FullScreenMode.FullScreenWindow;
+        }
     }
 
     private GameSettingsData CloneSettings(GameSettingsData source)
     {
-        return new GameSettingsData
-        {
-            resolutionWidth = source.resolutionWidth,
-            resolutionHeight = source.resolutionHeight,
-            isFullScreen = source.isFullScreen,
-            vSync = source.vSync
-        };
+        GameSettingsData clone = new GameSettingsData();
+
+        clone.resolutionWidth = source.resolutionWidth;
+        clone.resolutionHeight = source.resolutionHeight;
+        clone.displayMode = source.displayMode;
+        clone.qualityIndex = source.qualityIndex;
+        clone.vSync = source.vSync;
+
+        return clone;
     }
 }
