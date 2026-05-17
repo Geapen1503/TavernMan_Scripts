@@ -10,6 +10,6 @@ public class ResetSettingsButton : TextMenuButton
 
     private void OnResetClicked()
     {
-        if (SettingsManager.Instance != null) SettingsManager.Instance.ResetPendingSettings();
+        if (SettingsManager.Instance != null) SettingsManager.Instance.ResetPendingSettingsToFactory();
     }
 }
