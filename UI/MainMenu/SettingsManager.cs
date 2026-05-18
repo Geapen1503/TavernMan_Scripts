@@ -93,6 +93,8 @@ public class SettingsManager : MonoBehaviour
     {
         FullScreenMode unityMode = GetUnityMode(settings.displayMode);
         Screen.SetResolution(settings.resolutionWidth, settings.resolutionHeight, unityMode);
+        QualitySettings.vSyncCount = settings.vSync ? 1 : 0;
+        Application.targetFrameRate = settings.fpsLimit;
 
         // Here we'll apply other settings later, just like that :
         // QualitySettings.SetQualityLevel(settings.qualityIndex);
@@ -128,6 +130,7 @@ public class SettingsManager : MonoBehaviour
         clone.displayMode = source.displayMode;
         clone.qualityIndex = source.qualityIndex;
         clone.vSync = source.vSync;
+        clone.fpsLimit = source.fpsLimit;
 
         return clone;
     }
