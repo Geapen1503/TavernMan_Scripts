@@ -9,6 +9,7 @@ public class GameSettingsData
     public DisplayMode displayMode;
     public int qualityIndex;
     public bool vSync;
+    public int fpsLimit;
 
     // Default settings right here:
     public GameSettingsData()
@@ -19,6 +20,8 @@ public class GameSettingsData
         displayMode = DisplayMode.Borderless;
         qualityIndex = QualitySettings.GetQualityLevel();
         vSync = true;
+
+        fpsLimit = 60;
     }
 }
 
