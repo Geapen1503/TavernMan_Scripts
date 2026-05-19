@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using Invector.vCharacterController;
 using UnityEngine;
 
 public class SettingsManager : MonoBehaviour
@@ -55,6 +56,10 @@ public class SettingsManager : MonoBehaviour
     private void CreateDefaultSettings()
     {
         CurrentSettings = new GameSettingsData();
+
+        CurrentSettings.resolutionWidth = Screen.currentResolution.width;
+        CurrentSettings.resolutionHeight = Screen.currentResolution.height;
+
         SaveSettingsToDisk();
     }
 
@@ -96,6 +101,8 @@ public class SettingsManager : MonoBehaviour
         QualitySettings.vSyncCount = settings.vSync ? 1 : 0;
         Application.targetFrameRate = settings.fpsLimit;
 
+        if (vThirdPersonInput.Instance != null) vThirdPersonInput.Instance.ApplyRebindedControls(settings.controls);
+
         // Here we'll apply other settings later, just like that :
         // QualitySettings.SetQualityLevel(settings.qualityIndex);
         // QualitySettings.vSyncCount = settings.vSync ? 1 : 0;
@@ -131,6 +138,23 @@ public class SettingsManager : MonoBehaviour
         clone.qualityIndex = source.qualityIndex;
         clone.vSync = source.vSync;
         clone.fpsLimit = source.fpsLimit;
+        clone.language = source.language; 
+
+        if (source.controls != null)
+        {
+            clone.controls = new ControlsSettings
+            {
+                forward = source.controls.forward,
+                backward = source.controls.backward,
+                left = source.controls.left,
+                right = source.controls.right,
+                jump = source.controls.jump,
+                grab = source.controls.grab,
+                talk = source.controls.talk,
+                throwKey = source.controls.throwKey,
+                pause = source.controls.pause
+            };
+        }
 
         return clone;
     }
