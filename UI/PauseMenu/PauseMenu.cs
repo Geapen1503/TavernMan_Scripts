@@ -80,7 +80,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(GameScenes.MainMenu);
         Time.timeScale = 1f;
         AudioListener.pause = false;
     }

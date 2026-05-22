@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public class TextMenuButton : BaseMenuButton
 {
     [Header("Text Transition")]
-    [SerializeField] private TextMeshProUGUI buttonText;
+    [SerializeField] protected TextMeshProUGUI buttonText;
 
     public override void OnPointerEnter(PointerEventData eventData)
     {
@@ -31,7 +31,7 @@ public class TextMenuButton : BaseMenuButton
         ResetButtonColor(); 
     }
 
-    private void ResetButtonColor()
+    protected virtual void ResetButtonColor()
     {
         if (buttonText != null && MainMenuUI.Instance != null)
         {
