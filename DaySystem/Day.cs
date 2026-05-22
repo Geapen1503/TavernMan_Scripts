@@ -7,8 +7,11 @@ public class Day : MonoBehaviour
     public static Day Instance { get; private set; }
 
     public DayData data;
+
     public static System.Action<NPCID> OnAnyDialogueEnded;
     public static System.Action<NPCID> OnAnyNPCServed;
+
+    private Coroutine _dayRoutine;
 
     private void Awake()
     {
@@ -20,13 +23,41 @@ public class Day : MonoBehaviour
         Instance = this;
     }
 
+    public void LoadDayData(DayData newDayData)
+    {
+        data = newDayData;
+    }
+
     public void StartDay()
     {
-        StartCoroutine(StartDayRoutine());
+        StopCurrentDay();
+        ResetAllMissions();
+        _dayRoutine = StartCoroutine(StartDayRoutine());
+    }
+
+    private void ResetAllMissions()
+    {
+        if (data == null || data.missions == null) return;
+
+        foreach (MissionSO mission in data.missions)
+        {
+            if (mission != null) mission.ResetMission();
+        }
+    }
+
+    public void StopCurrentDay()
+    {
+        if (_dayRoutine != null)
+        {
+            StopCoroutine(_dayRoutine);
+            _dayRoutine = null;
+        }
     }
 
     private IEnumerator StartDayRoutine()
     {
+        if (data == null) yield break;
+
         foreach (MissionSO mission in data.missions)
         {
             if (mission.missionState != MissionState.NotStarted)
@@ -40,6 +71,7 @@ public class Day : MonoBehaviour
             yield return new WaitUntil(() => mission.missionState == MissionState.Completed);
         }
 
+        if (GameStateManager.Instance != null) GameStateManager.Instance.CompleteCurrentDay();
         Debug.Log("Day finished!");
     }
 

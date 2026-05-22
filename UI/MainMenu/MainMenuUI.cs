@@ -61,7 +61,7 @@ public class MainMenuUI : MonoBehaviour
         }
     }
 
-    public void StartNewGame() => SceneManager.LoadScene(1);
+    public void StartNewGame() => SceneManager.LoadScene(GameScenes.Game);
     public void Settings() { }
     public void QuitGame() => Application.Quit();
 }
