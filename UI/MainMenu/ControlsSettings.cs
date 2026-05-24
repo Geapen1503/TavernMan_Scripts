@@ -15,5 +15,6 @@ public class ControlsSettings
     public KeyCode grab = KeyCode.G;
     public KeyCode talk = KeyCode.T;
     public KeyCode throwKey = KeyCode.F;
+    public KeyCode narrator = KeyCode.H;
     public KeyCode pause = KeyCode.Escape;
 }

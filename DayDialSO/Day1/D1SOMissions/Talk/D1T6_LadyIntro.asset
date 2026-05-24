@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T6_LadyIntro
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Go talk to the Lady
   targetNpc: 36
   npcDialogue: {fileID: 11400000, guid: 70498b1bd7f3752498a62f9d7bb92a6d, type: 2}

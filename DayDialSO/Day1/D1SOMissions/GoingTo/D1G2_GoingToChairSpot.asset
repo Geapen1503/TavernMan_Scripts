@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: D1G2_GoingToChairSpot
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Investigate the empty chairs on the beach

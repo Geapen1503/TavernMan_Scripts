@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T15_AdvisorTalkAfterPillJob
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Listen to the Advisor
   targetNpc: 0
   npcDialogue: {fileID: 11400000, guid: c2eed73e134f8c54f8c476dbd3a857c4, type: 2}

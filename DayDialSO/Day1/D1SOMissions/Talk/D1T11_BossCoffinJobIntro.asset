@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T11_BossCoffinJobIntro
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: See what the Boss wants
   targetNpc: 33
   npcDialogue: {fileID: 11400000, guid: 8e3fa1250d9b5eb419254892a1661a94, type: 2}

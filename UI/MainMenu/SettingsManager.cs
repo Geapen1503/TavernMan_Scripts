@@ -130,32 +130,7 @@ public class SettingsManager : MonoBehaviour
 
     private GameSettingsData CloneSettings(GameSettingsData source)
     {
-        GameSettingsData clone = new GameSettingsData();
-
-        clone.resolutionWidth = source.resolutionWidth;
-        clone.resolutionHeight = source.resolutionHeight;
-        clone.displayMode = source.displayMode;
-        clone.qualityIndex = source.qualityIndex;
-        clone.vSync = source.vSync;
-        clone.fpsLimit = source.fpsLimit;
-        clone.language = source.language; 
-
-        if (source.controls != null)
-        {
-            clone.controls = new ControlsSettings
-            {
-                forward = source.controls.forward,
-                backward = source.controls.backward,
-                left = source.controls.left,
-                right = source.controls.right,
-                jump = source.controls.jump,
-                grab = source.controls.grab,
-                talk = source.controls.talk,
-                throwKey = source.controls.throwKey,
-                pause = source.controls.pause
-            };
-        }
-
-        return clone;
+        string json = JsonUtility.ToJson(source);
+        return JsonUtility.FromJson<GameSettingsData>(json);
     }
 }

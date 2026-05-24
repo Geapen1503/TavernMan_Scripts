@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T8_LadyDisksRecap
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Talk to the Lady again
   targetNpc: 36
   npcDialogue: {fileID: 11400000, guid: c01f000670af81043a029e872a5b2e2e, type: 2}

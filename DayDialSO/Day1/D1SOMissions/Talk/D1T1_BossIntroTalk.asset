@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34349b7f5c4c8d94b910a62f1d27437f, type: 3}
   m_Name: D1T1_BossIntroTalk
   m_EditorClassIdentifier: 
-  missionState: 0
+  missionState: 1
+  missionDescription: Talk to the Boss
   targetNpc: 33
   npcDialogue: {fileID: 11400000, guid: 49e7c2662371d1643a4f368f293ef5a5, type: 2}

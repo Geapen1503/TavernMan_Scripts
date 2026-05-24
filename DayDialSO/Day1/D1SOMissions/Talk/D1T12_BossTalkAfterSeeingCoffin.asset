@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T12_BossTalkAfterSeeingCoffin
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Confront the Boss
   targetNpc: 33
   npcDialogue: {fileID: 11400000, guid: 0074add0452b3574aa5091a2edb8d37a, type: 2}

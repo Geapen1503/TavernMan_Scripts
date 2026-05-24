@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T16_LoonyFirstTalk
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Go talk to the Loony on the balcony
   targetNpc: 4
   npcDialogue: {fileID: 11400000, guid: e5d1c7a39fd0ff845a7dd8bd023033ed, type: 2}

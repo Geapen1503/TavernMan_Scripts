@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T7_BossDisksTalk
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Return to the Boss
   targetNpc: 33
   npcDialogue: {fileID: 11400000, guid: 3d7953f3815827d4fac2350129f4cae0, type: 2}

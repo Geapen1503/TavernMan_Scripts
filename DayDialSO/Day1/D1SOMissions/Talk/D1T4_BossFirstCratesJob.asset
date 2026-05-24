@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T4_BossFirstCratesJob
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Talk to the Boss
   targetNpc: 33
   npcDialogue: {fileID: 11400000, guid: c5f21a0cc408f2a4d98beabc5c8df796, type: 2}

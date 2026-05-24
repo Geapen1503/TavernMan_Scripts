@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T10_AdvisorPillTalk
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Go talk to the Advisor
   targetNpc: 0
   npcDialogue: {fileID: 11400000, guid: dc5a66525c2d30948beefa4f650cf7ec, type: 2}

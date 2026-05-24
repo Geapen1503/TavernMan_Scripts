@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1S1_FirstServeNPCD1
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Serve drinks to the customers
   drinkType: 0
   npcsToServe: 060000000e0000001e000000

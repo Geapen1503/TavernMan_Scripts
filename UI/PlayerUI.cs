@@ -9,6 +9,7 @@ public class PlayerUI : MonoBehaviour
     public TextMeshProUGUI pressKeyText;
     public TextMeshProUGUI fpsText;
     public TextMeshProUGUI tavernManDialogue;
+    public TextMeshProUGUI narratorText;
 
     [Header("Dialogue Settings")]
     [SerializeField] private float baseDelay = 1.0f;
@@ -31,6 +32,7 @@ public class PlayerUI : MonoBehaviour
     {
         if (pressKeyText != null) pressKeyText.text = string.Empty;
         if (tavernManDialogue != null) tavernManDialogue.text = string.Empty;
+        if (narratorText != null) narratorText.text = string.Empty;
 
         ApplyFpsState();
 
@@ -110,6 +112,25 @@ public class PlayerUI : MonoBehaviour
     public void HidePressKey()
     {
         if (pressKeyText != null) pressKeyText.text = string.Empty;
+    }
+
+
+    /* Narrator Key methods */
+
+    public void ShowNarrator(string message)
+    {
+        if (narratorText != null) narratorText.text = message;
+    }
+
+    public void HideNarrator()
+    {
+        if (narratorText != null) narratorText.text = string.Empty;
+    }
+
+    public bool IsNarratorActive()
+    {
+        if (narratorText == null || narratorText.text == string.Empty) return false;
+        else return true;
     }
 
 
