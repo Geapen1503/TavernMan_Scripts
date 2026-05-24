@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T3_AdvisorIntro
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Talk to the Advisor
   targetNpc: 0
   npcDialogue: {fileID: 11400000, guid: 29093143b8584ac4f9259b18d2636160, type: 2}

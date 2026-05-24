@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: D1M3_ThrowCoffinInTheSea
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Throw the coffin into the sea
   allowThrowing: 1
   throwForce: 12
   onTaskCompletedDialogues: []

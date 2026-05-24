@@ -11,6 +11,11 @@ public class CinematicMissionSO : MissionSO
     public float startDelay = 0f;
     public DialogueLine[] dialogueSequence;
 
+    public override string GetDescription()
+    {
+        return string.Empty;
+    }
+
     protected override void MissionContentPlaying()
     {
         PlayableDirector director = CinematicManager.Instance.GetDirector(this);

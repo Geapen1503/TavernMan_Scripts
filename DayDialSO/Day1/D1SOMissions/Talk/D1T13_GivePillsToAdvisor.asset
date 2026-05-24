@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T13_GivePillsToAdvisor
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Talk to the Advisor
   targetNpc: 0
   npcDialogue: {fileID: 11400000, guid: 98caa1242982a3b42ad96388358531ef, type: 2}

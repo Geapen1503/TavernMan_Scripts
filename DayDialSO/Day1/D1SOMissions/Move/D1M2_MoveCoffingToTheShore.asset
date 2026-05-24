@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f10bc6f11403ad478256af67dc14c68, type: 3}
   m_Name: D1M2_MoveCoffingToTheShore
   m_EditorClassIdentifier: 
-  missionState: 2
+  missionState: 0
+  missionDescription: Drag the coffin to the shore
+  allowThrowing: 0
+  throwForce: 12
   onTaskCompletedDialogues: []
   onMissionFinishedDialogues: []

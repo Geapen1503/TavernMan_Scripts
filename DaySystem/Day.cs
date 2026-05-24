@@ -110,5 +110,17 @@ public class Day : MonoBehaviour
         return DrinkType.Beer;
     }
 
+    public string GetCurrentMissionDescription()
+    {
+        if (data == null || data.missions == null) return string.Empty;
+
+        foreach (MissionSO mission in data.missions)
+        {
+            if (mission != null && mission.missionState == MissionState.InProgress) return mission.GetDescription();
+        }
+
+        return string.Empty;
+    }
+
     public DayID GetDayId() { return data.dayID; }
 }

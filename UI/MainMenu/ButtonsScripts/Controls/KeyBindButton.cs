@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class KeyBindButton : BaseMenuButton
 {
-    public enum ControlAction { Jump, Grab, Talk, Throw, Pause, Forward, Backward, Left, Right }
+    public enum ControlAction { Jump, Grab, Talk, Throw, Narrator, Pause, Forward, Backward, Left, Right }
 
     [Header("KeyBind Configuration")]
     [SerializeField] private ControlAction actionToBind;
@@ -119,6 +119,7 @@ public class KeyBindButton : BaseMenuButton
             ControlAction.Grab => controls.grab,
             ControlAction.Talk => controls.talk,
             ControlAction.Throw => controls.throwKey,
+            ControlAction.Narrator => controls.narrator,
             ControlAction.Pause => controls.pause,
             ControlAction.Forward => controls.forward,
             ControlAction.Backward => controls.backward,
@@ -136,6 +137,7 @@ public class KeyBindButton : BaseMenuButton
             case ControlAction.Grab: controls.grab = newKey; break;
             case ControlAction.Talk: controls.talk = newKey; break;
             case ControlAction.Throw: controls.throwKey = newKey; break;
+            case ControlAction.Narrator: controls.narrator = newKey; break;
             case ControlAction.Pause: controls.pause = newKey; break;
             case ControlAction.Forward: controls.forward = newKey; break;
             case ControlAction.Backward: controls.backward = newKey; break;

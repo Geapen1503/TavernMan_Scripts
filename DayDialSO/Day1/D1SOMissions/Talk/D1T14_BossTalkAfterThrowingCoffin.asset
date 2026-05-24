@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T14_BossTalkAfterThrowingCoffin
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Report back to the Boss
   targetNpc: 33
   npcDialogue: {fileID: 11400000, guid: c2c03377ed9b22d46b42f3ebed503bb9, type: 2}

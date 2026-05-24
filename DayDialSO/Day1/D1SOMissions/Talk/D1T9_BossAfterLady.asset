@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T9_BossAfterLady
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Talk to the Boss
   targetNpc: 33
   npcDialogue: {fileID: 11400000, guid: 4284128c7c491f342b389b9fa0b62044, type: 2}

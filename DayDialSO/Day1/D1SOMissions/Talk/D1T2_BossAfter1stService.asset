@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T2_BossAfter1stService
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Return to the Boss
   targetNpc: 33
   npcDialogue: {fileID: 11400000, guid: 28995f5d493b17342b405b9b30a09d21, type: 2}

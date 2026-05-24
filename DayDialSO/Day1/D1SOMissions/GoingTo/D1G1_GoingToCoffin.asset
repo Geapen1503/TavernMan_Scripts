@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: D1G1_GoingToCoffin
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Inspect the stockroom

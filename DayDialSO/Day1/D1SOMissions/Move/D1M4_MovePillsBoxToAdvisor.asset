@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: D1M4_MovePillsBoxToAdvisor
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Find the pills on the beach and bring them to the Advisor
   allowThrowing: 0
   throwForce: 12
   onTaskCompletedDialogues: []

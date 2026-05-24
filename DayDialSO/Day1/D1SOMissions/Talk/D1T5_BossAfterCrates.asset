@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: D1T5_BossAfterCrates
   m_EditorClassIdentifier: 
   missionState: 0
+  missionDescription: Go back to the Boss
   targetNpc: 33
   npcDialogue: {fileID: 11400000, guid: 618471819c25d6a48a4f4a1de21d1d78, type: 2}
