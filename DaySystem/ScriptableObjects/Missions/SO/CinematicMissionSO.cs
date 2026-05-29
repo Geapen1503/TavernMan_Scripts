@@ -28,11 +28,18 @@ public class CinematicMissionSO : MissionSO
 
     private IEnumerator PlayCinematicSmooth(PlayableDirector director)
     {
-        if (PlayerUI.Instance != null) PlayerUI.Instance.ShowCinematicOverlay();
+        PlayerUI playerUI = PlayerUI.Instance;
+
+        if (playerUI != null) playerUI.ShowCinematicOverlay();
 
         yield return null;
 
-        if (PlayerUI.Instance != null) PlayerUI.Instance.InjectSequenceToTavernMan(dialogueSequence, startDelay);
+        if (playerUI != null)
+        {
+            playerUI.HideNarrator();
+            playerUI.HidePressKey();
+            playerUI.InjectSequenceToTavernMan(dialogueSequence, startDelay);
+        }
 
         director.time = 0;
         director.Evaluate();
@@ -45,7 +52,7 @@ public class CinematicMissionSO : MissionSO
 
         yield return null;
 
-        if (PlayerUI.Instance != null) PlayerUI.Instance.HideCinematicOverlay();
+        if (playerUI != null) playerUI.HideCinematicOverlay();
     }
 
     private IEnumerator EndMissionAfterDelay(PlayableDirector director)

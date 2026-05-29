@@ -71,7 +71,13 @@ public class MoveObjectsMissionSO : MissionSO
 
         foreach (MoveObjectsMissionManager.MoveTaskRefs task in refs)
         {
-            if (task.objectInScene != null) task.objectInScene.SetActive(true);
+            if (task.objectInScene != null)
+            {
+                task.objectInScene.SetActive(true);
+
+                task.initialPosition = task.objectInScene.transform.position;
+                task.initialRotation = task.objectInScene.transform.rotation;
+            }
             if (task.targetZoneCollider != null) task.targetZoneCollider.gameObject.SetActive(true);
 
             MoveObjectsMissionManager.Instance.StartCoroutine(WatchObjectRoutine(task, refs));
@@ -119,6 +125,8 @@ public class MoveObjectsMissionSO : MissionSO
             if (playerController != null) playerController.DetachObjectFromRightHand(completedTask.objectInScene); 
 
             Destroy(completedTask.objectInScene);
+
+            PlayerUI.Instance.HidePressKey();
         }
 
         _completedTasks = _completedTasks + 1;
@@ -136,7 +144,10 @@ public class MoveObjectsMissionSO : MissionSO
 
         if (colliderStillNeeded == false && completedTask.targetZoneCollider != null)
         {
-            completedTask.targetZoneCollider.gameObject.SetActive(false);
+            if (completedTask.targetZoneCollider.GetComponent<SeaWaterTrigger>() == null)
+            {
+                completedTask.targetZoneCollider.gameObject.SetActive(false);
+            }
         }
 
         if (_completedTasks < allTasks.Count)

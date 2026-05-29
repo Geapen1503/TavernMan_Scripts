@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Invector.vCharacterController;
 using UnityEngine;
 
 public class Day : MonoBehaviour
@@ -58,6 +59,8 @@ public class Day : MonoBehaviour
     {
         if (data == null) yield break;
 
+        StartCoroutine(DisplayDay1IntroAdvices());
+
         foreach (MissionSO mission in data.missions)
         {
             if (mission.missionState != MissionState.NotStarted)
@@ -108,6 +111,31 @@ public class Day : MonoBehaviour
             }
         }
         return DrinkType.Beer;
+    }
+
+    private IEnumerator DisplayDay1IntroAdvices()
+    {
+        if (data == null || data.dayID != DayID.Day1) yield break;
+
+        while (true)
+        {
+            MissionSO activeMission = GetCurrentMission();
+
+            if (activeMission != null)
+            {
+                if (activeMission is CinematicMissionSO) yield return null;
+                else break;
+            }
+            else
+            {
+                yield return null;
+            }
+        }
+
+        if (PlayerUI.Instance != null)
+        {
+            PlayerUI.Instance.InjectDialogueToTavernMan("If you're lost while playing the game, just press the " + vThirdPersonInput.Instance.narratorInput + " key", 10.0f);
+        }
     }
 
     public string GetCurrentMissionDescription()
