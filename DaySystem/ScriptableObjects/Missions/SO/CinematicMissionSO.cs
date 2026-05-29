@@ -22,11 +22,30 @@ public class CinematicMissionSO : MissionSO
 
         if (director != null)
         {
-            PlayerUI.Instance.InjectSequenceToTavernMan(dialogueSequence, startDelay);
-            director.Play();
-
-            CinematicManager.Instance.StartCoroutine(EndMissionAfterDelay(director));
+            CinematicManager.Instance.StartCoroutine(PlayCinematicSmooth(director));
         }
+    }
+
+    private IEnumerator PlayCinematicSmooth(PlayableDirector director)
+    {
+        if (PlayerUI.Instance != null) PlayerUI.Instance.ShowCinematicOverlay();
+
+        yield return null;
+
+        if (PlayerUI.Instance != null) PlayerUI.Instance.InjectSequenceToTavernMan(dialogueSequence, startDelay);
+
+        director.time = 0;
+        director.Evaluate();
+
+        yield return null; 
+
+        director.Play();
+
+        CinematicManager.Instance.StartCoroutine(EndMissionAfterDelay(director));
+
+        yield return null;
+
+        if (PlayerUI.Instance != null) PlayerUI.Instance.HideCinematicOverlay();
     }
 
     private IEnumerator EndMissionAfterDelay(PlayableDirector director)

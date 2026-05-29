@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f10bc6f11403ad478256af67dc14c68, type: 3}
   m_Name: D1M4_MovePillsBoxToAdvisor
   m_EditorClassIdentifier: 
-  missionState: 0
-  missionDescription: Find the pills on the beach and bring them to the Advisor
+  missionState: 2
+  missionDescription: Find the pills on by the palm and bring them to the Advisor
   allowThrowing: 0
   throwForce: 12
   onTaskCompletedDialogues: []

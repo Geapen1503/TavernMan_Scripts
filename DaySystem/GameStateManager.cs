@@ -133,12 +133,12 @@ public class GameStateManager : MonoBehaviour
         if (nextIndex < daySequence.Count)
         {
             _pendingDayIndex = nextIndex;
-            SceneManager.LoadScene(GameScenes.Game);
+            StartCoroutine(PlayerUI.Instance.LoadSceneWithLoadingScreen(GameScenes.Game));
         }
         else
         {
             _pendingDayIndex = -1;
-            SceneManager.LoadScene(GameScenes.MainMenu);
+            StartCoroutine(PlayerUI.Instance.LoadSceneWithLoadingScreen(GameScenes.MainMenu));
         }
     }
 
@@ -150,11 +150,18 @@ public class GameStateManager : MonoBehaviour
         if (dayIndex != -1)
         {
             _pendingDayIndex = dayIndex;
-            SceneManager.LoadScene(GameScenes.Game);
+            StartCoroutine(PlayerUI.Instance.LoadSceneWithLoadingScreen(GameScenes.Game));
             return true;
         }
 
         return false;
+    }
+
+    public void RestartCurrentDay()
+    {
+        _pendingDayIndex = _currentDayIndex;
+
+        StartCoroutine(PlayerUI.Instance.LoadSceneWithLoadingScreen(GameScenes.Game));
     }
 
     private void SaveProgress()

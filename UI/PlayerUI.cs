@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerUI : MonoBehaviour
 {
@@ -10,6 +12,11 @@ public class PlayerUI : MonoBehaviour
     public TextMeshProUGUI fpsText;
     public TextMeshProUGUI tavernManDialogue;
     public TextMeshProUGUI narratorText;
+
+    [Header("Loading Screen References")]
+    [Header("Loading Screen")]
+    [SerializeField] private GameObject loadingScreen;
+    [SerializeField] private Slider loadingBar;
 
     [Header("Dialogue Settings")]
     [SerializeField] private float baseDelay = 1.0f;
@@ -25,6 +32,9 @@ public class PlayerUI : MonoBehaviour
 
     private Queue<DialogueLine> dialogueQueue = new Queue<DialogueLine>();
     private bool isProcessingDialogue = false;
+
+    private bool isLoadingScreenVisible = false;
+    private Coroutine loadingRoutine;
 
     public static PlayerUI Instance { get; private set; }
 
@@ -42,6 +52,10 @@ public class PlayerUI : MonoBehaviour
             return;
         }
         Instance = this;
+
+        DontDestroyOnLoad(gameObject);
+
+        if (loadingScreen != null) loadingScreen.SetActive(false);
     }
 
     private void Update()
@@ -131,6 +145,48 @@ public class PlayerUI : MonoBehaviour
     {
         if (narratorText == null || narratorText.text == string.Empty) return false;
         else return true;
+    }
+
+    /* Loading screen methods */
+
+    public IEnumerator LoadSceneWithLoadingScreen(int sceneIndex)
+    {
+        loadingScreen.SetActive(true);
+        loadingBar.value = 0f;
+
+        yield return null;
+
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        operation.allowSceneActivation = false;
+
+        while (operation.progress < 0.9f)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+            loadingBar.value = progress;
+            yield return null;
+        }
+
+        loadingBar.value = 1f;
+
+        yield return new WaitForSecondsRealtime(0.1f);
+
+        operation.allowSceneActivation = true;
+
+        while (!operation.isDone) yield return null;
+
+        loadingScreen.SetActive(false);
+    }
+
+    public void ShowCinematicOverlay()
+    {
+        if (loadingScreen != null) loadingScreen.SetActive(true);
+
+        if (loadingBar != null) loadingBar.gameObject.SetActive(false);
+    }
+
+    public void HideCinematicOverlay()
+    {
+        if (loadingScreen != null) loadingScreen.SetActive(false);
     }
 
 

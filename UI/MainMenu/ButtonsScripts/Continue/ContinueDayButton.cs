@@ -57,6 +57,6 @@ public class ContinueDayButton : TextMenuButton
         GameStateManager.HasTargetDayToLoad = true;
         GameStateManager.TargetDayToLoad = targetDay;
 
-        SceneManager.LoadScene(GameScenes.Game);
+        StartCoroutine(MainMenuUI.Instance.LoadSceneWithLoadingScreen(GameScenes.Game));
     }
 }

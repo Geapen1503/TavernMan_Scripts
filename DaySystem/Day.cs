@@ -122,5 +122,17 @@ public class Day : MonoBehaviour
         return string.Empty;
     }
 
+    public MissionSO GetCurrentMission()
+    {
+        if (data == null || data.missions == null)  return null;
+        
+        foreach (MissionSO mission in data.missions)
+        {
+            if (mission != null && mission.missionState == MissionState.InProgress) return mission;
+        }
+
+        return null;
+    }
+
     public DayID GetDayId() { return data.dayID; }
 }
