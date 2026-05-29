@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Invector.vCharacterController;
 
 public class FPCam : MonoBehaviour
 {
@@ -199,16 +200,24 @@ public class FPCam : MonoBehaviour
     {
         GameObject grabbableObjectTargeted = GetGrabbableWithRaycast();
 
+        bool isHoldingSomething = vThirdPersonController.Instance != null && vThirdPersonController.Instance.currentlyHeldObject != null;
+
         if (grabbableObjectTargeted != null)
         {
             Outline outlineTargeted = grabbableObjectTargeted.GetComponent<Outline>();
-
             if (outlineTargeted != null) outlineTargeted.enabled = true;
             //oldGrabbableObject = grabbableObjectTargeted;
+
+            if (!isHoldingSomething && vThirdPersonInput.Instance != null && PlayerUI.Instance != null)
+            {
+                PlayerUI.Instance.ShowPressKey("Press " + vThirdPersonInput.Instance.grabInput.ToString() + " to Grab");
+            }
         }
         else
         {
             DisableOutlineFromGrabbable(grabbableGameObjects);
+
+            if (!isHoldingSomething && PlayerUI.Instance != null) PlayerUI.Instance.HidePressKey();
         }
 
         //else

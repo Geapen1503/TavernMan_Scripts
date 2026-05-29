@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f10bc6f11403ad478256af67dc14c68, type: 3}
   m_Name: D1M1_MoveCratesToStock
   m_EditorClassIdentifier: 
-  missionState: 0
+  missionState: 1
   missionDescription: Move the alcohol crates to the stockroom
   allowThrowing: 0
   throwForce: 12

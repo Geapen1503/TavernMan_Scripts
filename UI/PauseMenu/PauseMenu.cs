@@ -68,19 +68,16 @@ public class PauseMenu : MonoBehaviour
         TogglePauseGame();
     }
 
-    public void OpenOptions()
+    public void RestartDay()
     {
+        if (pauseMenuUI.activeSelf) TogglePauseGame();
 
-    }
-
-    public void CloseOptions()
-    {
-
+        if (GameStateManager.Instance != null) GameStateManager.Instance.RestartCurrentDay();
     }
 
     public void QuitGame()
     {
-        SceneManager.LoadScene(GameScenes.MainMenu);
+        StartCoroutine(PlayerUI.Instance.LoadSceneWithLoadingScreen(GameScenes.MainMenu));
         Time.timeScale = 1f;
         AudioListener.pause = false;
     }
