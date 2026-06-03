@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Invector.vCharacterController;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -139,6 +140,13 @@ public class PlayerUI : MonoBehaviour
     public void HideNarrator()
     {
         if (narratorText != null) narratorText.text = string.Empty;
+    }
+
+    public void RefreshNarrator()
+    {
+        if (IsNarratorActive() == false) return;
+
+        if (narratorText != null) narratorText.text = vThirdPersonController.Instance.GetNarratorMessage();
     }
 
     public bool IsNarratorActive()
