@@ -71,6 +71,8 @@ public class Day : MonoBehaviour
 
             mission.StartMission();
 
+            PlayerUI.Instance.RefreshNarrator();
+
             yield return new WaitUntil(() => mission.missionState == MissionState.Completed);
         }
 
