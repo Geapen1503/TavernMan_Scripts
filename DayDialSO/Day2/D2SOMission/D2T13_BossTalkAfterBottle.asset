@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34349b7f5c4c8d94b910a62f1d27437f, type: 3}
-  m_Name: D2T1_
+  m_Name: D2T13_BossTalkAfterBottle
   m_EditorClassIdentifier: 
   missionState: 0
-  targetNpc: 0
-  npcDialogue: {fileID: 0}
+  missionDescription: Talk to the Boss
+  targetNpc: 33
+  npcDialogue: {fileID: 11400000, guid: 93c1ad6ef83771c4290dd44387f692b6, type: 2}

@@ -14,5 +14,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayID: 1
   missions:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 3b2ad1940ef488843ab88c51ff47ef2e, type: 2}
+  - {fileID: 11400000, guid: 77d0b303d88477c4bb3fac7f2c4948f3, type: 2}
+  - {fileID: 11400000, guid: 90f1000df7d65c8468062c8453ad2db9, type: 2}
+  - {fileID: 11400000, guid: b596b6fefb2b43c4dafcb94745ce3c01, type: 2}
+  - {fileID: 11400000, guid: 18b7caba559ee9e4b9052a72e7e45a35, type: 2}
+  - {fileID: 11400000, guid: 2324270487da7954bbbeb4bcbc61e905, type: 2}
+  - {fileID: 11400000, guid: bd2c3359985438043a2c5a2c8a87a901, type: 2}
+  - {fileID: 11400000, guid: 956cfccc36f39924593dac1d582d138e, type: 2}
+  - {fileID: 11400000, guid: f2f3798f14b70d642960cbaf4cff98f0, type: 2}
+  - {fileID: 11400000, guid: 701d85a38bec49145aadc8acf4be13b6, type: 2}
+  - {fileID: 11400000, guid: 0d0d947ede1cc71459d9a7597c790325, type: 2}
+  - {fileID: 11400000, guid: 192ed0acbcd7e8348ac87c843ca8e9a5, type: 2}
+  - {fileID: 11400000, guid: 0362c32a30c5e084995e9398d1f8a226, type: 2}
+  - {fileID: 11400000, guid: c496bb867b375b2499d5c65cd0ab87fc, type: 2}
+  - {fileID: 11400000, guid: f46ca2d267405b044b467befd052e02f, type: 2}
+  - {fileID: 11400000, guid: a2bc2084d55e25840b86625353cd7d1c, type: 2}
+  - {fileID: 11400000, guid: 25d1e859798bc9a479c4a0a6eb1848ee, type: 2}
+  - {fileID: 11400000, guid: feed85a5f8421c04796c4f91c4e33f12, type: 2}
+  - {fileID: 11400000, guid: 717d207dd0d08b64ea7767eec11b3026, type: 2}
+  - {fileID: 11400000, guid: 24c66c153d99b1642b7816402206fa22, type: 2}
+  - {fileID: 11400000, guid: 28217aac0c1c8794f91152f5774bf2d1, type: 2}
+  - {fileID: 11400000, guid: 9d600e6ffe6010f488c15edcca012ee3, type: 2}
+  - {fileID: 11400000, guid: db1bfbb4c52fba6469d01a9be9fe2f84, type: 2}
+  - {fileID: 11400000, guid: 2e1bf8cd59e43124493a870569a493f5, type: 2}
+  - {fileID: 11400000, guid: b3cc75894263b294e974650d7b942ef3, type: 2}
+  - {fileID: 11400000, guid: 48e78a49bbf005e4cbaa980ba13acd74, type: 2}
   dialogues: []

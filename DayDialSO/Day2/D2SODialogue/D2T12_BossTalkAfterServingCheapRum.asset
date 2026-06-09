@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T12_BossTalkAfterServingCheapRum
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: 'You served that cheap rum? '
+    buttonText: Yes
+  - dialogueText: Let them choke on it for a while. It'll make them appreciate the
+      real gold when it returns.
+    buttonText: The real one?
+  - dialogueText: I have a situation coming up, and need a proper welcome ready.
+      I won't be caught empty-handed when the time comes.
+    buttonText: What's the plan?
+  - dialogueText: I'm no fool, TavernMan. I kept one bottle separate from the rest.
+      A safety net buried where the salt can't reach it.
+    buttonText: Where?
+  - dialogueText: Okay... So, here's what we're gonna do. You're going for a walk
+      behind the tavern
+    buttonText: I'll find it
+  - dialogueText: Follow the tree line into the dark. There's a palm with roots like
+      twisted fingers. I buried it right there
+    buttonText: I'll find it
+  - dialogueText: Bring it back wrapped in a cloth. I don't want anyone seeing what
+      I still have in reserve.
+    buttonText: Got it
+  - dialogueText: Go. And if you trip and break that glass... don't bother coming
+      back
+    buttonText: I won't

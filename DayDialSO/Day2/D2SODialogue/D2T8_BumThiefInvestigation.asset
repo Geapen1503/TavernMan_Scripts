@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T8_BumThiefInvestigation
+  m_EditorClassIdentifier: 
+  npc: 4
+  sequence:
+  - dialogueText: The crates? I saw them moving. Heavy wood on a quiet night.
+    buttonText: Who?
+  - dialogueText: Someone who knows the way to the water
+    buttonText: Did you see?
+  - dialogueText: I saw.
+    buttonText: Tell the boss?
+  - dialogueText: Why would I? I'm just watching the horizon. It doesn't change anything
+      for me
+    buttonText: He's mad
+  - dialogueText: He's often mad. But he's looking for a stranger.
+    buttonText: Keep it quiet?
+  - dialogueText: I've already forgotten. Just like the sea forgot those crates
+    buttonText: Good.

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T6_BossTalkAfterServe
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Ahhhh, TavernMan! The floor is soaked and the clients are leaning...
+      perfect timing.
+    buttonText: What's next?
+  - dialogueText: I have a craving for something... regal. A wooden crate that hasn't
+      seen the sun in fifty years.
+    buttonText: Expensive?
+  - dialogueText: It's liquid history, kid. A crate of amber fluid that's far too
+      precious for the likes of these local drunks.
+    buttonText: Where?
+  - dialogueText: Sitting on the deck, getting cold. I want it in my stockroom, away
+      from the damp and the greedy fingers.
+    buttonText: I'll get it
+  - dialogueText: Handle it like it's your own soul. If I hear even a tiny clink...
+      I'll have you singing opera for the manta rays
+    buttonText: Yeah...
+  - dialogueText: Bring it in. And don't let the night air get its teeth into the
+      cork
+    buttonText: On it
