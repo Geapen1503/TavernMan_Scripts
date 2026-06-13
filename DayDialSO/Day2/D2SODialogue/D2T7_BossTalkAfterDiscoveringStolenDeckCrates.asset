@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T7_BossTalkAfterDiscoveringStolenDeckCrates
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Not there? What do you mean, not there? That liquid cost me a fortune,
+      and I don't pay for the wind to drink it!
+    buttonText: Deck is bare
+  - dialogueText: At this hour, it's no late delivery. Someone put their greedy hands
+      on my amber. If I find them, I'll turn their bones into toothpicks.
+    buttonText: Who?
+  - dialogueText: If we don't find those bottles back...
+    buttonText: What then?
+  - dialogueText: My cellar will be a graveyard without them. I can't let that treasure
+      evaporate into the hands of some low-life thief.
+    buttonText: What now?
+  - dialogueText: You know what? Your next job is to find out who did that. I want
+      a name before the trail goes cold.
+    buttonText: Where to start?
+  - dialogueText: Start by that loony, he's on the balcony all night. He must have
+      seen something!
+    buttonText: Anyone else?
+  - dialogueText: The Japanese pair. They're too quiet, and quiet men always have
+      something to hide. Then the Indian.
+    buttonText: The Indian?
+  - dialogueText: He's got that look... the look of someone who knows exactly what
+      a crate is worth. They're all suspect until I say otherwise
+    buttonText: I'll find out
+  - dialogueText: Move. I want a thief to crush, and I want him tonight.
+    buttonText: Okay

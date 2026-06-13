@@ -17,4 +17,6 @@ public class ControlsSettings
     public KeyCode throwKey = KeyCode.F;
     public KeyCode narrator = KeyCode.H;
     public KeyCode pause = KeyCode.Escape;
+
+    public KeyCode leftClick = KeyCode.Mouse0;
 }

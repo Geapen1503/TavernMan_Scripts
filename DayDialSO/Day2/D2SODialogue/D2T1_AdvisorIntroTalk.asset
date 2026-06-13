@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T1_AdvisorIntroTalk
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: You're late. I thought the sand got to you after you left for the
+      beach.
+    buttonText: I'm fine
+  - dialogueText: Good. So, the camping spot. What did you actually see out there?
+    buttonText: Nothing much...
+  - dialogueText: Nothing? Two empty chairs and a view of the water? That's it?
+    buttonText: A shadow... maybe
+  - dialogueText: A shadow? That's not much to go on. If someone was out there, they're
+      gone now. We'll have to keep digging.
+    buttonText: Digging?
+  - dialogueText: My guts says those chairs aren't just for looking at the moon.
+      There's something specific about that spot that we're missing.
+    buttonText: Like what?
+  - dialogueText: I'm not sure yet. But it feels intentional. I'll do some checking
+      while you're on shift.
+    buttonText: Keep me posted
+  - dialogueText: Anyway, you should head over to the Boss. It's a new night. You
+      should make it a habit to check in with him first thing.
+    buttonText: Why?
+  - dialogueText: Just to see what the schedule looks like. It's better to ask for
+      the work than to wait for him to come find you with a problem.
+    buttonText: Good point
+  - dialogueText: Go on. Ask him if he's got anything lined up for tonight. It keeps
+      things simple.
+    buttonText: I'm going

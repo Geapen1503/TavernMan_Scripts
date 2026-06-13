@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9d446fdaefde204fbc683b0f43e403d, type: 3}
+  m_Name: D2E1_EndingDay2
+  m_EditorClassIdentifier: 
+  sequence:
+  - npcDialogueText: Haven't seen you by the stage tonight.
+    buttonText: Busy night
+    hasMonologue: 1
+    monologueLine:
+      text: I was cleaning glasses, but my head was somewhere else. Looking for what
+        I lost.
+      duration: 6
+      pauseAfterDuration: 1.2
+  - npcDialogueText: You looked like you were searching for something under the tables.
+    buttonText: My bottle
+    hasMonologue: 1
+    monologueLine:
+      text: I had to say it. Green rocks trapped in glass. It was my ticket out of
+        my old life.
+      duration: 7
+      pauseAfterDuration: 1
+  - npcDialogueText: A bottle? What was in it?
+    buttonText: Not liquid.
+    hasMonologue: 1
+    monologueLine:
+      text: I wasn't looking for a hangover. I was looking for a future.
+      duration: 7
+      pauseAfterDuration: 1

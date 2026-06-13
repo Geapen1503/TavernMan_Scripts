@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T10_IndianTheftInvestigation
+  m_EditorClassIdentifier: 
+  npc: 1
+  sequence:
+  - dialogueText: Crates? I know nothing of any crates. I have been sitting here,
+      enjoying the atmosphere
+    buttonText: Boss is fuming
+  - dialogueText: A shame. But why involve me? I am just a traveler with a taste
+      for fine service.
+    buttonText: You lied
+  - dialogueText: I offered a job. You accepted. We both profited. That is how the
+      world turns.
+    buttonText: He'll find out
+  - dialogueText: If he does, he finds a thief and a buyer. We are on the same side
+      of the coin now.
+    buttonText: I'm dead
+  - dialogueText: Only if you speak. If I fall, I take the man who did the heavy
+      lifting with me.
+    buttonText: You'd tell?
+  - dialogueText: I prefer silence. It's cheaper. Go back, tell him you found nothing.
+      For both our sakes.
+    buttonText: I'll do that

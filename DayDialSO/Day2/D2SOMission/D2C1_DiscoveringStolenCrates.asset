@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ddb04a8029f804aa11096befc94022, type: 3}
+  m_Name: D2C1_DiscoveringStolenCrates
+  m_EditorClassIdentifier: 
+  missionState: 1
+  missionDescription: 
+  startDelay: 1.75
+  dialogueSequence:
+  - text: The deck was empty. No wood, no amber fluid, no fifty-year-old history.
+    duration: 5.5
+    pauseAfterDuration: 1.2
+  - text: Only the wet ghost of a square where a crate used to sit.
+    duration: 4.5
+    pauseAfterDuration: 1.4
+  - text: Then it hit me. Cold, like a razor blade across the throat.
+    duration: 5
+    pauseAfterDuration: 1.8
+  - text: The Indian's "discarded" cargo. The "waste" I'd fed to the swell.
+    duration: 5.5
+    pauseAfterDuration: 1.5
+  - text: It wasn't trash. It was the Boss pride, and I'd served it to the reef on
+      a silver platter
+    duration: 8
+    pauseAfterDuration: 2.2
+  - text: I'd been played like a cheap guitar by a man in a floral shirt. He got
+      his gold, and I got a death sentence.
+    duration: 9
+    pauseAfterDuration: 2
+  - text: If the Boss found out his liquid gold was currently sinking into the sand,
+      I was as dead as this guy in the coffin.
+    duration: 9.5
+    pauseAfterDuration: 2.3
+  - text: I had to go back. I had to look him in the eye and make the lie stick.
+    duration: 6
+    pauseAfterDuration: 1.8
+  - text: In that place, the truth didn't set you free. It just helped the waves
+      find your body faster.
+    duration: 7
+    pauseAfterDuration: 3

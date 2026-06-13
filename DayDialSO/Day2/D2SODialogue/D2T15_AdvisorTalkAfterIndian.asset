@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T15_AdvisorTalkAfterIndian
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: You actually took the crates? You've got more nerve than I thought.
+      Or less sense.
+    buttonText: Needed the coin
+  - dialogueText: Bold move. But the Boss is a shark. If he catches a scent, you're
+      dead before you hit the water.
+    buttonText: What now?
+  - dialogueText: Play it cool. Stick to the script. And don't risk your neck again
+      unless the prize is truly valuable
+    buttonText: Understood
+  - dialogueText: Since your shift is over, why won't you head back to those chairs
+      on the beach?
+    buttonText: Nothing there
+  - dialogueText: Just because they were empty yesterday doesn't mean they're empty
+      tonight. This island has a short memory
+    buttonText: I'll check
+  - dialogueText: Wait... look at the counter. Why is he waving at you like that
+      again?
+    buttonText: Not again
+  - dialogueText: He's persistent tonight. Go see what he wants. Keep your head straight
+      until the pressure drops.
+    buttonText: I'm going

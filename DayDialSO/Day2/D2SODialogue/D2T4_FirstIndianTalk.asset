@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T4_FirstIndianTalk
+  m_EditorClassIdentifier: 
+  npc: 1
+  sequence:
+  - dialogueText: You have a good hand for pouring. But your pockets are still empty,
+      I assume?
+    buttonText: Still empty
+  - dialogueText: That is a waste of potential. I might have a little task to help
+      you fix that tonight.
+    buttonText: A task?
+  - dialogueText: Some crates just arrived at the main deck. I need them... discarded.
+      Feed them to the swell.
+    buttonText: Toss them?
+  - dialogueText: Out past the reef. I want them to disappear before the sun rises.
+    buttonText: The pay?
+  - dialogueText: With gold, my friend. Of course. Does that spark your interest?
+    buttonText: I'm in
+  - dialogueText: 'Good. Remember: discreet work, off the books. Make sure the moon
+      is your only witness.'
+    buttonText: And the stars?
+  - dialogueText: Go now. I find that gold has very little patience for a slow man.
+    buttonText: On my way

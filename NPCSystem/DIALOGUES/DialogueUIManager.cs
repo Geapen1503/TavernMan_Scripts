@@ -34,6 +34,10 @@ public class DialogueUIManager : MonoBehaviour
     private int currentDialogueIndex = 0;
     private NPCID currentInteractingNPC;
 
+    private List<EndingDialogueStep> endingSequence;
+    private bool isEndingSequence = false;
+    private bool isMonologueCooldown = false;
+
 
     private void Awake()
     {
@@ -81,6 +85,21 @@ public class DialogueUIManager : MonoBehaviour
         ShowDialogue(currentDialogueIndex);
     }
 
+    public void StartEndingDialogueSequence(List<EndingDialogueStep> entries, NPCID npcID)
+    {
+        if (entries == null || entries.Count == 0) return;
+
+        isEndingSequence = true;
+        isMonologueCooldown = false;
+        IsInDialogue = true;
+        currentInteractingNPC = npcID;
+        endingSequence = entries;
+        currentDialogueIndex = 0;
+
+        DisplayCanvas();
+        ShowEndingDialogue(currentDialogueIndex);
+    }
+
     private void ShowDialogue(int index)
     {
         if (index < 0 || index >= dialogueSequence.Count) return;
@@ -88,14 +107,34 @@ public class DialogueUIManager : MonoBehaviour
         DialogueEntry entry = dialogueSequence[index];
         dialogueTextBox.text = entry.dialogueText;
         buttonLabel.text = entry.buttonText;
+
+        if (nextButton != null) nextButton.gameObject.SetActive(true);
+    }
+
+    private void ShowEndingDialogue(int index)
+    {
+        EndingDialogueStep entry = endingSequence[index];
+        dialogueTextBox.text = entry.npcDialogueText;
+        buttonLabel.text = entry.buttonText;
+
+        if (nextButton != null) nextButton.gameObject.SetActive(true);
     }
 
     private void NextDialogue()
     {
-        currentDialogueIndex++;
+        if (isMonologueCooldown) return;
 
-        if (currentDialogueIndex < dialogueSequence.Count) ShowDialogue(currentDialogueIndex);
-        else EndDialogueSequence();
+        if (isEndingSequence)
+        {
+            StartCoroutine(HandleEndingMonologueTransition());
+        }
+        else
+        {
+            currentDialogueIndex++;
+         
+            if (currentDialogueIndex < dialogueSequence.Count) ShowDialogue(currentDialogueIndex);
+            else EndDialogueSequence();
+        }
     }
 
     private void EndDialogueSequence()
@@ -113,6 +152,30 @@ public class DialogueUIManager : MonoBehaviour
         if (playerInput != null) playerInput.UnfreezeInputs();
         
         if (Day.Instance != null) Day.Instance.NotifyDialogueEnded(currentInteractingNPC);
+    }
+
+    private IEnumerator HandleEndingMonologueTransition()
+    {
+        isMonologueCooldown = true;
+
+        if (nextButton != null) nextButton.gameObject.SetActive(false);
+
+        EndingDialogueStep step = endingSequence[currentDialogueIndex];
+
+        if (step.hasMonologue && PlayerUI.Instance != null)
+        {
+            DialogueLine[] monoArray = new DialogueLine[] { step.monologueLine };
+            PlayerUI.Instance.InjectSequenceToTavernMan(monoArray, 0f);
+
+            float waitTime = step.monologueLine.duration + step.monologueLine.pauseAfterDuration;
+            yield return new WaitForSeconds(waitTime);
+        }
+
+        isMonologueCooldown = false;
+        currentDialogueIndex++;
+
+        if (currentDialogueIndex < endingSequence.Count) ShowEndingDialogue(currentDialogueIndex);
+        else EndDialogueSequence();
     }
 
     public bool IsInDialogue { get; private set; }

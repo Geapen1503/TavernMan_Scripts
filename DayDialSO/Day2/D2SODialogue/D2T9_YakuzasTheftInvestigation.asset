@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T9_YakuzasTheftInvestigation
+  m_EditorClassIdentifier: 
+  npc: 3
+  sequence:
+  - dialogueText: Bottles? We deal in many things. Petty theft from a deck is not
+      one of them.
+    buttonText: You saw nothing?
+  - dialogueText: Our eyes were on our own business. We have no information regarding
+      your loss.
+    buttonText: The Boss...
+  - dialogueText: Tell your employer that we are guests here, not his watchmen.
+    buttonText: Anyone suspect?
+  - dialogueText: We do not speculate. We only know what we see. And we saw nothing.
+    buttonText: I see...

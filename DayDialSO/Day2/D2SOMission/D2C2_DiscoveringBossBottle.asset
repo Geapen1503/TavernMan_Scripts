@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ddb04a8029f804aa11096befc94022, type: 3}
+  m_Name: D2C2_DiscoveringBossBottle
+  m_EditorClassIdentifier: 
+  missionState: 2
+  missionDescription: 
+  startDelay: 2
+  dialogueSequence:
+  - text: Stuck deep in the sand. Right where the Boss said it would be.
+    duration: 6
+    pauseAfterDuration: 1.2
+  - text: "I crouched down and took it. The cold glass felt like a d\xE9j\xE0 vu."
+    duration: 5
+    pauseAfterDuration: 1.3
+  - text: I remembered another bottle. Same shape. But not for drinking.
+    duration: 5.5
+    pauseAfterDuration: 1.5
+  - text: It was filled with emeralds. Large, raw stones that clinked against the
+      glass.
+    duration: 6
+    pauseAfterDuration: 1.4
+  - text: I still don't remember the path that led me to this shore.
+    duration: 5.5
+    pauseAfterDuration: 1.5
+  - text: But I know I had those stones with me when I arrived.
+    duration: 5.2
+    pauseAfterDuration: 1.3
+  - text: I wrapped the bottle in the cloth. It was time to head back to the Boss.
+    duration: 6
+    pauseAfterDuration: 0

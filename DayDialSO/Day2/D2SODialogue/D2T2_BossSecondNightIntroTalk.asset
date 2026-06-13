@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T2_BossSecondNightIntroTalk
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Ahhhh, TavernMan! The moon is back and the air smells like opportunity...
+      or is that just your sweat?
+    buttonText: Ready to work
+  - dialogueText: Good. Tonight, the island is thirsty for something stronger. No
+      more beer for the weak. We're pouring whiskey.
+    buttonText: Whiskey?
+  - dialogueText: The real stuff. The kind that makes a man forget his name or start
+      singing to the dugongs.
+    buttonText: Who first?
+  - dialogueText: I've seen you flapping your gums with that stiff in the clean suit.
+      Too much talking, not enough pouring.
+    buttonText: Just talking
+  - dialogueText: Go serve him some of the good stuff. Keep his throat lubricated
+      so he doesn't choke on his own silence.
+    buttonText: Anyone else?
+  - dialogueText: Upstairs. The indian in the red floral shirt. He's got a bald head
+      and a dry mouth. Fix the second one.
+    buttonText: And?
+  - dialogueText: The poker table. Those vultures are too sober to lose their money
+      properly. Give them the grain.
+    buttonText: I'm ont it
+  - dialogueText: Move those legs now. A dry glass is a crime, and I don't like criminals
+      in my Tavern.
+    buttonText: Right...

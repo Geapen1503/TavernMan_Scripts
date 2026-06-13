@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D2T14_IndianConfrontation
+  m_EditorClassIdentifier: 
+  npc: 1
+  sequence:
+  - dialogueText: You have the eyes of a cornered animal, my friend. It's very bad
+      for business.
+    buttonText: Boss wants blood
+  - dialogueText: Naturally. But a thief is only caught if he admits to the crime.
+      Handle the pressure.
+    buttonText: What now?
+  - dialogueText: Relax. This is only the beginning. I have many more tasks in mind
+      for a man of your... talents.
+    buttonText: More jobs
+  - dialogueText: Plenty. Don't let a little heat ruin a long and profitable partnership.
+    buttonText: He's watching
+  - dialogueText: Then stop lingering here! I told you to be discreet. Your panic
+      is becoming a liability.
+    buttonText: I'm trapped
+  - dialogueText: You're only trapped if you keep talking to me. Now disappear before
+      he notices.
+    buttonText: Fine
