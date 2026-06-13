@@ -12,9 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9d446fdaefde204fbc683b0f43e403d, type: 3}
   m_Name: D2E1_EndingDay2
   m_EditorClassIdentifier: 
-  npc: 36
   sequence:
-  - dialogueText: Haven't seen you by the stage
-    buttonText: I know
-  - dialogueText: Okay, I'll swim, goodbye
-    buttonText: What?
+  - npcDialogueText: Haven't seen you by the stage tonight.
+    buttonText: Busy night
+    hasMonologue: 1
+    monologueLine:
+      text: I was cleaning glasses, but my head was somewhere else. Looking for what
+        I lost.
+      duration: 6
+      pauseAfterDuration: 1.2
+  - npcDialogueText: You looked like you were searching for something under the tables.
+    buttonText: My bottle
+    hasMonologue: 1
+    monologueLine:
+      text: I had to say it. Green rocks trapped in glass. It was my ticket out of
+        my old life.
+      duration: 7
+      pauseAfterDuration: 1
+  - npcDialogueText: A bottle? What was in it?
+    buttonText: Not liquid.
+    hasMonologue: 1
+    monologueLine:
+      text: I wasn't looking for a hangover. I was looking for a future.
+      duration: 7
+      pauseAfterDuration: 1

@@ -66,7 +66,7 @@ public class EndDayManager : MonoBehaviour
         if (mapping.mission.dialogueSO != null && mapping.chairDialogueAnchor != null)
         {
             DialogueUIManager.Instance.MoveCanvasToNPC(mapping.chairDialogueAnchor);
-            DialogueUIManager.Instance.StartDialogueSequence(mapping.mission.dialogueSO.sequence, mapping.npcId);
+            DialogueUIManager.Instance.StartEndingDialogueSequence(mapping.mission.dialogueSO.sequence, mapping.npcId);
 
             yield return new WaitWhile(() => DialogueUIManager.Instance.IsInDialogue);
         }
