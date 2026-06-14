@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D3T2_BossAfterPouring_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Ah... that's the real thing. Keeps my throat hydrated while I navigate
+      this mess.
+    buttonText: Better?
+  - dialogueText: Much. Now, you said that bald Indian was barking about a meal last
+      night?
+    buttonText: He was
+  - dialogueText: Well, I have good news for that suspicious prick. The "meal" is
+      here.
+    buttonText: Already?
+  - dialogueText: The crate is sitting right at the entrance of the Tavern. I moved
+      it there myself this time.
+    buttonText: You did?
+  - dialogueText: I wanted to see if any rats would come sniffing around. I'm not
+      letting another one slip away.
+    buttonText: Catch anyone?
+  - dialogueText: Not yet. They're staying in the corners for now, waiting for the
+      moon to dim.
+    buttonText: I'll watch
+  - dialogueText: You do that. But first, haul that crate to the stock room. It's
+      taking up space.
+    buttonText: Right now?
+  - dialogueText: Yes. The entrance is for guests, not for rotting wood.
+    buttonText: And after?
+  - dialogueText: After that, play the waiter. That shiny-headed Indian looks like
+      he's about to eat his own fingers.
+    buttonText: Give him food?
+  - dialogueText: He asked for it. Serve the two Japanese gargoyles too. They haven't
+      blinked in an hour.
+    buttonText: Who else?
+  - dialogueText: The fat Turkish man. Someone of that size shouldn't be left with
+      an empty plate for long.
+    buttonText: I'm on it
+  - dialogueText: Go. I'll be here with my glass, seeing which one of them can't
+      look me in the eye.
+    buttonText: Understood...

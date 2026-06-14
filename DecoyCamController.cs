@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Invector.vCharacterController;
 
 public class DecoyCamController : MonoBehaviour
 {
@@ -12,12 +14,13 @@ public class DecoyCamController : MonoBehaviour
     public float maxYaw = 45f;
 
     public GameObject seaHintCanvas;
+    public TextMeshProUGUI hintTextComponent;
 
     private float _pitch = 0f;
     private float _yaw = 0f;
     private Quaternion _initialRotation;
 
-    private KeyCode nextDialogueKey = KeyCode.Alpha0;
+    private KeyCode nextDialogueKey = KeyCode.Mouse0;
 
     private bool _hasClickedOnce = false;
 
@@ -32,21 +35,32 @@ public class DecoyCamController : MonoBehaviour
 
         if (seaHintCanvas != null) seaHintCanvas.SetActive(true);
         _hasClickedOnce = false;
+    }
 
-        if (SettingsManager.Instance != null && SettingsManager.Instance.CurrentSettings != null)
-        {
-            nextDialogueKey = SettingsManager.Instance.CurrentSettings.controls.leftClick;
-        }
-        else
-        {
-            nextDialogueKey = KeyCode.Mouse0;
-        }
+    private void Start()
+    {
+        UpdateHintText();
+        if (vThirdPersonInput.Instance != null) nextDialogueKey = vThirdPersonInput.Instance.leftClickInput;
     }
 
     private void Update()
     {
         HandleCameraMovement();
         HandleDialogueClick();
+    }
+
+    private void UpdateHintText()
+    {
+        if (vThirdPersonInput.Instance != null) nextDialogueKey = vThirdPersonInput.Instance.leftClickInput;
+
+        if (hintTextComponent != null)
+        {
+            string keyName = nextDialogueKey.ToString();
+
+            if (nextDialogueKey == KeyCode.Mouse0) keyName = "Left Click";
+
+            hintTextComponent.text = "Press " + keyName + " to display next dialogue";
+        }
     }
 
     private void HandleCameraMovement()
