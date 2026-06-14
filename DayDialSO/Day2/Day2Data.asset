@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayID: 1
   missions:
-  - {fileID: 11400000, guid: 3b2ad1940ef488843ab88c51ff47ef2e, type: 2}
   - {fileID: 11400000, guid: 77d0b303d88477c4bb3fac7f2c4948f3, type: 2}
   - {fileID: 11400000, guid: 90f1000df7d65c8468062c8453ad2db9, type: 2}
   - {fileID: 11400000, guid: b596b6fefb2b43c4dafcb94745ce3c01, type: 2}
@@ -40,4 +39,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2e1bf8cd59e43124493a870569a493f5, type: 2}
   - {fileID: 11400000, guid: b3cc75894263b294e974650d7b942ef3, type: 2}
   - {fileID: 11400000, guid: 48e78a49bbf005e4cbaa980ba13acd74, type: 2}
+  - {fileID: 11400000, guid: 3b2ad1940ef488843ab88c51ff47ef2e, type: 2}
   dialogues: []

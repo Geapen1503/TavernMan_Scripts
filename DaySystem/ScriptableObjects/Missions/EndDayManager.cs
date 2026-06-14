@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Invector.vCharacterController;
 
 public class EndDayManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class EndDayManager : MonoBehaviour
 
     [Header("Player & Camera Settings")]
     public GameObject realPlayer;
+    public GameObject realPlayerCamera;
     public GameObject decoyPlayer;
     public GameObject decoyCamera;
 
@@ -51,9 +53,11 @@ public class EndDayManager : MonoBehaviour
 
     private IEnumerator ChairSequenceRoutine(ChairMissionMapping mapping)
     {
-        if (realPlayer != null) realPlayer.SetActive(false);
+        if (vThirdPersonInput.Instance != null) vThirdPersonInput.Instance.TogglePlayerForChairEnding(true);
+
         if (decoyPlayer != null) decoyPlayer.SetActive(true);
         if (decoyCamera != null) decoyCamera.SetActive(true);
+        if (realPlayerCamera != null) realPlayerCamera.SetActive(false);
 
         _currentActiveNPC = GameStateManager.Instance.GetNPC(mapping.npcId);
 
@@ -83,7 +87,9 @@ public class EndDayManager : MonoBehaviour
 
         if (decoyCamera != null) decoyCamera.SetActive(false);
         if (decoyPlayer != null) decoyPlayer.SetActive(false);
-        if (realPlayer != null) realPlayer.SetActive(true);
+        if (realPlayerCamera != null) realPlayerCamera.SetActive(true);
+
+        if (vThirdPersonInput.Instance != null) vThirdPersonInput.Instance.TogglePlayerForChairEnding(false);
 
         if (_currentMission != null)
         {

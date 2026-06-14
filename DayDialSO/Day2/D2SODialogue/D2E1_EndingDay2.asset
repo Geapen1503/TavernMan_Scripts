@@ -19,20 +19,129 @@ MonoBehaviour:
     monologueLine:
       text: I was cleaning glasses, but my head was somewhere else. Looking for what
         I lost.
-      duration: 6
-      pauseAfterDuration: 1.2
+      duration: 8.5
+      pauseAfterDuration: 0
   - npcDialogueText: You looked like you were searching for something under the tables.
     buttonText: My bottle
     hasMonologue: 1
     monologueLine:
       text: I had to say it. Green rocks trapped in glass. It was my ticket out of
         my old life.
-      duration: 7
-      pauseAfterDuration: 1
+      duration: 10
+      pauseAfterDuration: 0
   - npcDialogueText: A bottle? What was in it?
     buttonText: Not liquid.
     hasMonologue: 1
     monologueLine:
       text: I wasn't looking for a hangover. I was looking for a future.
-      duration: 7
-      pauseAfterDuration: 1
+      duration: 7.5
+      pauseAfterDuration: 0
+  - npcDialogueText: ...was it full of rum? The good stuff from the cellar?
+    buttonText: Better
+    hasMonologue: 1
+    monologueLine:
+      text: The kind of liquid that doesn't just burn your throat, it changes your
+        name.
+      duration: 9
+      pauseAfterDuration: 0
+  - npcDialogueText: Don't tell me it's gin. I hate the smell of gin.
+    buttonText: Emeralds
+    hasMonologue: 1
+    monologueLine:
+      text: Raw stones. Enough to buy a house, a name, a life. Now they're gone.
+        The island swallowed them
+      duration: 11
+      pauseAfterDuration: 0
+  - npcDialogueText: Emeralds? Is that some new cocktail? What's the base... vodka?
+    buttonText: Real stones
+    hasMonologue: 1
+    monologueLine:
+      text: She thought I was joking. Just another bartender spinning a tall tale
+        to pass the time
+      duration: 10
+      pauseAfterDuration: 0
+  - npcDialogueText: You're serious? You actually had... God. That must be a lot
+      of green.
+    buttonText: Had.
+    hasMonologue: 1
+    monologueLine:
+      text: Now I was just a man with empty pockets.
+      duration: 6
+      pauseAfterDuration: 0
+  - npcDialogueText: Emeralds... Must be a heavy thing to carry. I'm just carrying
+      my father's bills.
+    buttonText: His bills?
+    hasMonologue: 1
+    monologueLine:
+      text: She wasn't just a singer. She was collateral. Her father was in some
+        bad business, and now she's the one paying.
+      duration: 12
+      pauseAfterDuration: 0
+  - npcDialogueText: He worked with some bad people. When he died, the debt didn't
+      died with him.
+    buttonText: Mobsters
+    hasMonologue: 1
+    monologueLine:
+      text: People who don't care who pays, as long as the account is settled. She
+        was the last one left to squeeze.
+      duration: 12
+      pauseAfterDuration: 0
+  - npcDialogueText: I thought I could run. But I ended up here. Just like you.
+    buttonText: For how long?
+    hasMonologue: 1
+    monologueLine:
+      text: We were like clockwork toys. The Boss winds us up every evening, and
+        we perform.
+      duration: 9.5
+      pauseAfterDuration: 0
+  - npcDialogueText: I don't know. My memory is... fuzzy. Have you looked at the
+      water lately?
+    buttonText: The water?
+    hasMonologue: 1
+    monologueLine:
+      text: I'd been staring at it for days, but I wasn't really seeing it. Not the
+        way she was.
+      duration: 10.5
+      pauseAfterDuration: 0
+  - npcDialogueText: No boats. Not at the dock, not on the horizon. Nothing comes,
+      nothing goes.
+    buttonText: None?
+    hasMonologue: 1
+    monologueLine:
+      text: I tried to remember a supply ship. A ferry. Anything. But there was only
+        an empty sea.
+      duration: 11
+      pauseAfterDuration: 0
+  - npcDialogueText: If no one can leave, the stones are just green rocks.
+    buttonText: Still pretty
+    hasMonologue: 1
+    monologueLine:
+      text: Maybe. But beauty doesn't buy a way home. It just sits there and mocks
+        you.
+      duration: 9.5
+      pauseAfterDuration: 0
+  - npcDialogueText: At least the air is fresh out here. It's better than the smell
+      of old beer and smoke.
+    buttonText: Much better
+    hasMonologue: 1
+    monologueLine:
+      text: The air was clean. It was the only thing on this island that didn't felt
+        like a lie.
+      duration: 10.5
+      pauseAfterDuration: 0
+  - npcDialogueText: And the moon... it's quiet. I like that
+    buttonText: The stars too
+    hasMonologue: 1
+    monologueLine:
+      text: We sat there, letting the night settle. The sky didn't have a price tag.
+        Not yet.
+      duration: 10.5
+      pauseAfterDuration: 0
+  - npcDialogueText: Well... that's one more night down. Let's see what's left for
+      the next one.
+    buttonText: Until tomorrow
+    hasMonologue: 1
+    monologueLine:
+      text: I just had to wait for the next turn of the wheel.
+      duration: 7.5
+      pauseAfterDuration: 0
