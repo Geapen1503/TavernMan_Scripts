@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D3T4_LadyTalkAboutLoony_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 36
+  sequence:
+  - dialogueText: Still haven't found a way off this rock, have you?
+    buttonText: Nothing yet
+  - dialogueText: Me neither. But I don't exactly get to move around. I'm pretty
+      much glued to this stool.
+    buttonText: That's tough
+  - dialogueText: It's a living, I guess. Anyway, that guy up on the balcony, the
+      one who told you where those chairs were...
+    buttonText: The loony?
+  - dialogueText: Yeah, him. He seems to know more about how this place works than
+      anyone else here. Even the Boss.
+    buttonText: Really?
+  - dialogueText: The Boss just cares about running the place. That guy... he's actually
+      watching.
+    buttonText: I don't know...
+  - dialogueText: If you want to know why no one is leaving, he might be the one
+      to ask. Right?
+    buttonText: I'll ask him
+  - dialogueText: Go on then. I'll still be here when you get back. It's not like
+      I have a choice anyway.
+    buttonText: See ya

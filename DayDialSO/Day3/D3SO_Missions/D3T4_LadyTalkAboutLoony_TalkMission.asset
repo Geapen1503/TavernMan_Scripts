@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34349b7f5c4c8d94b910a62f1d27437f, type: 3}
-  m_Name: D3T2_BossAfterPouring_TalkMission
+  m_Name: D3T4_LadyTalkAboutLoony_TalkMission
   m_EditorClassIdentifier: 
   missionState: 0
-  missionDescription: 
-  targetNpc: 33
-  npcDialogue: {fileID: 11400000, guid: 949ea6823922c6646bad8a6e1e717677, type: 2}
+  missionDescription: Talk to the Lady
+  targetNpc: 36
+  npcDialogue: {fileID: 11400000, guid: 17bc78f10ce9ec14b8186dbe99d86b19, type: 2}

@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34349b7f5c4c8d94b910a62f1d27437f, type: 3}
-  m_Name: D3T1_BossTalkIntro_TalkMission
+  m_Script: {fileID: 11500000, guid: b373d75771c87e04ca9be31d7ae6c332, type: 3}
+  m_Name: D3S2_ServeMeals
   m_EditorClassIdentifier: 
   missionState: 0
-  missionDescription: 
-  targetNpc: 33
-  npcDialogue: {fileID: 11400000, guid: 9813bb4411f808f4dad3512250468828, type: 2}
+  missionDescription: Serve a meal to the Bald Indian, the Yakuzas, and the Fat Turkish
+    Man
+  drinkType: 4
+  npcsToServe: 010000000300000019000000

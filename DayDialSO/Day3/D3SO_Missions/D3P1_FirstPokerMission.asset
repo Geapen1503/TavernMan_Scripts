@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77af500fb4c0c8349b55f48818c4762a, type: 3}
+  m_Name: D3P1_FirstPokerMission
+  m_EditorClassIdentifier: 
+  missionState: 0
+  missionDescription: 
+  playerCardPrefabs:
+  - {fileID: 742165225435323516, guid: e614b394ef3c91744bf6fdec17000bca, type: 3}
+  - {fileID: 2794055200651382015, guid: 7a899e125d9bc2349b39cac32820e264, type: 3}
+  - {fileID: 1070167702591700147, guid: b3954b479377b7a478d437254300895e, type: 3}
+  winningNpcCardPrefabs:
+  - {fileID: 3023994653224203284, guid: ec37fbade43c8974bad4a69c8f12d9dd, type: 3}
+  - {fileID: 5376780489651091041, guid: 09e03fd49ac6d3646a5d8a396827df7d, type: 3}
+  - {fileID: 5376780489651091041, guid: 09e03fd49ac6d3646a5d8a396827df7d, type: 3}
