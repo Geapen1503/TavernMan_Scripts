@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D3T5_LoonyTalkAboutExit_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 4
+  sequence:
+  - dialogueText: Still at it? Another fresh night to keep the glasses clinking
+    buttonText: Thanks for the spot
+  - dialogueText: You'd have found those chairs eventually. The sand doesn't have
+      many secrets.
+    buttonText: Why no boats?
+  - dialogueText: Boats? I haven't seen any. Maybe the sea is too agitated
+    buttonText: We can't leave?
+  - dialogueText: I wouldn't know. I'm just here for the horizon. It's the only thing
+      that doesn't ask for a tip.
+    buttonText: You're lying
+  - dialogueText: I told you. I don't have any idea. My mind is like a sieve tonight.
+    buttonText: Help my memory?
+  - dialogueText: Look, kiddo. If I could help you, I would.
+    buttonText: But?
+  - dialogueText: But these questions... they're starting to break my balls.
+    buttonText: Just a lead
+  - dialogueText: Go find someone else to bother. I'm busy watching the stars. It's
+      a full-time job.
+    buttonText: Fine
