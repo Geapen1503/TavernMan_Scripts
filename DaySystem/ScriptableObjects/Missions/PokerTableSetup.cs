@@ -17,6 +17,8 @@ public class PokerTableSetup : MonoBehaviour
     public List<GameObject> playerCoins;
     public List<GameObject> opponentCoins;
 
+    public List<ExtraNPCTableSetup> extraNPCs;
+
     public void ActivateCoinForRound(int index)
     {
         if (index >= 0 && index < playerCoins.Count && playerCoins[index] != null)
@@ -34,6 +36,8 @@ public class PokerTableSetup : MonoBehaviour
     {
         foreach (var coin in playerCoins) if (coin != null) coin.SetActive(false);
         foreach (var coin in opponentCoins) if (coin != null) coin.SetActive(false);
+
+        foreach (var npc in extraNPCs) if (npc != null) npc.ResetVisuals();
 
         if (cardDeck != null) cardDeck.SetActive(false);
         if (pokerCanvas != null) pokerCanvas.SetActive(false);

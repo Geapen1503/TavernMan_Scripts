@@ -39,6 +39,7 @@ public class PokerManager : MonoBehaviour
     private bool _isWaitingForPlayerInput = false;
     private int _currentCardIndex = 0;
 
+
     private void Awake()
     {
         if (Instance != null && Instance != this) Destroy(gameObject);
@@ -71,15 +72,58 @@ public class PokerManager : MonoBehaviour
         RecordOriginalCardTransforms(mapping);
         _currentCardIndex = 0;
 
+        foreach (var npc in tableSetup.extraNPCs)
+        {
+            if (npc != null) npc.InitializeForNewGame();
+        }
+
         yield return new WaitForSeconds(0.5f);
 
-        yield return StartCoroutine(DistributeSingleCardRound(mapping, 0));
-        yield return StartCoroutine(DistributeSingleCardRound(mapping, 1));
+        tableSetup.ActivateCoinForRound(0);
+        tableSetup.ActivateCoinForRound(1);
+        foreach (var npc in tableSetup.extraNPCs)
+        {
+            if (npc != null)
+            {
+                npc.ActivateCoin(0);
+                npc.ActivateCoin(1);
+            }
+        }
 
+        yield return StartCoroutine(DistributeCardsToActivePlayers(mapping, 0));
+        yield return StartCoroutine(DistributeCardsToActivePlayers(mapping, 1));
+
+        _currentCardIndex = 2;
         int maxPossibleCards = Mathf.Min(5, Mathf.Max(mapping.playerCardsToDraw.Count, mapping.npcCardsToDraw.Count));
 
         while (_currentCardIndex < maxPossibleCards)
         {
+            foreach (var npc in tableSetup.extraNPCs)
+            {
+                if (npc == null || npc.hasFolded) continue;
+
+                yield return new WaitForSeconds(Random.Range(1f, 2.2f));
+
+                if (_currentCardIndex == npc.foldAtCardIndex)
+                {
+                    npc.hasFolded = true;
+
+                    for (int c = 0; c < _currentCardIndex; c++)
+                    {
+                        if (c < npc.cardsToDraw.Count && npc.cardsToDraw[c] != null)
+                        {
+                            StartCoroutine(MoveCardToSlot(npc.cardsToDraw[c], npc.foldTransform.position, npc.foldTransform.rotation));
+                        }
+                    }
+                    yield return new WaitForSeconds(0.4f); 
+                }
+                else
+                {
+                    npc.ActivateCoin(_currentCardIndex);
+                }
+            }
+
+
             if (tableSetup.pokerCanvas != null) tableSetup.pokerCanvas.SetActive(true);
 
             _isWaitingForPlayerInput = true;
@@ -90,9 +134,12 @@ public class PokerManager : MonoBehaviour
             if (tableSetup.pokerCanvas != null) tableSetup.pokerCanvas.SetActive(false);
 
             if (_currentRoundAction == PokerAction.Fold) break;
-            else if (_currentRoundAction == PokerAction.Call)
+
+            if (_currentRoundAction == PokerAction.Call)
             {
-                yield return StartCoroutine(DistributeSingleCardRound(mapping, _currentCardIndex));
+                tableSetup.ActivateCoinForRound(_currentCardIndex);
+                yield return StartCoroutine(DistributeCardsToActivePlayers(mapping, _currentCardIndex));
+                _currentCardIndex++;
             }
         }
 
@@ -101,25 +148,27 @@ public class PokerManager : MonoBehaviour
         EndPokerSequence(mapping);
     }
 
-    private IEnumerator DistributeSingleCardRound(PokerMissionMapping mapping, int index)
+    private IEnumerator DistributeCardsToActivePlayers(PokerMissionMapping mapping, int index)
     {
-        tableSetup.ActivateCoinForRound(index);
-
-        if (index < mapping.playerCardsToDraw.Count && index < tableSetup.playerSlots.Count)
+        if (index < mapping.playerCardsToDraw.Count && index < mapping.playerSlots.Count)
         {
-            GameObject card = mapping.playerCardsToDraw[index];
-            Transform targetSlot = tableSetup.playerSlots[index];
-            yield return StartCoroutine(MoveCardToSlot(card, targetSlot.position, targetSlot.rotation));
+            yield return StartCoroutine(MoveCardToSlot(mapping.playerCardsToDraw[index], mapping.playerSlots[index].position, mapping.playerSlots[index].rotation));
         }
 
-        if (index < mapping.npcCardsToDraw.Count && index < tableSetup.npcSlots.Count)
+        if (index < mapping.npcCardsToDraw.Count && index < mapping.npcSlots.Count)
         {
-            GameObject card = mapping.npcCardsToDraw[index];
-            Transform targetSlot = tableSetup.npcSlots[index];
-            yield return StartCoroutine(MoveCardToSlot(card, targetSlot.position, targetSlot.rotation));
+            yield return StartCoroutine(MoveCardToSlot(mapping.npcCardsToDraw[index], mapping.npcSlots[index].position, mapping.npcSlots[index].rotation));
         }
 
-        _currentCardIndex++;
+        foreach (var npc in tableSetup.extraNPCs)
+        {
+            if (npc == null || npc.hasFolded) continue;
+
+            if (index < npc.cardsToDraw.Count && index < npc.slots.Count)
+            {
+                yield return StartCoroutine(MoveCardToSlot(npc.cardsToDraw[index], npc.slots[index].position, npc.slots[index].rotation));
+            }
+        }
     }
 
     private IEnumerator MoveCardToSlot(GameObject card, Vector3 targetPos, Quaternion targetRot)
@@ -166,6 +215,14 @@ public class PokerManager : MonoBehaviour
 
         foreach (var card in mapping.playerCardsToDraw) { RecordCard(card); }
         foreach (var card in mapping.npcCardsToDraw) { RecordCard(card); }
+
+        foreach (var npc in tableSetup.extraNPCs)
+        {
+            if (npc != null)
+            {
+                foreach (var card in npc.cardsToDraw) { RecordCard(card); }
+            }
+        }
     }
 
     private void RecordCard(GameObject card)
