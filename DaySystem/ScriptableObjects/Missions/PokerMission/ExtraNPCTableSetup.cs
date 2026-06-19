@@ -16,15 +16,14 @@ public class ExtraNPCTableSetup : MonoBehaviour
     {
         hasFolded = false;
 
-        foldAtCardIndex = Random.Range(2, 5);
+        foldAtCardIndex = Random.Range(2, 4);
     }
 
     public void ActivateCoin(int index)
     {
-        if (index >= 0 && index < coins.Count && coins[index] != null)
-        {
-            coins[index].SetActive(true);
-        }
+        if (!IsValidCoinIndex(index)) return;
+
+        coins[index].SetActive(true);
     }
 
     public void ResetVisuals()
@@ -33,5 +32,10 @@ public class ExtraNPCTableSetup : MonoBehaviour
         {
             if (coin != null) coin.SetActive(false);
         }
+    }
+
+    private bool IsValidCoinIndex(int index)
+    {
+        return index >= 0 && index < coins.Count && coins[index] != null;
     }
 }

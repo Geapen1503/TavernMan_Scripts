@@ -35,6 +35,11 @@ public class ButtonFeedback : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         button.onClick.AddListener(PlayClickSound);
     }
 
+    void OnEnable()
+    {
+        ResetVisualState();
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (buttonText != null) buttonText.color = hoverTextColor;
