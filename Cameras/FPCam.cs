@@ -48,6 +48,11 @@ public class FPCam : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    private void OnEnable()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void Update()
     {
         if (lockOnDialogue == false && LockOnPauseMenu == false) CameraInputs();

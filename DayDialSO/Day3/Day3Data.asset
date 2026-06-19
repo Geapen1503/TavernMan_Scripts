@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayID: 2
   missions:
+  - {fileID: 11400000, guid: 66d32515d02b10440a162b38e13bd2dd, type: 2}
   - {fileID: 11400000, guid: 78d38d1a9dec7e1458e60fa51c30d5de, type: 2}
   - {fileID: 11400000, guid: 8b311261857b6f9458a57ce43cd7c1f0, type: 2}
   - {fileID: 11400000, guid: a8e2375fb7c5e9547b9f466655b2361d, type: 2}
