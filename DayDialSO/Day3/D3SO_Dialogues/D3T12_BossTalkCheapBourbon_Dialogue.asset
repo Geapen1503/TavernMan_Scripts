@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D3T12_BossTalkCheapBourbon_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: I'm still seeing red. How you let those mollusks bleed you dry
+      is beyond me. It's a disgrace to the house.
+    buttonText: It happened
+  - dialogueText: Yeah, it happened, and it's coming out of your hide later.
+    buttonText: Meaning?
+  - dialogueText: Meaning the night is almost dead, and we still have one last service
+      to handle.
+    buttonText: Who's left?
+  - dialogueText: You're going to serve some cheap bourbon.
+    buttonText: To who?
+  - dialogueText: Start with those vultures at the poker table. Let them toast to
+      your incompetence with my worst swill.
+    buttonText: And then?
+  - dialogueText: The Pianist. Just look at how he's hitting those keys. He's playing
+      like he's trying to squeeze water out of the wood.
+    buttonText: I see
+  - dialogueText: And the Scot upstairs. They've been waiting long enough.
+    buttonText: After that?
+  - dialogueText: After that... well, it'll just be another night over and done with.
+      Making us closer to the end of the world
+    buttonText: What?
+  - dialogueText: Don't just stand there looking pathetic. Go serve the drunks so
+      I can finally close this till.
+    buttonText: On it

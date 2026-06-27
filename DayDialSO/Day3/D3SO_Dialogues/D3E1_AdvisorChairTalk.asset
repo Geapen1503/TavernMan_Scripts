@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9d446fdaefde204fbc683b0f43e403d, type: 3}
+  m_Name: D3E1_AdvisorChairTalk
+  m_EditorClassIdentifier: 
+  sequence:
+  - npcDialogueText: So you took the pills, huh? I could see it in your eyes back
+      there.
+    buttonText: I did
+    hasMonologue: 1
+    monologueLine:
+      text: The pills tasted like copper and old regrets. They tore a hole in the
+        fog
+      duration: 8
+      pauseAfterDuration: 0
+  - npcDialogueText: You know where that bottle of emeralds came from now?
+    buttonText: I do
+    hasMonologue: 1
+    monologueLine:
+      text: What I saw on the other side wasn't a dream. It was a crime scene.
+      duration: 7
+      pauseAfterDuration: 0
+  - npcDialogueText: Well? Don't keep me in suspense
+    buttonText: I stole them.
+    hasMonologue: 1
+    monologueLine:
+      text: I wasn't a guest in that room and I took those stones from there.
+      duration: 6.5
+      pauseAfterDuration: 0
+  - npcDialogueText: So... You stole them? Remember when you told me the singer thinks
+      nobody can leave this place?
+    buttonText: She's right
+    hasMonologue: 1
+    monologueLine:
+      text: The island was a magnet for those who had something they couldn't give
+        back
+      duration: 9
+      pauseAfterDuration: 0
+  - npcDialogueText: When I took the pills myself... I saw a face. A man, fifty-something
+      years old.
+    buttonText: Who?
+    hasMonologue: 1
+    monologueLine:
+      text: Didn't know what was in those pills, but they were efficient...
+      duration: 6.5
+      pauseAfterDuration: 0
+  - npcDialogueText: I killed him. I had to, to save my own skin. If I hadn't, I
+      wouldn't be sitting here talking to you.
+    buttonText: Self defense?
+    hasMonologue: 1
+    monologueLine:
+      text: ...somewhere, a junkie was missing the trip of a lifetime.
+      duration: 9
+      pauseAfterDuration: 0
+  - npcDialogueText: But he was innocent. Just a dude at the wrong place at the wrong
+      time.
+    buttonText: Bad luck
+    hasMonologue: 1
+    monologueLine:
+      text: Despite the murder, that guy was more trustworthy than the others guests.
+      duration: 8
+      pauseAfterDuration: 0
+  - npcDialogueText: I think I have a debt. A moral one. Maybe you've got one too
+      because of those emeralds.
+    buttonText: A debt?
+    hasMonologue: 1
+    monologueLine:
+      text: The Lady mentioned a literal debt last night. Mobsters and bills. He
+        had a blood debt...
+      duration: 9
+      pauseAfterDuration: 0
+  - npcDialogueText: If she's right and we're stuck... I believe it's because the
+      bill hasn't been paid yet.
+    buttonText: ...
+    hasMonologue: 1
+    monologueLine:
+      text: ...And I had a pocket full of stolen stones. Different sins, same weight.
+      duration: 8
+      pauseAfterDuration: 0
+  - npcDialogueText: Well... Think about it. We'll talk tomorrow.
+    buttonText: Until then.
+    hasMonologue: 1
+    monologueLine:
+      text: I looked at the sea. It wasn't an escape route anymore. It was a fence.
+      duration: 8
+      pauseAfterDuration: 0

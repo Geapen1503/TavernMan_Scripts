@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D4T1_BossDayServiceIntro_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Ah, the guard of my stockroom! Still haunting the place after all
+      that heavy lifting, I see.
+    buttonText: Still here
+  - dialogueText: Settling into the humidity? Stick close, kid. This place has enough
+      surprises to keep you from yawning.
+    buttonText: Never bored
+  - dialogueText: Good, because tonight's a sweatbox. I found a mop in the back.
+    buttonText: A mop?
+  - dialogueText: First, you'll treat it like a dancing partner and scrub the floor
+      until I can see my sins in it.
+    buttonText: Scrub the floor?
+  - dialogueText: Secondly, the cards. Those players upstairs better start coughing
+      up the cash for the music disks and our missing crates.
+    buttonText: I'll win
+  - dialogueText: You'd better. Speaking of missing things... did you sniff out our
+      little mice yet?
+    buttonText: Not yet
+  - dialogueText: Theft isn't a hobby, it's a hole in my pocket. Find the thief or
+      I'll start deducting the loss from your skin.
+    buttonText: I'll look
+  - dialogueText: Enough chatter. Start the taps. Drown the poker table in ale so
+      they play like blind mules.
+    buttonText: Who else?
+  - dialogueText: Hit the suits upstairs, and... hell, even give a pint to the ape
+      with the cigar in the corner.
+    buttonText: The monkey?
+  - dialogueText: Don't stare at the fur. Just pour the drink and keep the ash off
+      the rug.
+    buttonText: On it
+  - dialogueText: Move it then. This Tavern doesn't run on sea breeze and good intentions.
+    buttonText: I'm going

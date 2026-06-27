@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D3T8_LadyTalkAfterPoker_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 36
+  sequence:
+  - dialogueText: I saw you at the poker table. From your face, I'm guessing it didn't
+      go well.
+    buttonText: Total disaster
+  - dialogueText: Can't blame me, I warned you. The Boss sounded like he was about
+      to have a heart attack from up here.
+    buttonText: He could've
+  - dialogueText: Anyway, did you talk to the guy on the balcony?
+    buttonText: Yeah
+  - dialogueText: And? What did he have to say about why nobody can leave?
+    buttonText: Said he didn't know
+  - dialogueText: Really? You actually believed that? I've been watching him for
+      a while... I'm pretty sure he's hiding something.
+    buttonText: Why?
+  - dialogueText: He's always watching. You don't stay that quiet unless you know
+      what's going on. Did you ask him about your bottle?
+    buttonText: I tried
+  - dialogueText: And he wouldn't talk about that either?
+    buttonText: Yep
+  - dialogueText: We really need to figure this out. I'm tired of being stuck here.
+    buttonText: Where to look?
+  - dialogueText: I don't know yet. But he's definitely the one with the answers.
+      He's just not talking.
+    buttonText: I'll keep trying
+  - dialogueText: You do that. And come back to see me if you find anything.
+    buttonText: Will do

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D3T15_AdvisorTalkAfterTakingPills_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: Steady. You almost went over the counter.
+    buttonText: I did?
+  - dialogueText: Your eyes... you were definitely somewhere else for a second.
+    buttonText: ...
+  - dialogueText: Whatever you found in there, keep it to yourself for now. You're
+      too rattled to hide it well if the Boss looks your way.
+    buttonText: Right
+  - dialogueText: Take a minute to find your feet. We'll figure out the details when
+      the air is clearer.
+    buttonText: ...
+  - dialogueText: Go on. Finish what you have to do.
+    buttonText: I'll go

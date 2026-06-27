@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D4T3_LadyTalkAfterPills_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 36
+  sequence:
+  - dialogueText: You're back. Did you finally shook some of the fog out of your
+      head?
+    buttonText: About the debt...
+  - dialogueText: Still on that? I already told you about my father's bills.
+    buttonText: Advisor's pills
+  - dialogueText: Pills? He's playing pharmacist now? I hope they didn't make your
+      vision go blurry.
+    buttonText: They helped
+  - dialogueText: Helped how? Did you suddenly remember where the hidden exit is?
+    buttonText: The emeralds
+  - dialogueText: The emeralds? Those green rocks again. Did they finally show up,
+      or are they still a dream?
+    buttonText: Talked on chairs
+  - dialogueText: You and the man in the suit, having deep talk? I hope he wasn't
+      too stiff.
+    buttonText: He has a debt too
+  - dialogueText: Him too? So the sharp-dressed man is just another bird in the cage
+      with us.
+    buttonText: We all are
+  - dialogueText: A trio of knobs. If the three of us owe, then the dock is basically
+      a forbidden zone.
+    buttonText: Exactly
+  - dialogueText: We have to find out who's really holding the receipts, and maybe
+      we can finally stop staring at the same stars.
+    buttonText: I will
+  - dialogueText: Good luck. I'm not going anywhere... you guessed it.
+    buttonText: Wait here
