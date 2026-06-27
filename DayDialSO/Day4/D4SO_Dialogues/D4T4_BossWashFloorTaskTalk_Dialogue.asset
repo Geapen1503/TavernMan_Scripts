@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D4T4_BossWashFloorTaskTalk_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Ah, the wanderer returns! Tell me, did you trip over the filth
+      on your way in, or are you just blind?
+    buttonText: Another body?
+  - dialogueText: Shut it! That's a heavy word to toss around when the air is this
+      thin. I'm talking about this absolute wreckage of a floor.
+    buttonText: Looks the same
+  - dialogueText: Precisely! But "the same" is a crime against my reputation. This
+      place is layered in years of spilled regret and dried sand.
+    buttonText: The mop?
+  - dialogueText: Learning fast I see. I didn't dig it out of the stockroom just
+      to give the spiders a new home.
+    buttonText: Scrub everything?
+  - dialogueText: Every inch. I want those stains gone before the loggerheads even
+      think about showing up. I want to see the wood again, not the grime.
+    buttonText: Fine...
+  - dialogueText: Put some muscle into it, TavernMan. The floor isn't going to polish
+      itself while you stand there.
+    buttonText: Cow?

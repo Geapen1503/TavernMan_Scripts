@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D3T7_BossTalkAfterPoker_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: You're back early. I don't see any gold weighing down your pockets.
+      Don't tell me you're tapped out already.
+    buttonText: I lost
+  - dialogueText: What do you mean, you lost? I sent you up there to gut them, not
+      to hand over my reputation on a silver platter!
+    buttonText: Bad cards
+  - dialogueText: Bad cards? You went up there all confident, talking about music
+      records and paying debts...
+    buttonText: I'm sorry
+  - dialogueText: Sorry doesn't fill my safe, damnit! It doesn't put music in my
+      ears or crates in my cellar.
+    buttonText: I know
+  - dialogueText: You know? You're a hole in my pocket that just keeps getting bigger.
+    buttonText: What now?
+  - dialogueText: I can't stand to look at you. My blood is boiling just watching
+      you breathe my air. Get out!
+    buttonText: But...
+  - dialogueText: Go! I don't want to see that face for the rest of the night. We'll
+      figure out how to pay for this disaster another time. Move!
+    buttonText: I'm leaving

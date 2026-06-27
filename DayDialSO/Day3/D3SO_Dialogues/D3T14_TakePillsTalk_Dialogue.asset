@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D3T14_TakePillsTalk_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: You're back. I'm guessing you're ready to hear that solution now?
+    buttonText: Tell me?
+  - dialogueText: I'm going to sound like a broken record, and you're probably going
+      to hate me for saying it again...
+    buttonText: Don't say it
+  - dialogueText: You really need to take those pills.
+    buttonText: No way
+  - dialogueText: Listen to me. You're hitting a wall, and so am I. This place isn't
+      just a prison for your body, it's a prison for your head.
+    buttonText: It's crazy
+  - dialogueText: Is it? I took them myself when you brought the first box back.
+      I had to know.
+    buttonText: You what?
+  - dialogueText: Things I'd completely forgotten... it all started coming back.
+      The fog is lifting for me. It can lift for you too.
+    buttonText: It's dangerous
+  - dialogueText: Being here without knowing who you are is more dangerous. At this
+      point, what do you have to lose?
+    buttonText: ...
+  - dialogueText: Take them. Let's see what's behind that curtain of yours.
+    buttonText: Fuck it, I'm stuck here anyway.

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 642dcb855da57604996aa3265dad10c2, type: 3}
+  m_Name: Day4Data
+  m_EditorClassIdentifier: 
+  dayID: 3
+  missions:
+  - {fileID: 11400000, guid: b24931f9f1702ed41abb89497bf60b00, type: 2}
+  - {fileID: 11400000, guid: c389f4a01022a384381b1ada87c7eeea, type: 2}
+  - {fileID: 11400000, guid: e5877b3ff9286ed4ba996a13c407a69c, type: 2}
+  - {fileID: 11400000, guid: 32e7ac5bf2a1b3244bc76dc239e9133a, type: 2}
+  - {fileID: 11400000, guid: fabfe379e479c5942b3bdbed0d5061e3, type: 2}
+  - {fileID: 11400000, guid: ef4557ec0690e2d44866ac9b3303cbc7, type: 2}
+  dialogues: []

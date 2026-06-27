@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac30ed3b3219edd47ac9f38f21aa0def, type: 3}
+  m_Name: D4W1_WashingFirstFloor
+  m_EditorClassIdentifier: 
+  missionState: 1
+  missionDescription: Clean the Tavern ground floor with the mop
+  timeRequiredPerFloor: 15
