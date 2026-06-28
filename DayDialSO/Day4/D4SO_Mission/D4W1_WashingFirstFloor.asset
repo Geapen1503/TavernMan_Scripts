@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac30ed3b3219edd47ac9f38f21aa0def, type: 3}
   m_Name: D4W1_WashingFirstFloor
   m_EditorClassIdentifier: 
-  missionState: 1
+  missionState: 2
   missionDescription: Clean the Tavern ground floor with the mop
-  timeRequiredPerFloor: 15
+  completionThreshold: 0.6

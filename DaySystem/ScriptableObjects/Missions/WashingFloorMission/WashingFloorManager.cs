@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class WashingFloorManager : MonoBehaviour
 {
-    public static WashingFloorManager Instance { get; private set; }
-
     [System.Serializable]
     public struct MissionMapping
     {
@@ -13,9 +11,15 @@ public class WashingFloorManager : MonoBehaviour
         public List<DirtyFloorOverlay> dirtyOverlays;
     }
 
+    public GameObject mop;
+
     [SerializeField] private List<MissionMapping> mappings;
     [SerializeField] private MopController mopController;
     public MopController MopController => mopController;
+
+    private WashingFloorMissionSO _currentMission;
+
+    public static WashingFloorManager Instance { get; private set; }
 
     private void Awake()
     {
@@ -25,6 +29,23 @@ public class WashingFloorManager : MonoBehaviour
             return;
         }
         Instance = this;
+    }
+
+    public void SetCurrentMission(WashingFloorMissionSO mission)
+    {
+        _currentMission = mission;
+    }
+
+    public void ClearCurrentMission()
+    {
+        _currentMission = null;
+    }
+
+    public List<DirtyFloorOverlay> GetCurrentMissionOverlays()
+    {
+        if (_currentMission == null) return null;
+
+        return GetOverlaysForMission(_currentMission);
     }
 
     public List<DirtyFloorOverlay> GetOverlaysForMission(WashingFloorMissionSO mission)
