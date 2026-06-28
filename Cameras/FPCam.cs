@@ -15,6 +15,8 @@ public class FPCam : MonoBehaviour
     private bool lockOnDialogue = false;
     private bool lockOnPauseMenu = false;
 
+    private const int DefaultRaycastLayers = 0;
+
     [Header("Serving Settings")]
     private bool isServing = false;
     public float servingMinPitch = -20f;
@@ -165,6 +167,15 @@ public class FPCam : MonoBehaviour
         isCarryingObject = active;
 
         if (isCarryingObject) xRotation = Mathf.Clamp(xRotation, carryMinPitch, carryMaxPitch);
+    }
+
+    public bool RaycastFromScreenCenter(out RaycastHit hit, float maxDistance = 10f, int layerMask = DefaultRaycastLayers)
+    {
+        if (thisCam == null) { hit = new RaycastHit(); return false; }
+
+        Ray ray = thisCam.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0f));
+
+        return Physics.Raycast(ray, out hit, maxDistance, layerMask);
     }
 
 

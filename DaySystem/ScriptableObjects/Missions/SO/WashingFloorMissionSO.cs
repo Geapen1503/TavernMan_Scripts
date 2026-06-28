@@ -8,7 +8,7 @@ using Invector.vCharacterController;
 public class WashingFloorMissionSO : MissionSO
 {
     [Range(0f, 1f)]
-    [SerializeField] private float completionThreshold = 0.85f;
+    [SerializeField] private float completionThreshold = 0.6f;
 
     private List<DirtyFloorOverlay> _activeOverlays;
     private int _totalTasks;
@@ -16,12 +16,9 @@ public class WashingFloorMissionSO : MissionSO
 
     protected override void MissionContentPlaying()
     {
-        var overlays = WashingFloorManager.Instance.GetOverlaysForMission(this);
-        if (overlays == null || overlays.Count == 0)
-        {
-            CompleteMission();
-            return;
-        }
+        WashingFloorManager.Instance.SetCurrentMission(this);
+        var overlays = WashingFloorManager.Instance.GetCurrentMissionOverlays();
+        if (overlays == null || overlays.Count == 0) return;
 
         _totalTasks = 0;
         _completedTasks = 0;
@@ -40,8 +37,13 @@ public class WashingFloorMissionSO : MissionSO
             _totalTasks++;
         }
 
-        var mop = WashingFloorManager.Instance.MopController;
-        if (mop != null) mop.Activate(_activeOverlays);
+        var mopController = WashingFloorManager.Instance.MopController;
+        var mop = WashingFloorManager.Instance.mop;
+        if (mopController != null && mop != null)
+        {
+            mop.SetActive(true);
+            mopController.Activate(_activeOverlays);
+        }
     }
 
     private void OnOverlayCompleted(DirtyFloorOverlay overlay)
@@ -52,8 +54,15 @@ public class WashingFloorMissionSO : MissionSO
 
     private void FinalizeMission()
     {
-        var mop = WashingFloorManager.Instance.MopController;
-        if (mop != null) mop.Deactivate();
+        var mopController = WashingFloorManager.Instance.MopController;
+        var mop = WashingFloorManager.Instance.mop;
+        if (mopController != null && mop != null)
+        {
+            mopController.Deactivate();
+            mop.SetActive(false);
+        }
+
+        WashingFloorManager.Instance.ClearCurrentMission();
 
         foreach (var overlay in _activeOverlays)
         {
@@ -62,6 +71,7 @@ public class WashingFloorMissionSO : MissionSO
             overlay.gameObject.SetActive(false);
         }
         _activeOverlays = null;
+
         CompleteMission();
     }
 }
