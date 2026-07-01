@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D5T6_BossWhiskyBusiness_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Back from the dragon's den? Did those silent types agree to ship
+      my inventory?
+    buttonText: Here by tomorrow
+  - dialogueText: By tomorrow? Now that's how you move a mountain. Those gentlemen
+      don't waste a single heartbeat.
+    buttonText: Double the price
+  - dialogueText: It's expensive, but that's the tax for real work. My gold is gone,
+      but at least the job is solid.
+    buttonText: A lot?
+  - dialogueText: Enough to make a statue cry. But we need those crates for the next
+      night.
+    buttonText: What's next?
+  - dialogueText: Another thing. I'm done with that jazz noise. My ears are sick
+      of those brass notes.
+    buttonText: The music?
+  - dialogueText: I bought the disks myself. Since your poker game is as weak as
+      day-old tea, I had to dig into the reserve.
+    buttonText: Where?
+  - dialogueText: They're sitting on the deck outside. Go grab them before the squids
+      eats the wax.
+    buttonText: I'll go
+  - dialogueText: Bring them here and feed the jukebox. I want this place sounding
+      decent for our guests.
+    buttonText: Decent?
+  - dialogueText: And don't you scratch them. My coins don't grow on palm trees.
+    buttonText: Could've guess

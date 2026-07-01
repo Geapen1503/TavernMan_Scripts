@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D4T6_AdvisorSqueezeIndian_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: So, the search continues? The Boss seems remarkably focused on
+      that thief.
+    buttonText: He's losing it
+  - dialogueText: 'Let him be. My advice remains the same as last time: play it cool.
+      Don''t let his paranoia become your problem.'
+    buttonText: Just wait?
+  - dialogueText: Correct. A larger event will eventually occur, and this theft will
+      become a footnote. It's just a matter of time
+    buttonText: Something bigger?
+  - dialogueText: Things can't stay this quiet forever. In the meantime, look at
+      the Indian. He's the architect of your current situation.
+    buttonText: What do you mean?
+  - dialogueText: He placed you here. Personally, I think you shouldn't be handling
+      his jobs for mere pocket change.
+    buttonText: Squeeze him?
+  - dialogueText: It would be the logical move. He has information that is far more
+      valuable than your salary
+    buttonText: I'll do it
+  - dialogueText: Okay. That way you won't be the only one paying a debt you didn't
+      sign for.
+    buttonText: Right

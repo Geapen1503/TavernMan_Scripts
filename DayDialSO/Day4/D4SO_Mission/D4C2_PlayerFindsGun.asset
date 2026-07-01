@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ddb04a8029f804aa11096befc94022, type: 3}
+  m_Name: D4C2_PlayerFindsGun
+  m_EditorClassIdentifier: 
+  missionState: 2
+  missionDescription: 
+  startDelay: 7
+  dialogueSequence:
+  - text: The sand finally gave way. Cold iron, heavy and loaded for a job I hadn't
+      agreed to yet.
+    duration: 8
+    pauseAfterDuration: 1.8
+  - text: Not the payment I expected, but protection is a rare luxury in a place
+      like this.
+    duration: 7
+    pauseAfterDuration: 1.5
+  - text: Another poisoned gift from the bald Indian. If the Boss finds this steel
+      on me, I'm as good as gone.
+    duration: 8
+    pauseAfterDuration: 2
+  - text: I kept the metal close, feeling the chill. It's not safety; it's just a
+      faster way to the end of the line.
+    duration: 8.2
+    pauseAfterDuration: 2.4

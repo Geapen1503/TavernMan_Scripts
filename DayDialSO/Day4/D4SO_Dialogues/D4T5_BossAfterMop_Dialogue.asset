@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D4T5_BossAfterMop_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Look at that... the wood actually has a color under all that filth.
+      I'd almost forgotten I didn't build this place on top of a swamp.
+    buttonText: It's done
+  - dialogueText: It'll do. Take your "earned" rest then. Vanish for a while.
+    buttonText: Vanish?
+  - dialogueText: I don't care if you go count the crabs or stare at the moon until
+      your brain melts.
+    buttonText: I'm free?
+  - dialogueText: For now. But keep your fingers nimble. I'll be summoning you later
+      to settle those debts with the cards.
+    buttonText: The poker?
+  - dialogueText: Precisely. We need to bleed those players dry. And while you're
+      resting, keep the squirrel in mind.
+    buttonText: The thief...
+  - dialogueText: That thief is still taking bites out of my pocket. Don't get so
+      comfortable that you forget to keep your eyes peeled.
+    buttonText: I'm watching
+  - dialogueText: Great. Now get out of my sight before I find another chore that
+      needs a pair of hands.
+    buttonText: Right, moving

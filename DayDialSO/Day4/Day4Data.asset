@@ -14,10 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayID: 3
   missions:
-  - {fileID: 11400000, guid: b24931f9f1702ed41abb89497bf60b00, type: 2}
   - {fileID: 11400000, guid: c389f4a01022a384381b1ada87c7eeea, type: 2}
   - {fileID: 11400000, guid: e5877b3ff9286ed4ba996a13c407a69c, type: 2}
   - {fileID: 11400000, guid: 32e7ac5bf2a1b3244bc76dc239e9133a, type: 2}
   - {fileID: 11400000, guid: fabfe379e479c5942b3bdbed0d5061e3, type: 2}
   - {fileID: 11400000, guid: ef4557ec0690e2d44866ac9b3303cbc7, type: 2}
+  - {fileID: 11400000, guid: b24931f9f1702ed41abb89497bf60b00, type: 2}
+  - {fileID: 11400000, guid: c77775a3c56850d43ad6e2dc7fa8e5da, type: 2}
+  - {fileID: 11400000, guid: 5210e969cc28f1a418f4076aca38fc6a, type: 2}
+  - {fileID: 11400000, guid: 80156f37945bc4645ab33bdb45d79eb3, type: 2}
+  - {fileID: 11400000, guid: 6cb6019b2dc965f4ba803053617b8105, type: 2}
+  - {fileID: 11400000, guid: 92dda9a52b7009d45a79f62fbbe485d9, type: 2}
+  - {fileID: 11400000, guid: c4bd63762e036ee4ba60d633264a7a83, type: 2}
+  - {fileID: 11400000, guid: ff973c28964b1014b9b54d0f9507c811, type: 2}
+  - {fileID: 11400000, guid: 24ab8edb3c017cd449d405e7f963b9ba, type: 2}
+  - {fileID: 11400000, guid: 6b8c2d5d93ec11047a17a36a9be80347, type: 2}
+  - {fileID: 11400000, guid: a2f47122b347f024586dd82e9da9f9be, type: 2}
+  - {fileID: 11400000, guid: b1364b06a0dfa374fa21ec33aa2e4631, type: 2}
+  - {fileID: 11400000, guid: 12e913d331479a24aa7acfec4fa25257, type: 2}
+  - {fileID: 11400000, guid: 9f13c338159a26f4ba677e0c56cd27c3, type: 2}
+  - {fileID: 11400000, guid: dd6dd44aee284564e84b96fc19c5ca2a, type: 2}
+  - {fileID: 11400000, guid: 5381e4c7cdc6269439fa93f5585316ae, type: 2}
+  - {fileID: 11400000, guid: ed58d2273e5000c499f3dd221d045232, type: 2}
+  - {fileID: 11400000, guid: ab4b729972a046f4e88068f3c1cac668, type: 2}
+  - {fileID: 11400000, guid: e9903bd50dcc9e2409174386ebdc7d1b, type: 2}
+  - {fileID: 11400000, guid: 8fe2a127d7fd0714ba8456d94fa1498e, type: 2}
+  - {fileID: 11400000, guid: c73f9a2dbefae3d40b395f3c715e741a, type: 2}
+  - {fileID: 11400000, guid: 8f6f6d5223afb584e8b83cd939c4b3f3, type: 2}
+  - {fileID: 11400000, guid: a540ed56866ec854390d669dbf59fc6d, type: 2}
+  - {fileID: 11400000, guid: 194d44215a4838a4aac4b4581080e053, type: 2}
+  - {fileID: 11400000, guid: 41a416e7ca1398944baa1749e4765599, type: 2}
   dialogues: []

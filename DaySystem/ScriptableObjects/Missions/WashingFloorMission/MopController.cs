@@ -54,15 +54,23 @@ public class MopController : MonoBehaviour
         if (!_isActive) return;
         if (!Input.GetKey(vThirdPersonInput.Instance.leftClickInput)) return;
 
+        bool cleanedSomething = false;
         Vector3 pos = brushTip.position;
+
         foreach (var overlay in _targetOverlays)
         {
             if (overlay == null || !overlay.isActiveAndEnabled || overlay.IsCompleted) continue;
 
             Bounds bounds = overlay.MeshRenderer.bounds;
 
-            if (bounds.Contains(new Vector3(pos.x, bounds.center.y, pos.z))) overlay.CleanArea(brushTip, brushSize);
+            if (bounds.Contains(new Vector3(pos.x, bounds.center.y, pos.z)))
+            {
+                overlay.CleanArea(brushTip, brushSize);
+                cleanedSomething = true;
+            }
         }
+
+        if (cleanedSomething) WashingFloorManager.Instance.CheckCurrentMissionProgress();
     }
 
     public void MoveMopTo(Vector3 targetPoint, Vector3 normal)

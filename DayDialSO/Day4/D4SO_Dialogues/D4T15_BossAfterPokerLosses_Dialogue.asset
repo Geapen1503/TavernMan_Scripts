@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D4T15_BossAfterPokerLosses_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Look at that walk! That's the walk of a man with heavy pockets.
+      Tell me, how much did you bleed those porpoise for?
+    buttonText: I lost
+  - dialogueText: Stop it, you're killing me. Seriously, how much? Is the safe going
+      to groan tonight?
+    buttonText: I lost it all
+  - dialogueText: You're not joking.
+    buttonText: Three times.
+  - dialogueText: Three times? Three? I told you to play one hand.
+    buttonText: I...
+  - dialogueText: I give you my trust, I give you my capital... How much more betrayal
+      can I take!
+    buttonText: I thought...
+  - dialogueText: You thought? That's the problem! I actually stood here last night
+      calling you a Goldfish. I thought...
+    buttonText: I mean...
+  - dialogueText: And you? You didn't just drown, you sank the whole boat! You're
+      not a Goldfish, you're an anchor.
+    buttonText: It was rigged
+  - dialogueText: I don't want to hear excuses from a loser! You've turned my Tavern
+      into a charity for barnacles.
+    buttonText: What now?
+  - dialogueText: Now? You vanish. Get far away from me before I decide your skin
+      is worth more than your service.
+    buttonText: My skin?
+  - dialogueText: I don't want to see you for the rest of the night. Move!
+    buttonText: I'm leaving

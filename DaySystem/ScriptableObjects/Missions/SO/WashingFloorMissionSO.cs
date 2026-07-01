@@ -20,8 +20,6 @@ public class WashingFloorMissionSO : MissionSO
         var overlays = WashingFloorManager.Instance.GetCurrentMissionOverlays();
         if (overlays == null || overlays.Count == 0) return;
 
-        _totalTasks = 0;
-        _completedTasks = 0;
         _activeOverlays = new List<DirtyFloorOverlay>();
 
         foreach (var overlay in overlays)
@@ -30,11 +28,10 @@ public class WashingFloorMissionSO : MissionSO
 
             overlay.gameObject.SetActive(true);
             overlay.InitializeOverlay();
-            overlay.CompletionThreshold = completionThreshold;
-            overlay.CleaningCompleted += OnOverlayCompleted;
+
+            overlay.CompletionThreshold = 2f;
 
             _activeOverlays.Add(overlay);
-            _totalTasks++;
         }
 
         var mopController = WashingFloorManager.Instance.MopController;
@@ -44,6 +41,18 @@ public class WashingFloorMissionSO : MissionSO
             mop.SetActive(true);
             mopController.Activate(_activeOverlays);
         }
+    }
+
+    public void CheckGlobalCompletion()
+    {
+        if (_activeOverlays == null || _activeOverlays.Count == 0) return;
+
+        float totalProgress = 0f;
+        foreach (var overlay in _activeOverlays) totalProgress += overlay.CleanedPercentage;
+
+        float averageProgress = totalProgress / _activeOverlays.Count;
+
+        if (averageProgress >= completionThreshold) FinalizeMission();
     }
 
     private void OnOverlayCompleted(DirtyFloorOverlay overlay)
@@ -67,7 +76,6 @@ public class WashingFloorMissionSO : MissionSO
         foreach (var overlay in _activeOverlays)
         {
             if (overlay == null) continue;
-            overlay.CleaningCompleted -= OnOverlayCompleted;
             overlay.gameObject.SetActive(false);
         }
         _activeOverlays = null;

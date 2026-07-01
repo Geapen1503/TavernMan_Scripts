@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D5T2_BossAskForLastPokerGame_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Look at that. I can finally see my scowl in the floorboards. Almost
+      makes me want to smile.
+    buttonText: It's done
+  - dialogueText: About time. Now drop the rags. The piranhas upstairs are getting
+      impatient.
+    buttonText: Poker time?
+  - dialogueText: Exactly. Go up there and strip those fools of every copper they
+      own.
+    buttonText: I'll try
+  - dialogueText: Don't just try. Win. I need a mountain of gold to settle the bill
+      for those crates and disks.
+    buttonText: Big leagues
+  - dialogueText: Huge. Now get moving before your luck catches a cold.
+    buttonText: The luck
+  - dialogueText: And TavernMan? Don't come back down with empty pockets
+    buttonText: Okay

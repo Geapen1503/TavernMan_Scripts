@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D4T20_BossLastTalkOfNight_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Why are you still haunting my stool? I told you to vanish after
+      you drowned my gold in that poker game!
+    buttonText: Shift over?
+  - dialogueText: It was over the second you lost! Now you're just dead weight cluttering
+      up my Tavern.
+    buttonText: I thought...
+  - dialogueText: Don't "thought" me, you pathetic sea pig! Get out of my sight before
+      I decide to use you as bait.
+    buttonText: A sea pig?

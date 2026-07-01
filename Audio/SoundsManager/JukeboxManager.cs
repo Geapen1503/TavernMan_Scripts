@@ -6,6 +6,7 @@ public class JukeboxManager : MonoBehaviour
 {
     [Header("Audio Source")]
     public AudioSource audioSource;
+    public BoxCollider jukeboxTriggerCol;
 
     [Header("Random Durations")]
     public float minCrackleDuration = 2f;
@@ -23,6 +24,13 @@ public class JukeboxManager : MonoBehaviour
     private bool isRunning = false;
     private bool clipsPreloaded = false;
 
+    private string jazzAudioClipsPath = "Audio/Music/JukeBox/Jazz";
+    private string latinAudioClipsPath = "Audio/Music/JukeBox/Latin";
+
+    private bool isPlayerInsideTrigger = false;
+    private bool useLatinPlaylist = false;
+    private Coroutine jukeboxLoopCoroutine;
+
     private void Start()
     {
         LoadResources();
@@ -31,7 +39,7 @@ public class JukeboxManager : MonoBehaviour
 
     void LoadResources()
     {
-        AudioClip[] loadedMusic = Resources.LoadAll<AudioClip>("Audio/Music/JukeBox");
+        AudioClip[] loadedMusic = Resources.LoadAll<AudioClip>(jazzAudioClipsPath);
         musicClips.AddRange(loadedMusic);
 
         diskInsertClip = Resources.Load<AudioClip>("Audio/Tavern/JukeBox/disk_insert");
@@ -51,7 +59,7 @@ public class JukeboxManager : MonoBehaviour
             }
 
             isRunning = true;
-            StartCoroutine(JukeboxLoop());
+            jukeboxLoopCoroutine = StartCoroutine(JukeboxLoop());
         }
     }
 
@@ -137,6 +145,7 @@ public class JukeboxManager : MonoBehaviour
 
         clipsPreloaded = true;
 
+        if (jukeboxTriggerCol != null) jukeboxTriggerCol.enabled = IsCurrentDayValidForPlaylistChange();
         if (IsActive) StartJukebox();
     }
 
@@ -183,6 +192,51 @@ public class JukeboxManager : MonoBehaviour
         }
     }
 
+    public void TryExecutePlaylistChange()
+    {
+        if (!IsCurrentDayValidForPlaylistChange()) return;
+        if (!isPlayerInsideTrigger) return;
+
+        useLatinPlaylist = !useLatinPlaylist;
+        string targetPath = useLatinPlaylist ? latinAudioClipsPath : jazzAudioClipsPath;
+
+        AudioClip[] loadedMusic = Resources.LoadAll<AudioClip>(targetPath);
+
+        if (loadedMusic.Length > 0)
+        {
+            musicClips.Clear();
+            musicClips.AddRange(loadedMusic);
+
+            if (isRunning)
+            {
+                if (jukeboxLoopCoroutine != null) StopCoroutine(jukeboxLoopCoroutine);
+
+                audioSource.Stop();
+                StopMusicVFX();
+
+                jukeboxLoopCoroutine = StartCoroutine(JukeboxLoop());
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player")) isPlayerInsideTrigger = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player")) isPlayerInsideTrigger = false;
+    }
+
+    private bool IsCurrentDayValidForPlaylistChange()
+    {
+        if (GameStateManager.Instance == null) return false;
+
+        DayID currentDay = GameStateManager.Instance.GetCurrentDayID();
+
+        return currentDay == DayID.Day5 || currentDay == DayID.Day6 || currentDay == DayID.Day7;
+    }
 
     public bool IsActive { get; set; } = true;
 }

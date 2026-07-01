@@ -28,6 +28,15 @@ public class PokerTableSetup : MonoBehaviour
 
     public List<ExtraNPCTableSetup> extraNPCs;
 
+    private Vector3 pokerCamPosition;
+    private Quaternion pokerCamRotation;
+
+    private void Start()
+    {
+        pokerCamPosition = pokerCamera.transform.position;
+        pokerCamRotation = pokerCamera.transform.rotation;
+    }
+
     public void ActivateCoinForRound(int index)
     {
         ActivateCoin(playerCoins, index);
@@ -47,6 +56,7 @@ public class PokerTableSetup : MonoBehaviour
         SetActive(cardDeck, false);
         SetActive(pokerCanvas, false);
         SetActive(pokerCamera, false);
+        ResetPokerCam(); 
     }
 
     private static void ActivateCoin(List<GameObject> coins, int index)
@@ -61,6 +71,15 @@ public class PokerTableSetup : MonoBehaviour
         foreach (var coin in coins)
         {
             if (coin != null) coin.SetActive(false);
+        }
+    }
+
+    private void ResetPokerCam()
+    {
+        if (pokerCamPosition != null && pokerCamRotation != null)
+        {
+            pokerCamera.transform.position = pokerCamPosition;
+            pokerCamera.transform.rotation = pokerCamRotation;
         }
     }
 
