@@ -41,6 +41,11 @@ public class WashingFloorManager : MonoBehaviour
         _currentMission = null;
     }
 
+    public void CheckCurrentMissionProgress()
+    {
+        if (_currentMission != null) _currentMission.CheckGlobalCompletion();
+    }
+
     public List<DirtyFloorOverlay> GetCurrentMissionOverlays()
     {
         if (_currentMission == null) return null;

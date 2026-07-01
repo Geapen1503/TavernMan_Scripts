@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D5T4_BossFindingSeabedWhisky_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Back again. And by the look of your boots, you didn't bring the
+      gold.
+    buttonText: I lost
+  - dialogueText: I'll try not to be mad this time. That's five in a row. It's not
+      bad luck anymore, it's a talent.
+    buttonText: Last time
+  - dialogueText: You're damn right it's the last time. My patience isn't a bottomless
+      hole.
+    buttonText: Another way?
+  - dialogueText: We need those crates, and since you gambled away the honest coins,
+      we're doing this the hard way.
+    buttonText: How?
+  - dialogueText: I want a real crew. No more bickering with those loudmouths or
+      the bald drunkards.
+    buttonText: Who then?
+  - dialogueText: See the Japanese gentlemen in the corner? They don't smile, and
+      they don't miss. They're professional.
+    buttonText: The Yakuzas?
+  - dialogueText: Go talk to them. I need two crates of that seabed whisky. The one
+      distilled under the sea.
+    buttonText: The cost?
+  - dialogueText: Ask them for the price and the delay. And don't stutter. They smell
+      fear faster than they smell blood.
+    buttonText: They smell?
+  - dialogueText: Just like a seabass they are the ones with the best smell
+    buttonText: The seabass?
+  - dialogueText: A seabass can smell a single drop of fear from across the entire
+      lagoon. They can even scent your sins through the water
+    buttonText: That's a lot
+  - dialogueText: It's a fact. Those guys in the corner? Same thing. They'll know
+      if you're shaking before you even open your mouth.
+    buttonText: I'm ready
+  - dialogueText: Anyway, move. And? If they reach for their jackets... don't bother
+      running
+    buttonText: Great...

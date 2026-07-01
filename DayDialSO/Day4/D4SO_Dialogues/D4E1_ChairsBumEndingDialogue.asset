@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9d446fdaefde204fbc683b0f43e403d, type: 3}
+  m_Name: D4E1_ChairsBumEndingDialogue
+  m_EditorClassIdentifier: 
+  sequence:
+  - npcDialogueText: The stars are remarkably bright tonight. Almost like they're
+      watching us
+    buttonText: It's okay
+    hasMonologue: 1
+    monologueLine:
+      text: The questions had been rotting in my mind.
+      duration: 4
+      pauseAfterDuration: 0
+  - npcDialogueText: 'Last time, inside, you asked me two questions: why nobody leaves
+      and how to recover your memory'
+    buttonText: I did
+    hasMonologue: 1
+    monologueLine:
+      text: Tonight, the air felt thin enough to finally hear some answers.
+      duration: 4.5
+      pauseAfterDuration: 0
+  - npcDialogueText: My guess is that you've already sorted out that second one.
+    buttonText: That's right
+    hasMonologue: 1
+    monologueLine:
+      text: The pills had torn the veil. I knew who I was now, even if that person
+        I didn't want to meet.
+      duration: 8
+      pauseAfterDuration: 0
+  - npcDialogueText: As for why they stay... some have debts to pay.
+    buttonText: And?
+    hasMonologue: 1
+    monologueLine:
+      text: The Advisor had his debt, the Lady had her debt, and I had a bag of stolen
+        emeralds.
+      duration: 6.6
+      pauseAfterDuration: 0
+  - npcDialogueText: For the rest? I know as much as you, which is pretty much nothing
+    buttonText: Any way out?
+    hasMonologue: 1
+    monologueLine:
+      text: The horizon was a straight line, but every path I'd taken so far had
+        been a circle.
+      duration: 6.2
+      pauseAfterDuration: 0
+  - npcDialogueText: Of course there is. I already left this place once. You just
+      can't do it by the rules. You have to cheat.
+    buttonText: How to cheat?
+    hasMonologue: 1
+    monologueLine:
+      text: Rules are for people with a future. I was just a man with a gun in his
+        pocket and a debt.
+      duration: 7.3
+      pauseAfterDuration: 0
+  - npcDialogueText: Bring a plane or a sub if you can.
+    buttonText: A sub?
+    hasMonologue: 1
+    monologueLine:
+      text: How the heck was I supposed to get a sub, I'd stick to the boat.
+      duration: 6
+      pauseAfterDuration: 0
+  - npcDialogueText: A boat would be your best bet. If you can get one
+    buttonText: A boat...
+    hasMonologue: 1
+    monologueLine:
+      text: The Indian's poisoned gift was starting to look like the only key to
+        the front door.
+      duration: 6.5
+      pauseAfterDuration: 0
+  - npcDialogueText: If you find one, count me in. I still remember the path through
+      the swell from last time.
+    buttonText: Show me?
+    hasMonologue: 1
+    monologueLine:
+      text: A bum for a navigator. A desperate crew for a desperate escape. It was
+        almost poetic.
+      duration: 6.5
+      pauseAfterDuration: 0
+  - npcDialogueText: I'll show you. But why ask me now?
+    buttonText: Why here?
+    hasMonologue: 1
+    monologueLine:
+      text: Inside, the walls had ears. Here, the only witness were the crabs, and
+        they didn't tell tales.
+      duration: 7.1
+      pauseAfterDuration: 0
+  - npcDialogueText: This is the only spot on the island where I'm sure nobody is
+      listening
+    buttonText: How?
+    hasMonologue: 1
+    monologueLine:
+      text: It was just two chairs in the sand, but it felt like a bunker in a war
+        zone.
+      duration: 6.6
+      pauseAfterDuration: 0
+  - npcDialogueText: Look at the ground. The grass stops here on purpose. This spot
+      is special.
+    buttonText: Strange
+    hasMonologue: 1
+    monologueLine:
+      text: A silent sanctuary, I guess
+      duration: 3
+      pauseAfterDuration: 0

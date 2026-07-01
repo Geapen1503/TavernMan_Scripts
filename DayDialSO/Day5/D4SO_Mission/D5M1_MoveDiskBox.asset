@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f10bc6f11403ad478256af67dc14c68, type: 3}
+  m_Name: D5M1_MoveDiskBox
+  m_EditorClassIdentifier: 
+  missionState: 0
+  missionDescription: Move the record crates to the jukebox
+  allowThrowing: 0
+  throwForce: 12
+  onTaskCompletedDialogues:
+  - "That\u2019s where it stays."
+  - Off my hands and into the shadows.
+  - Gravity does the rest.
+  - There. Let the dust settle on it.
+  - "It\u2019s right where it needs to be. For now."
+  - Done with this one. Let it rot in the corner.
+  - This heat makes everything feel twice as heavy.
+  - Moving things in the dark... just another way to kill time.
+  - One foot in front of the other. The island way.
+  - "Keeping the weight moving. It\u2019s the only way to stay ahead of the night."
+  - Let the salty air have it.
+  - One less thing to carry.
+  - Stay there. Don't move.
+  - Dropped. Just like my expectations for this night.
+  - "It\u2019s the ground\u2019s problem now."
+  - Found its home for the night.
+  - Out of sight, out of mind.
+  - Off my back and onto the wood.
+  - Let the humidity eat it.
+  - One more for the pile.
+  - Landing felt harder than it should.
+  - Sit tight.
+  - Another piece of the puzzle on the floor.
+  onMissionFinishedDialogues:
+  - One task down. The night doesn't feel any shorter.
+  - Done. Back to the grind.
+  - Another small job for a small man on a small island.
+  - The list gets shorter, but the air stays just as thick.
+  - Finished. Now for the next headache.
+  - Task complete. If only everything was this simple.
+  - Done. The island hasn't moved, but at least this did.
+  - Task finished. The heat remains.
+  - Moving stuff around... the story of my life.
+  - Everything in its place. For a while, anyway.
+  - Done. One small win against the chaos.
+  - Inventory's moved. My legs feel it.
+  - Wrapped up. Just me and the ocean breeze now.
+  - No more hauling. At least for the next ten minutes.
+  - The chore's over. The guilt lingers.
+  - Another day, another haul.
+  - Everything's where it should be. If only life worked like that.

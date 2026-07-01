@@ -164,6 +164,11 @@ public class GameStateManager : MonoBehaviour
         StartCoroutine(PlayerUI.Instance.LoadSceneWithLoadingScreen(GameScenes.Game));
     }
 
+    public DayID GetCurrentDayID()
+    {
+        return daySequence[_currentDayIndex].dayID;
+    }
+
     private void SaveProgress()
     {
         string json = JsonUtility.ToJson(progressData, true);
