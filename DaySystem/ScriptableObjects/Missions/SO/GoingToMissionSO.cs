@@ -12,13 +12,7 @@ public class GoingToMissionSO : MissionSO
     protected override void MissionContentPlaying()
     {
         Collider targetCollider = GoingToMissionManager.Instance.GetColliderForMission(this);
-
-        if (targetCollider == null)
-        {
-            Debug.LogError($"Mission {this.name} : No targetted zone in Manager!");
-            CompleteMission();
-            return;
-        }
+        if (targetCollider == null) return;
 
         targetCollider.gameObject.SetActive(true);
         GoingToMissionManager.Instance.StartCoroutine(WatchPlayerArrivalRoutine(targetCollider));

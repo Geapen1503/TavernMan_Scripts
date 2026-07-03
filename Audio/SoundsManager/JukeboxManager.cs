@@ -8,6 +8,9 @@ public class JukeboxManager : MonoBehaviour
     public AudioSource audioSource;
     public BoxCollider jukeboxTriggerCol;
 
+    public List<DayID> allowedDays = new List<DayID> { DayID.Day5, DayID.Day6, DayID.Day7 };
+    public MissionSO day5UnlockMission;
+
     [Header("Random Durations")]
     public float minCrackleDuration = 2f;
     public float maxCrackleDuration = 5f;
@@ -30,6 +33,14 @@ public class JukeboxManager : MonoBehaviour
     private bool isPlayerInsideTrigger = false;
     private bool useLatinPlaylist = false;
     private Coroutine jukeboxLoopCoroutine;
+
+    public static JukeboxManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -145,7 +156,8 @@ public class JukeboxManager : MonoBehaviour
 
         clipsPreloaded = true;
 
-        if (jukeboxTriggerCol != null) jukeboxTriggerCol.enabled = IsCurrentDayValidForPlaylistChange();
+        if (jukeboxTriggerCol != null) jukeboxTriggerCol.enabled = IsCurrentDayValidForCollActivation();
+
         if (IsActive) StartJukebox();
     }
 
@@ -216,26 +228,60 @@ public class JukeboxManager : MonoBehaviour
 
                 jukeboxLoopCoroutine = StartCoroutine(JukeboxLoop());
             }
+
+            if (JukeboxMissionManager.Instance != null) JukeboxMissionManager.Instance.NotifyPlaylistChanged();
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) isPlayerInsideTrigger = true;
+        if (other.CompareTag("Player"))
+        {
+            isPlayerInsideTrigger = true;
+
+            if (IsCurrentDayValidForPlaylistChange())
+            {
+                var playerInput = Invector.vCharacterController.vThirdPersonInput.Instance;
+                if (playerInput != null && PlayerUI.Instance != null)
+                {
+                    PlayerUI.Instance.ShowPressKey("Press " + playerInput.talkInput + " to change list");
+                }
+            }
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player")) isPlayerInsideTrigger = false;
+        if (other.CompareTag("Player"))
+        {
+            isPlayerInsideTrigger = false;
+
+            if (PlayerUI.Instance != null) PlayerUI.Instance.HidePressKey();
+        }
+    }
+
+    private bool IsCurrentDayValidForCollActivation()
+    {
+        if (GameStateManager.Instance == null) return false;
+        DayID currentDay = GameStateManager.Instance.GetCurrentDayID();
+
+        return allowedDays.Contains(currentDay);
     }
 
     private bool IsCurrentDayValidForPlaylistChange()
     {
         if (GameStateManager.Instance == null) return false;
-
         DayID currentDay = GameStateManager.Instance.GetCurrentDayID();
 
-        return currentDay == DayID.Day5 || currentDay == DayID.Day6 || currentDay == DayID.Day7;
+        if (!allowedDays.Contains(currentDay)) return false;
+
+        if (currentDay == DayID.Day5)
+        {
+            if (day5UnlockMission == null) return false;
+            return day5UnlockMission.missionState == MissionState.Completed;
+        }
+
+        return true;
     }
 
     public bool IsActive { get; set; } = true;

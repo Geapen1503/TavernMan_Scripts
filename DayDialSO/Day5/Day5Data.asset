@@ -24,4 +24,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: eb8d410e8f122ac4f9799e443d39431a, type: 2}
   - {fileID: 11400000, guid: 6a78c07a21b25f848a2ec5172f7227bb, type: 2}
   - {fileID: 11400000, guid: 2ceaf8d45e35ece49a8325d9ca7ea845, type: 2}
+  - {fileID: 11400000, guid: bb857ffe1d42688498a3a0302d1b2f1a, type: 2}
   dialogues: []
