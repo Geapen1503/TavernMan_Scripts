@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ddb04a8029f804aa11096befc94022, type: 3}
+  m_Name: D5C1_PianistEmeraldDiscovery
+  m_EditorClassIdentifier: 
+  missionState: 2
+  missionDescription: "\t"
+  startDelay: 5.7
+  dialogueSequence:
+  - text: This man behind the keys... I'd barely exchanged a word with for nights
+    duration: 6.2
+    pauseAfterDuration: 0.6
+  - text: And yet, he held the key to the only thing that mattered. My emeralds
+    duration: 7
+    pauseAfterDuration: 1.2
+  - text: How did he know? Maybe it was a trap. Or maybe it was just greed whispering
+      in my ear.
+    duration: 8.5
+    pauseAfterDuration: 1.2
+  - text: Either way, I wasn't leaving this island without that bottle.
+    duration: 5.7
+    pauseAfterDuration: 0

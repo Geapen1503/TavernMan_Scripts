@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D5T10_PianistEmeraldsTalkPart2_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 28
+  sequence:
+  - dialogueText: So... about that green glass. I don't trade secrets for free, kiddo.
+    buttonText: How much?
+  - dialogueText: Information is a duet. I want a share. A third of the bottle sounds
+      fair.
+    buttonText: One emerald
+  - dialogueText: One? Don't insult the music. I've been keeping this quiet for too
+      long.
+    buttonText: Too much
+  - dialogueText: Let's find a middle ground then. Give me three stones, and my lips
+      are sealed.
+    buttonText: Fine. Three stones.
+  - dialogueText: Deal. Now, listen. I spend my breaks watching the waves. They bring
+      back what the world forgets
+    buttonText: The beach?
+  - dialogueText: Exactly. I've seen plenty of objects known to be lost strand on
+      that sand.
+    buttonText: Are you serious?
+  - dialogueText: Yes. If you search the shore every night, the sea will spit it
+      out.
+    buttonText: Three... For a "maybe"?
+  - dialogueText: It's not luck, kiddo. It's the current. It won't be the first time
+      it happens.
+    buttonText: Better be true
+  - dialogueText: Try it anyway. You just have to check the beach every night and
+      we'll see.
+    buttonText: I'll check now
