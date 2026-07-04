@@ -11,14 +11,16 @@ public class GoingToMissionSO : MissionSO
 
     protected override void MissionContentPlaying()
     {
-        Collider targetCollider = GoingToMissionManager.Instance.GetColliderForMission(this);
+        if (!GoingToMissionManager.Instance.TryGetMissionData(this, out Collider targetCollider, out GameObject indicator)) return;
         if (targetCollider == null) return;
 
         targetCollider.gameObject.SetActive(true);
-        GoingToMissionManager.Instance.StartCoroutine(WatchPlayerArrivalRoutine(targetCollider));
+        if (indicator != null) indicator.SetActive(true);
+
+        GoingToMissionManager.Instance.StartCoroutine(WatchPlayerArrivalRoutine(targetCollider, indicator));
     }
 
-    private IEnumerator WatchPlayerArrivalRoutine(Collider targetZone)
+    private IEnumerator WatchPlayerArrivalRoutine(Collider targetZone, GameObject indicator)
     {
         CapsuleCollider playerCollider = vThirdPersonInput.Instance.GetComponent<CapsuleCollider>();
 
@@ -34,13 +36,13 @@ public class GoingToMissionSO : MissionSO
             if (targetZone.bounds.Intersects(playerCollider.bounds)) playerArrived = true;
         }
 
-        FinalizeMission(targetZone);
+        FinalizeMission(targetZone, indicator);
     }
 
-    private void FinalizeMission(Collider target)
+    private void FinalizeMission(Collider target, GameObject indicator)
     {
-        if (target != null)
-            target.gameObject.SetActive(false);
+        if (target != null) target.gameObject.SetActive(false);
+        if (indicator != null) indicator.SetActive(false);
 
         CompleteMission();
     }
