@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D5T12_BossChangeJazzPlaylist_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Stop! Turn that racket off before my brain turns into pulp.
+    buttonText: The music?
+  - dialogueText: It's too much. Too much heat, too much sweat. I made a mistake,
+      a terrible, noisy mistake.
+    buttonText: You liked it
+  - dialogueText: I was deluded. My ears were playing tricks on me. I'm a man of
+      Jazz. I've always been a man of Jazz.
+    buttonText: Always?
+  - dialogueText: Don't get smart with me. Jazz has soul. Jazz has... class. This
+      Latin noise is for people who can't sit still
+    buttonText: Change it?
+  - dialogueText: Every single record. Go back to that machine and feed it the old
+      trumpets. I want this place sounding like a smoky lounge again.
+    buttonText: Back to Jazz
+  - dialogueText: Now. And don't come back until I can hear my own thoughts without
+      a drum kit getting in the way.
+    buttonText: I'm going

@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9d446fdaefde204fbc683b0f43e403d, type: 3}
+  m_Name: D5E1_LadyChairEnding
+  m_EditorClassIdentifier: 
+  sequence:
+  - npcDialogueText: I'm sick of this rock. Every night is a carbon copy of the last
+      one. I want out, but this place...
+    buttonText: It doesn't have an exit
+    hasMonologue: 1
+    monologueLine:
+      text: We were looking for a light that never came again. She thought we were
+        trapped in a loop.
+      duration: 9
+      pauseAfterDuration: 0
+  - npcDialogueText: There are no ships, no horizon... just us and the Tavern. Did
+      you finally get that loony to talk?
+    buttonText: He did
+    hasMonologue: 1
+    monologueLine:
+      text: I told her about the scavenger. The man who knows the secrets buried
+        deep in the island.
+      duration: 9
+      pauseAfterDuration: 0
+  - npcDialogueText: I knew it. I told you he was hiding something. What did he say?
+    buttonText: About the rules
+    hasMonologue: 1
+    monologueLine:
+      text: It was simple. Don't play by the Tavern's rules. If you cheat, the door
+        opens.
+      duration: 9.5
+      pauseAfterDuration: 0
+  - npcDialogueText: '"Cheating"? And you actually believed him? You think life is
+      just a poker game you can rig?'
+    buttonText: He's done it before
+    hasMonologue: 1
+    monologueLine:
+      text: He'd been to the other side. He knew the path through the mist because
+        he'd already walked it.
+      duration: 9
+      pauseAfterDuration: 0
+  - npcDialogueText: If he's been out, why is he back? Why stay here if you have
+      the keys?
+    buttonText: I don't know
+    hasMonologue: 1
+    monologueLine:
+      text: That was the part I couldn't explain. Maybe he left something behind.
+      duration: 8.5
+      pauseAfterDuration: 0
+  - npcDialogueText: Even if he knows the way, we're still sitting on the shore.
+      We need a hull that floats.
+    buttonText: We'll have a boat
+    hasMonologue: 1
+    monologueLine:
+      text: I told her about the Indian crook. One last job for a way out.
+      duration: 8.5
+      pauseAfterDuration: 0
+  - npcDialogueText: Dealing with him? That's like making pact with a whale. He'll
+      swallow you whole before you see the dock.
+    buttonText: You're in?
+    hasMonologue: 1
+    monologueLine:
+      text: I wasn't sure why I was offering her a seat on the ship. Maybe because
+        even a suicide mission is better with a soundtrack.
+      duration: 11
+      pauseAfterDuration: 0
+  - npcDialogueText: I'm in. Dying out there is better than rotting in here. We'll
+      need that balcony man to guide us.
+    buttonText: He's coming too
+    hasMonologue: 1
+    monologueLine:
+      text: We couldn't do it alone. We needed the scavenger's eyes to find the route.
+      duration: 8.5
+      pauseAfterDuration: 0
+  - npcDialogueText: Fine. Tell me when the time comes. I don't want to spend another
+      lifetime not to sing here.
+    buttonText: Soon
+    hasMonologue: 1
+    monologueLine:
+      text: The pieces were moving. For the first time, this starry sky felt like
+        a curtain, not a wall
+      duration: 9.5
+      pauseAfterDuration: 0

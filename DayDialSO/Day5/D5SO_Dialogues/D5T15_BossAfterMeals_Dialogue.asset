@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D5T15_BossAfterMeals_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Is that the last of the plates? Good. My stomach is starting to
+      settle along with the music.
+    buttonText: It's done
+  - dialogueText: Now, let's drown the rest of the night in something flammable.
+      One last round of drinks and we can call it a night.
+    buttonText: What are we pouring?
+  - dialogueText: Some of that cheap rum. Start with the muscles man upstairs, then
+      move to those loud Scottish drunks.
+    buttonText: And the others?
+  - dialogueText: Give some to those gentlemen, the ones from the rising sun.
+    buttonText: For free?
+  - dialogueText: Consider it a gift. A little grease for the wheels before their
+      delivery arrives tomorrow.
+    buttonText: Cheap gift
+  - dialogueText: 'It''s the thought that counts. And the thought is: don''t mess
+      up my crates. Now move, that rum isn''t going to pour itself'
+    buttonText: I'll pour
