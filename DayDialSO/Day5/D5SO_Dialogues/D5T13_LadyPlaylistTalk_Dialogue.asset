@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D5T13_LadyPlaylistTalk_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 36
+  sequence:
+  - dialogueText: Wait... tell me my ears are lying. Is that the old trumpet again?
+    buttonText: Boss's orders
+  - dialogueText: Of course. I should've known the sugar would rot his teeth too
+      fast.
+    buttonText: He's a Jazz man now
+  - dialogueText: He's a man of whims, nothing more. One minute he wants a carnival,
+      the next he wants a funeral.
+    buttonText: He's tired of it
+  - dialogueText: We're all tired, but some of us have to live with his playlist.
+      I'm going to miss those drums.
+    buttonText: Sorry
+  - dialogueText: Whatever... Now that both sets are in the machine, you can swap
+      them whenever he's not looking
+    buttonText: I can?
+  - dialogueText: Just go to the jukebox. You're the one feeding it, you decide the
+      mood. Latin, Jazz... whatever keeps us sane.
+    buttonText: I'll remember that

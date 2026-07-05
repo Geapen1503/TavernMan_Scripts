@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D5T11_PianistAfterEmeraldsSearch_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 28
+  sequence:
+  - dialogueText: So, you're back? Did you find anything on the beach
+    buttonText: Nothing but sand
+  - dialogueText: The ocean doesn't play on cue, kiddo. It's not a jukebox.
+    buttonText: Waste of time
+  - dialogueText: Only if you stop looking. You just have to search the beach every
+      night. Eventually, the sand will pay its debt.
+    buttonText: Three stones for a maybe
+  - dialogueText: Luck is just being there when the wave hits. Keep checking every
+      night. It'll turn up.
+    buttonText: It better

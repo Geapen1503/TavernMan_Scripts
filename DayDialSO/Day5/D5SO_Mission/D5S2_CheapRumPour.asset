@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 768b49028b69bd94db1fb6b230dd7c47, type: 3}
-  m_Name: D5G1_SearchingRightBeach
+  m_Script: {fileID: 11500000, guid: b373d75771c87e04ca9be31d7ae6c332, type: 3}
+  m_Name: D5S2_CheapRumPour
   m_EditorClassIdentifier: 
-  missionState: 2
-  missionDescription: Search the beach area on the right of the Tavern
+  missionState: 0
+  missionDescription: Serve cheap rum to the Egyptian, the Scotsmen, and the Japanese
+  drinkType: 3
+  npcsToServe: 130000000e00000003000000

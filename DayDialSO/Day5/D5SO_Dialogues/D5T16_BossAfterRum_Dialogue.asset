@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D5T16_BossAfterRum_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Done already? Awesome. You're faster with a bottle than you are
+      with a deck of cards.
+    buttonText: Last drop poured
+  - dialogueText: But look at this place... it's a disaster. It's a mess! We can't
+      welcome decent souls in a dump like this.
+    buttonText: It's a Tavern
+  - dialogueText: It's my tavern. And right now, it looks like an orange roughy.
+    buttonText: What again?
+  - dialogueText: An orange roughy! The dirtiest fish in the sea. They live for a
+      150 years, just sitting there, soaking up all the filth of the ocean.
+    buttonText: That's absolute garbage
+  - dialogueText: Garbage? It's common knowledge! But I suppose you were too busy
+      losing at poker to read a book. Only a fool wouldn't know that.
+    buttonText: What now?
+  - dialogueText: Now? Clean it up. Every corner, every spill. Do it exactly like
+      you did at the beginning of the night.
+    buttonText: Again?
+  - dialogueText: Again. I want the floor reflecting the stars before we close the
+      doors. We'll be good after that.
+    buttonText: Fine
+  - dialogueText: Don't look at me with those tired eyes. A clean floor is the sign
+      of a clean mind. Now, scrub!
+    buttonText: I'm scrubbing
