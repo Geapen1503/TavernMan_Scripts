@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D6T8_BossAfterSeabedWhisky_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Ah, the Yakuza blend has landed. Let's see if it's as burning as
+      they say.
+    buttonText: Crates are in
+  - dialogueText: Good job, TavernMan. You're efficient when you want to be. Now,
+      get out of my sight for a bit.
+    buttonText: More free time?
+  - dialogueText: Exactly. Kill some time, pour some drinks. But don't drift too
+      far from the shore.
+    buttonText: Waiting for him?
+  - dialogueText: You got it. Next time I yell your name, it'll be because our special
+      guest has finally docked.
+    buttonText: Understood
+  - dialogueText: And I mean it. When that bell rings, you drop everything. No lingering
+      in the palms, no slacking off.
+    buttonText: Loud and clear

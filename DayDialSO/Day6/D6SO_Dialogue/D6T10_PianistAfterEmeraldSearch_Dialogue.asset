@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D6T10_PianistAfterEmeraldSearch_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 28
+  sequence:
+  - dialogueText: Back so soon? Don't tell me... you found nothing again?
+    buttonText: Empty hands
+  - dialogueText: Don't lose heart, kiddo. The sea doesn't keep a schedule. We just
+      need a little more patience
+    buttonText: Tired of searching
+  - dialogueText: If we check that shore every night, the waves will give it up eventually.
+      It's a mathematical certainty.
+    buttonText: This makes no sense
+  - dialogueText: You don't trust me anymore, do you? Think I'm just spinning yarns.
+      But look at that monkey over there.
+    buttonText: With the cigar?
+  - dialogueText: When he first arrived, he was wild, screaming and biting customers.
+      He even took a chunk out of the big guy next to him.
+    buttonText: The big guy?
+  - dialogueText: Then one night, the waves brought back a red striped tie.
+    buttonText: A tie...?
+  - dialogueText: He put it on, and he's been calm ever since. Hasn't bitten a soul
+      since that day.
+    buttonText: He's not that calm
+  - dialogueText: The ocean delivers exactly what we need, kiddo, even if we don't
+      understand it yet.
+    buttonText: A red striped tie...
+  - dialogueText: Now go rest. Tomorrow is another current.
+    buttonText: Whatever

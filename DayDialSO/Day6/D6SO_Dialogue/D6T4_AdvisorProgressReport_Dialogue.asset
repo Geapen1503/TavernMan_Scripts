@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D6T4_AdvisorProgressReport_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: Any progress on our situation? You look like a man with an update.
+    buttonText: Found a way
+  - dialogueText: Speak quietly. This room has ears. Who has the solution?
+    buttonText: The loony knows
+  - dialogueText: The loony... He's resourceful, obviously. But knowledge won't get
+      us off this island. We need a boat.
+    buttonText: We made a plan
+  - dialogueText: A plan with the Lady? That covers the coordination. But the ship
+      itself?
+    buttonText: Indian can provide
+  - dialogueText: The Indian... He doesn't give anything away for free. What's the
+      catch?
+    buttonText: One last job
+  - dialogueText: Risky as hell. But given the state of affairs, it might be the
+      only option we have left. Count me in.
+    buttonText: You're in
+  - dialogueText: I can handle a gun and I know how to drive a boat. I won't be a
+      liability.
+    buttonText: Perfect
+  - dialogueText: Good. The Indian has it? I think he's gesturing toward you right
+      now. It seems he's ready.
+    buttonText: Time to talk
+  - dialogueText: Exactly. Go secure that boat.
+    buttonText: On it
