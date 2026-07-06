@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D6T5_IndianBoatJob_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 1
+  sequence:
+  - dialogueText: So... about that final transaction? You still require a boat, correct?
+    buttonText: By tomorrow?
+  - dialogueText: Tomorrow I can do, my friend. But a ship is an expensive currency.
+      You must complete one last task first.
+    buttonText: What task?
+  - dialogueText: I heard a visitor is expected tonight. The Boss briefed you on
+      the arrival, yes?
+    buttonText: A new guy
+  - dialogueText: Exactly. I need you to... manage this arrival. Use the object I
+      provided earlier
+    buttonText: What!?
+  - dialogueText: End him. Then deliver what's left to the deep water. The sea is
+      excellent for erasing mistakes.
+    buttonText: No frickin' way!
+  - dialogueText: 'Calm your breathing, my friend. It is a simple equation: no job,
+      no boat. You stay here forever.'
+    buttonText: ...
+  - dialogueText: Do we have a contract, TavernMan?
+    buttonText: For the boat...
+  - dialogueText: Excellent. Do it cleanly, without a sound. I dislike messy business
+      partners.
+    buttonText: I'll do it

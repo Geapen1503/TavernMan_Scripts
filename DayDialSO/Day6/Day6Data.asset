@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 642dcb855da57604996aa3265dad10c2, type: 3}
+  m_Name: Day6Data
+  m_EditorClassIdentifier: 
+  dayID: 5
+  missions:
+  - {fileID: 11400000, guid: 8a2365c813b23e948a5d51dc809183c1, type: 2}
+  - {fileID: 11400000, guid: 2449c9c95f4a0204fbc932ca4d60406e, type: 2}
+  - {fileID: 11400000, guid: b508b561fc0da374ab3fb7cd578ac9bf, type: 2}
+  - {fileID: 11400000, guid: 883f99b3aa7032f45b2cf2d9ce93d99f, type: 2}
+  - {fileID: 11400000, guid: 8fb6150c70fa2254598914bb7f4ad21a, type: 2}
+  - {fileID: 11400000, guid: d7b2950eb680fcf469741114c088f4f0, type: 2}
+  - {fileID: 11400000, guid: 469274e396a28d0479a0a9fe03557f2f, type: 2}
+  - {fileID: 11400000, guid: ef132062ec65b4745aec0da2c785a797, type: 2}
+  - {fileID: 11400000, guid: dd4242bc79de3df4aa2da094d83742f5, type: 2}
+  - {fileID: 11400000, guid: 55eff4719ea99e049955592f4a382867, type: 2}
+  - {fileID: 11400000, guid: df5fb358fc2212f439c371c012b468c9, type: 2}
+  - {fileID: 11400000, guid: 5bca5b78758336a49b6fc91369a5ce59, type: 2}
+  - {fileID: 11400000, guid: 607c71a17b3b58146ad39f57253f0ccd, type: 2}
+  - {fileID: 11400000, guid: 8a1c4743c5aad8b44b3e7f4b53cf3702, type: 2}
+  - {fileID: 11400000, guid: 59b906e3b38b33644909602d36c7212a, type: 2}
+  - {fileID: 11400000, guid: fcdbe4a50c65e074baa4f836a890770b, type: 2}
+  - {fileID: 11400000, guid: 34c057afae5cc944e9509af06dbcc792, type: 2}
+  - {fileID: 11400000, guid: e1075911d71d4e1469e46bb96d1bf303, type: 2}
+  - {fileID: 11400000, guid: 967195a8ee84d9c409897a2c73295a0e, type: 2}
+  - {fileID: 11400000, guid: f23c78a9b246f254e895993cd490ee1f, type: 2}
+  - {fileID: 11400000, guid: ed81e850c66f4c24fbb5f48ee157845a, type: 2}
+  - {fileID: 11400000, guid: 6638136ea6161774f9027bda5fd53466, type: 2}
+  dialogues: []

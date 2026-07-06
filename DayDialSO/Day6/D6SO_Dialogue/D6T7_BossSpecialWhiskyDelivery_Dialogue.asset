@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D6T7_BossSpecialWhiskyDelivery_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: There you are. Guess what, TavernMan?
+    buttonText: He's here?
+  - dialogueText: Yes... I mean no! Not him, but the delivery to welcome him.
+    buttonText: What delivery?
+  - dialogueText: The precious cargo! The special whiskey aged under the sea. The
+      ones that were stolen from the deck.
+    buttonText: The lost crates?
+  - dialogueText: Exactly. We were supposed to pay for them with the poker money,
+      but you lost at the table. So I had to buy a batch from the Yakuzas.
+    buttonText: Yeah... I remember
+  - dialogueText: Those expensive pricks... Useful nonetheless. Anyway, the crates
+      just dropped on the main deck.
+    buttonText: Move them?
+  - dialogueText: Right now! Go bring them to me before someone else sniffs them
+      out. Move those legs!
+    buttonText: On my way

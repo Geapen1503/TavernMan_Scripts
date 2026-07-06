@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D6T13_BossNewGuyComing_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Aaaaaah, the moment has finally arrived. Can you feel the tension
+      in the air?
+    buttonText: The guest?
+  - dialogueText: Yes, the new guy! He's about to dock. Take whatever you need and
+      go wait for him on the deck
+    buttonText: Why a new guy?
+  - dialogueText: Since when do I pay you for your curiosity? He's arriving, that's
+      all you need to know.
+    buttonText: I ain't paid
+  - dialogueText: Bring him straight to me, right here. Don't let him wander around.
+    buttonText: I'll bring him
+  - dialogueText: And don't waste time, TavernMan. I've been waiting far too long
+      for this guest. Move!
+    buttonText: Already gone
