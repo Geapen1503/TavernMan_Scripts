@@ -36,4 +36,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f23c78a9b246f254e895993cd490ee1f, type: 2}
   - {fileID: 11400000, guid: ed81e850c66f4c24fbb5f48ee157845a, type: 2}
   - {fileID: 11400000, guid: 6638136ea6161774f9027bda5fd53466, type: 2}
+  - {fileID: 11400000, guid: 196a23dea20c69240b9b8e21b97c655d, type: 2}
+  - {fileID: 11400000, guid: 6b0513463fb3f0e46bf4842b3e685a80, type: 2}
+  - {fileID: 11400000, guid: eb888e0c3bdf45c409e32e747804cf55, type: 2}
+  - {fileID: 11400000, guid: 43df0bf7d1e1dc14082e45e6c032574e, type: 2}
+  - {fileID: 11400000, guid: 2f6a159df4db0654b81d742a1e896867, type: 2}
+  - {fileID: 11400000, guid: 27c3f4d0017029f4ca737f8570753541, type: 2}
+  - {fileID: 11400000, guid: 4ae32d336790adb429df456af36d07a1, type: 2}
+  - {fileID: 11400000, guid: 2468d90dfbc3bc543aff3d0bb17e8df7, type: 2}
+  - {fileID: 11400000, guid: 583075d6b3381394ba01c384123dd8d5, type: 2}
+  - {fileID: 11400000, guid: 8078f14d17d0b044885c457609249005, type: 2}
+  - {fileID: 11400000, guid: 325214e1566277145b936ef45079a4dc, type: 2}
   dialogues: []

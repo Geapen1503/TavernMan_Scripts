@@ -68,17 +68,24 @@ public class PlayerUI : MonoBehaviour
     }
 
     /* Tavern Man Dialogues methods */
-    public void InjectDialogueToTavernMan(string dialogue, float customDuration = 0f, float customPause = 0f)
+    public void InjectDialogueToTavernMan(string dialogue, float customDuration = 0f, float customPause = 0f, bool showPrefix = true)
     {
-        DialogueLine newLine = new DialogueLine{ text = dialogue, duration = customDuration, pauseAfterDuration = customPause };
+        string finalText = showPrefix ? "T : " + dialogue : dialogue;
+        DialogueLine newLine = new DialogueLine{ text = finalText, duration = customDuration, pauseAfterDuration = customPause };
         dialogueQueue.Enqueue(newLine);
 
         if (!isProcessingDialogue) StartCoroutine(ProcessDialogueQueue());
     }
 
-    public void InjectSequenceToTavernMan(DialogueLine[] sequence, float initialDelay = 0f)
+    public void InjectSequenceToTavernMan(DialogueLine[] sequence, float initialDelay = 0f, bool showPrefix = true)
     {
-        foreach (DialogueLine line in sequence) dialogueQueue.Enqueue(line);
+        foreach (DialogueLine line in sequence)
+        {
+            DialogueLine modifiedLine = line;
+            modifiedLine.text = showPrefix ? "T : " + line.text : line.text;
+            dialogueQueue.Enqueue(modifiedLine);
+        }
+
         if (!isProcessingDialogue) StartCoroutine(ProcessDialogueQueue(initialDelay));
     }
 
@@ -97,7 +104,7 @@ public class PlayerUI : MonoBehaviour
                 : baseDelay + (currentLine.text.Length * timePerChar);
 
             // Display
-            tavernManDialogue.text = "T : " + currentLine.text;
+            tavernManDialogue.text = currentLine.text;
             yield return new WaitForSeconds(finalDuration);
 
             // And breath (in the air)

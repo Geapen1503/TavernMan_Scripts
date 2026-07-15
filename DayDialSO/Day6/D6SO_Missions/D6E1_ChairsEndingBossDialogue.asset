@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9d446fdaefde204fbc683b0f43e403d, type: 3}
+  m_Name: D6E1_ChairsEndingBossDialogue
+  m_EditorClassIdentifier: 
+  sequence:
+  - npcDialogueText: You fucked up really good, you know that?
+    buttonText: I know
+    hasMonologue: 1
+    monologueLine:
+      text: The waves were coming in, washing away the blood from the dock.
+      duration: 7.5
+      pauseAfterDuration: 0
+  - npcDialogueText: We're both dead now. The guy who gave you that job too.
+    buttonText: Why?
+    hasMonologue: 1
+    monologueLine:
+      text: But it wouldn't wash away what I'd done.
+      duration: 6.5
+      pauseAfterDuration: 0
+  - npcDialogueText: Attempt to kill us? No, my boy. They will succeed.
+    buttonText: Succeed?
+    hasMonologue: 1
+    monologueLine:
+      text: He was talking about the shadow behind the curtain.
+      duration: 7.5
+      pauseAfterDuration: 0
+  - npcDialogueText: It's the people who organize this whole circus, the ones that
+      brought most of us here.
+    buttonText: Who are they?
+    hasMonologue: 1
+    monologueLine:
+      text: The unseen hands that kept this tavern running on that bloody island.
+      duration: 8
+      pauseAfterDuration: 0
+  - npcDialogueText: We are all here for a reason, kid. Either you owe them something...
+    buttonText: Owe them?
+    hasMonologue: 1
+    monologueLine:
+      text: A waiting room for the debtors
+      duration: 6
+      pauseAfterDuration: 0
+  - npcDialogueText: Or you're in a conflict with somebody else, and they put you
+      here until it's solved.
+    buttonText: A prison?
+    hasMonologue: 1
+    monologueLine:
+      text: A purgatory where people were kept on ice until the world outside decided
+        what to do with them
+      duration: 10
+      pauseAfterDuration: 0
+  - npcDialogueText: Heck, if you have a plan, you can try to flee.
+    buttonText: Flee?
+    hasMonologue: 1
+    monologueLine:
+      text: He didn't know about the Indian's boat, or the loony's route through
+        the fog.
+      duration: 8.5
+      pauseAfterDuration: 0
+  - npcDialogueText: But there's no way in hell you ever make it off this island.
+    buttonText: I can try
+    hasMonologue: 1
+    monologueLine:
+      text: To him, the horizon was just a wall painted blue.
+      duration: 7.5
+      pauseAfterDuration: 0
+  - npcDialogueText: I can give you tasks, jobs, and pretend nothing happened. Not
+      tell them a single thing about this.
+    buttonText: Keep quiet?
+    hasMonologue: 1
+    monologueLine:
+      text: He wasn't saving my skin, he was saving his own.
+      duration: 7
+      pauseAfterDuration: 0
+  - npcDialogueText: But they will find out. And when they do, I'm just as dead as
+      you.
+    buttonText: Why cover me?
+    hasMonologue: 1
+    monologueLine:
+      text: On this rock, a dead bartender was just as useless as a dead boss.
+      duration: 7
+      pauseAfterDuration: 0
+  - npcDialogueText: My jobs, my cover... it won't last long.
+    buttonText: How long?
+    hasMonologue: 1
+    monologueLine:
+      text: The clock was officially ticking.
+      duration: 5
+      pauseAfterDuration: 0
+  - npcDialogueText: If you have a plan to flee, or anything at all... well, you
+      have two nights left.
+    buttonText: Only two?
+    hasMonologue: 1
+    monologueLine:
+      text: Forty-eight hours before the owners of this place realized their new
+        asset had been fed to the groupers.
+      duration: 9.2
+      pauseAfterDuration: 0
+  - npcDialogueText: I can't cover you for more than that, kid. They will find out
+      after two nights.
+    buttonText: I get it
+    hasMonologue: 1
+    monologueLine:
+      text: Two nights to get the boat and gather the crew.
+      duration: 7
+      pauseAfterDuration: 0
+  - npcDialogueText: Make them count.
+    buttonText: I will
+    hasMonologue: 1
+    monologueLine:
+      text: And pray that bum really knew a way through the foam.
+      duration: 8
+      pauseAfterDuration: 0
