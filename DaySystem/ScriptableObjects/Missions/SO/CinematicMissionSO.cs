@@ -9,6 +9,7 @@ public class CinematicMissionSO : MissionSO
 {
     [Header("Configuration")]
     public float startDelay = 0f;
+    public bool showPrefix = true;
     public DialogueLine[] dialogueSequence;
 
     public override string GetDescription()
@@ -38,7 +39,7 @@ public class CinematicMissionSO : MissionSO
         {
             playerUI.HideNarrator();
             playerUI.HidePressKey();
-            playerUI.InjectSequenceToTavernMan(dialogueSequence, startDelay);
+            playerUI.InjectSequenceToTavernMan(dialogueSequence, startDelay, showPrefix);
         }
 
         director.time = 0;

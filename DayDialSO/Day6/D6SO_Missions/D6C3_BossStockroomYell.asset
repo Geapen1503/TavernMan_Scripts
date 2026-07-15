@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ddb04a8029f804aa11096befc94022, type: 3}
+  m_Name: D6C3_BossStockroomYell
+  m_EditorClassIdentifier: 
+  missionState: 0
+  missionDescription: 
+  startDelay: 0.8
+  showPrefix: 0
+  dialogueSequence:
+  - text: 'Boss : The fuck did you do?! The hell! Why did you do that?!'
+    duration: 5
+    pauseAfterDuration: 1.1
+  - text: 'Boss : Don''t answer. I don''t give a damn who paid you. It doesn''t matter
+      anymore.'
+    duration: 6
+    pauseAfterDuration: 1.3
+  - text: 'Boss : It reminds me of the damn stonefish... Shit! Not the time! Think,
+      think, think...'
+    duration: 5.9
+    pauseAfterDuration: 1.2
+  - text: 'Boss : We''re in deep shit, you degenerate. We''re both dead men walking
+      now. Both of us!'
+    duration: 6.8
+    pauseAfterDuration: 1.5
+  - text: 'Boss : We need to get rid of this prick. Right now.'
+    duration: 4
+    pauseAfterDuration: 1
+  - text: 'Boss : Get the fuck outta my stockroom. Get out of my sight. We''ll talk
+      later. Move!'
+    duration: 5.7
+    pauseAfterDuration: 0

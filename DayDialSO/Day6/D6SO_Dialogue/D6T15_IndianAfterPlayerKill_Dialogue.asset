@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D6T15_IndianAfterPlayerKill_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 1
+  sequence:
+  - dialogueText: You look like you've been doing some heavy lifting. The job is
+      done?
+    buttonText: Taken care of
+  - dialogueText: Perfect. Effectiveness is a virtue I always appreciate.
+    buttonText: My turn now
+  - dialogueText: You'll have your boat by tomorrow, my friend. Exactly as we agreed.
+    buttonText: No delays
+  - dialogueText: None. But until then, keep a low profile. Do not give the Boss
+      any reason to look at you twice
+    buttonText: I'll do that
+  - dialogueText: Good. We are very close to the finish line. Let's not trip over
+      our own feet now.
+    buttonText: See you soon
