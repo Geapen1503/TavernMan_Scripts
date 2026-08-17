@@ -13,6 +13,9 @@ public class DirtyFloorOverlay : MonoBehaviour
     [Range(0f, 1f)]
     [SerializeField] private float completionThreshold = 0.85f;
 
+    [Header("References")]
+    [SerializeField] private Shader transparentShader;
+
     public float CleanedPercentage => _totalPixels > 0 ? (float)_cleanedPixels / _totalPixels : 1f;
     public bool IsCompleted { get; private set; }
     public Renderer MeshRenderer => _renderer;
@@ -80,22 +83,32 @@ public class DirtyFloorOverlay : MonoBehaviour
         _dirtyTexture.SetPixels32(_pixelBuffer);
         _dirtyTexture.Apply();
 
-        Shader shader = Shader.Find("Unlit/Transparent");
-        if (shader == null)
+        if (transparentShader != null)
         {
-            _runtimeMaterial = new Material(Shader.Find("Standard"));
-            _runtimeMaterial.SetFloat("_Mode", 3f);
-            _runtimeMaterial.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-            _runtimeMaterial.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-            _runtimeMaterial.SetInt("_ZWrite", 0);
-            _runtimeMaterial.DisableKeyword("_ALPHATEST_ON");
-            _runtimeMaterial.EnableKeyword("_ALPHABLEND_ON");
-            _runtimeMaterial.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-            _runtimeMaterial.renderQueue = 3000;
+            _runtimeMaterial = new Material(transparentShader);
         }
         else
         {
-            _runtimeMaterial = new Material(shader);
+            Debug.LogWarning($"[DirtyFloorOverlay] The transparent shader isn't assigned {gameObject.name}. Using standard fallback.", this);
+
+            Shader standardShader = Shader.Find("Standard");
+            if (standardShader != null)
+            {
+                _runtimeMaterial = new Material(standardShader);
+                _runtimeMaterial.SetFloat("_Mode", 3f);
+                _runtimeMaterial.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+                _runtimeMaterial.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+                _runtimeMaterial.SetInt("_ZWrite", 0);
+                _runtimeMaterial.DisableKeyword("_ALPHATEST_ON");
+                _runtimeMaterial.EnableKeyword("_ALPHABLEND_ON");
+                _runtimeMaterial.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+                _runtimeMaterial.renderQueue = 3000;
+            }
+            else
+            {
+                Debug.LogError("[DirtyFloorOverlay] Impossible to load transparent ground, it won't load.", this);
+                return;
+            }
         }
         _runtimeMaterial.mainTexture = _dirtyTexture;
         _renderer.material = _runtimeMaterial;

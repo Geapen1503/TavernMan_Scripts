@@ -73,8 +73,9 @@ public class GameStateManager : MonoBehaviour
     private void StartDay(DayData dayData)
     {
         if (dayData == null) return;
-
         Day.Instance.LoadDayData(dayData);
+
+        if (ObjectsForDaysManager.Instance != null) ObjectsForDaysManager.Instance.ActivateObjectsForDay(dayData.dayID);
 
         var playerController = Invector.vCharacterController.vThirdPersonController.Instance;
         if (playerController != null) playerController.currentDay = Day.Instance;

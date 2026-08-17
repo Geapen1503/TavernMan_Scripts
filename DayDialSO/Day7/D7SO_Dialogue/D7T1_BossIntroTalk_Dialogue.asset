@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D7T1_BossIntroTalk_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Another night, another round of smoke. I'm feeling generous, take
+      the lead tonight.
+    buttonText: Free will?
+  - dialogueText: Total control. Serve whatever shite you want for whoever crawls
+      through that door.
+    buttonText: My choice?
+  - dialogueText: Within reason. Don't go on poisoning everybody, I've got enough
+      headaches to bury already.
+    buttonText: Any specific?
+  - dialogueText: Just keep the glasses wet and the chatter low. We're keeping a
+      low profile.
+    buttonText: Right
+  - dialogueText: Less noise means less attention. And tonight, I'd prefer if the
+      spotlight stayed elsewhere.
+    buttonText: I get it
+  - dialogueText: Good, now don't look so grim. It's just booze and cunts. Best job
+      you'll ever have, eh?
+    buttonText: I hope not
+  - dialogueText: Now, get to work. And keep that trap shut unless you're pouring
+      a drink.
+    buttonText: On it
