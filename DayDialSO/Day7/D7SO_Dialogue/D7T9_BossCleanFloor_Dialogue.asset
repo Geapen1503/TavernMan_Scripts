@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D7T9_BossCleanFloor_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: That's a weight off our chests. Now clean that floor, and we're
+      good for tonight.
+    buttonText: Almost done
+  - dialogueText: Make it spotless. I've seen enough blood on these boards to last
+      a lifetime.
+    buttonText: Understood
+  - dialogueText: Then we're good for tonight.
+    buttonText: Rest of the night?
+  - dialogueText: Take it. Then stay out of sight. I've got a tavern to run and a
+      blind eye to turn.
+    buttonText: I'm gone

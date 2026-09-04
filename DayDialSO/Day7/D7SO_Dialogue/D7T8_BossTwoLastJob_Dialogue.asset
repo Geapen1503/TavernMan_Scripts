@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D7T8_BossTwoLastJob_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 33
+  sequence:
+  - dialogueText: Quick night, huh? Well... I've got two last jobs for you.
+    buttonText: What is it?
+  - dialogueText: The first one is a throwback. Just like your first day here. Remember?
+    buttonText: Stockroom
+  - dialogueText: Exactly. Grab what's inside, take it to the pier, and toss it in
+      the sea. Same way as the first time.
+    buttonText: Done in a second
+  - dialogueText: The quicker, the better. The ocean is waiting, and I don't like
+      to keep the ocean waiting.
+    buttonText: I'm on it
+  - dialogueText: Good. When that's gone, come find me for the second task. Don't
+      keep me waiting.
+    buttonText: See you then
