@@ -19,6 +19,8 @@ public class CinematicMoveObjectsMissionSO : MoveObjectsMissionSO
             }
         }
 
+        if (BoatCinematicTrigger.Instance != null) BoatCinematicTrigger.Instance.ToggleBoxTriggerActivation(true);
+
         if (vThirdPersonInput.Instance != null)
         {
             vThirdPersonInput.Instance.canGrab = false;

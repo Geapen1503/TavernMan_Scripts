@@ -19,6 +19,14 @@ public class BoatCinematicTrigger : MonoBehaviour
 
     private bool _lockPosition = false;
 
+    public static BoatCinematicTrigger Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+    }
+
     private void OnEnable()
     {
         _hasTriggered = false;
@@ -29,6 +37,7 @@ public class BoatCinematicTrigger : MonoBehaviour
     private void Start()
     {
         boatTriggerCol = this.gameObject.GetComponent<BoxCollider>();
+        ToggleBoxTriggerActivation(false);
     }
 
     private void Update()
@@ -47,6 +56,15 @@ public class BoatCinematicTrigger : MonoBehaviour
         {
             boatObject.transform.position = finalDestination.position;
             boatObject.transform.rotation = finalDestination.rotation;
+        }
+    }
+
+    public void ToggleBoxTriggerActivation(bool enable)
+    {
+        if (boatTriggerCol != null)
+        {
+            if (enable) boatTriggerCol.enabled = true;
+            if (!enable) boatTriggerCol.enabled = false;
         }
     }
 
