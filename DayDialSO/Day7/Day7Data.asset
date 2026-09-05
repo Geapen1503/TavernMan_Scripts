@@ -15,7 +15,25 @@ MonoBehaviour:
   dayID: 6
   missions:
   - {fileID: 11400000, guid: 133d5b9cf3dbffc47a11c384dd9a1b54, type: 2}
+  - {fileID: 11400000, guid: 83fc4da9f682ff54aad09979d4d2683b, type: 2}
   - {fileID: 11400000, guid: c01948cd4bc8a054abde0ac53957038c, type: 2}
   - {fileID: 11400000, guid: 57d2ef2b54358d848b2fed7ad3ede3aa, type: 2}
   - {fileID: 11400000, guid: 99b18f75a0555a64786cec4b532bca22, type: 2}
+  - {fileID: 11400000, guid: cb8029189fd04bb449d676430adc2bb7, type: 2}
+  - {fileID: 11400000, guid: 334bd24957643b64594ad4d401cce4e0, type: 2}
+  - {fileID: 11400000, guid: 757ab9b639c210441b760ac829da9212, type: 2}
+  - {fileID: 11400000, guid: 136ccda60aca20543a66dcc32669922d, type: 2}
+  - {fileID: 11400000, guid: 532771d6b6c30a9408f370dc956c0419, type: 2}
+  - {fileID: 11400000, guid: 81280f37fd873854eb336263e0ef953a, type: 2}
+  - {fileID: 11400000, guid: 2d7939ed0a354d44eae369cf7abe300a, type: 2}
+  - {fileID: 11400000, guid: d0b15b915cc428144b0ab2376e1b3714, type: 2}
+  - {fileID: 11400000, guid: 11c5cf764c572074fbd862300e7a7859, type: 2}
+  - {fileID: 11400000, guid: 3a521d73d0225354e91653f0aae2aaa7, type: 2}
+  - {fileID: 11400000, guid: a07071b3545734643a99074a00b78a85, type: 2}
+  - {fileID: 11400000, guid: 88cf7e0e3c91369419ac3ae74bd91a57, type: 2}
+  - {fileID: 11400000, guid: 337b7b9e579504349b61f11e554bd18d, type: 2}
+  - {fileID: 11400000, guid: d719d5ec01dfd484e924936e48b89d40, type: 2}
+  - {fileID: 11400000, guid: 19dd0b930f2c3c34f9112f25c187e5f1, type: 2}
+  - {fileID: 11400000, guid: e80bcd13b2b47bd4f8ed87b1c78e4d98, type: 2}
+  - {fileID: 11400000, guid: ceb5aab10de11fd4283a2ae585f531be, type: 2}
   dialogues: []

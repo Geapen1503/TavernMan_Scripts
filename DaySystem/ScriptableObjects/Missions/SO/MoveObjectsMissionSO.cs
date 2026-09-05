@@ -55,7 +55,7 @@ public class MoveObjectsMissionSO : MissionSO
     "Everything's where it should be. If only life worked like that."
 };
 
-    private int _completedTasks;
+    protected int _completedTasks;
 
     protected override void MissionContentPlaying()
     {
@@ -117,14 +117,14 @@ public class MoveObjectsMissionSO : MissionSO
         FinalizeSingleTask(currentTask, allTasks);
     }
 
-    private void FinalizeSingleTask(MoveObjectsMissionManager.MoveTaskRefs completedTask, List<MoveObjectsMissionManager.MoveTaskRefs> allTasks)
+    protected void FinalizeSingleTask(MoveObjectsMissionManager.MoveTaskRefs completedTask, List<MoveObjectsMissionManager.MoveTaskRefs> allTasks)
     {
         if (completedTask.objectInScene != null)
         {
             var playerController = vThirdPersonController.Instance;
-            if (playerController != null) playerController.DetachObjectFromRightHand(completedTask.objectInScene); 
+            if (playerController != null) playerController.DetachObjectFromRightHand(completedTask.objectInScene);
 
-            Destroy(completedTask.objectInScene);
+            if (ShouldDestroyObjectOnComplete()) Destroy(completedTask.objectInScene);
 
             PlayerUI.Instance.HidePressKey();
         }
@@ -176,5 +176,10 @@ public class MoveObjectsMissionSO : MissionSO
 
             CompleteMission();
         }
+    }
+
+    protected virtual bool ShouldDestroyObjectOnComplete()
+    {
+        return true;
     }
 }

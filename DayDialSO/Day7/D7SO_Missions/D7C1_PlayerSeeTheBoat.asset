@@ -14,6 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missionState: 0
   missionDescription: 
-  startDelay: 0
+  startDelay: 1.5
   showPrefix: 1
-  dialogueSequence: []
+  dialogueSequence:
+  - text: After all that mess, the boat was there. A rotting splinter of wood...
+    duration: 7.5
+    pauseAfterDuration: 1.4
+  - text: I had the means to escape this place. Now, I just needed the crew to fill
+      the seats.
+    duration: 8
+    pauseAfterDuration: 2
+  - text: The lady, the advisor, the loony... if they weren't on board, the boat
+      was just another coffin waiting to drift
+    duration: 10
+    pauseAfterDuration: 2.1
+  - text: The Boss was sweating, he had a reason to be worried. I had to play the
+      waiter, keep pouring the drinks
+    duration: 9.7
+    pauseAfterDuration: 1.6
+  - text: A simple round of gin to hide the coordinates for our getaway. One last
+      service before the final curtain.
+    duration: 9.5
+    pauseAfterDuration: 1.8
+  - text: If I can make it through this night without a bullet in my head, I might
+      just wake up on the other side of the horizon.
+    duration: 12
+    pauseAfterDuration: 0

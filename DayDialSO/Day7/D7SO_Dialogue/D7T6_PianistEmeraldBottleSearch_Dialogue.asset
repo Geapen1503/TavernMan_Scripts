@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D7T6_PianistEmeraldBottleSearch_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 28
+  sequence:
+  - dialogueText: You're rushing the tempo tonight, kiddo.
+    buttonText: Regular work
+  - dialogueText: If you say so... But I have a strong belief the sea finally gave
+      up our green bottle
+    buttonText: No time
+  - dialogueText: Don't drop the rhythm. We're so close to the finale, I can feel
+      those emeralds in my fingers.
+    buttonText: It's total bullshit.
+  - dialogueText: One more time. Just a quick walk to the water. And I'll give you
+      my lucky quarter if I'm wrong.
+    buttonText: A lucky quarter? Yeah...
+  - dialogueText: It never failed me. If the sand is empty, the coin is yours. Just
+      go check.
+    buttonText: Fine. Still bullshit.

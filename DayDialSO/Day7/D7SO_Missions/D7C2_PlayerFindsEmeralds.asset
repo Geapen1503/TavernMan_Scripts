@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ddb04a8029f804aa11096befc94022, type: 3}
+  m_Name: D7C2_PlayerFindsEmeralds
+  m_EditorClassIdentifier: 
+  missionState: 0
+  missionDescription: 
+  startDelay: 2.5
+  showPrefix: 1
+  dialogueSequence:
+  - text: There it was. The green glass I'd bled for, emeralds gleaming in the night.
+    duration: 7.5
+    pauseAfterDuration: 2
+  - text: I couldn't believe it. On the final night, the sea finally coughed up my
+      ticket out of hell.
+    duration: 9
+    pauseAfterDuration: 2.2
+  - text: Everything was set. The boat was waiting, the crew was almost on board,
+      and the weight in my hand felt like freedom.
+    duration: 10
+    pauseAfterDuration: 1.7
+  - text: The sunset was calling, bleeding red over the horizon. It was time to leave
+      this island.
+    duration: 9
+    pauseAfterDuration: 2.1
+  - text: No more drinks, no more games. Just the open water and the end of this
+      nightmare.
+    duration: 8
+    pauseAfterDuration: 0

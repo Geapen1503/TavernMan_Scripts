@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f10bc6f11403ad478256af67dc14c68, type: 3}
+  m_Name: D7M1_ThrowCoffinAwayAgain
+  m_EditorClassIdentifier: 
+  missionState: 2
+  missionDescription: Throw the Coffin in the Sea
+  allowThrowing: 1
+  throwForce: 12
+  onTaskCompletedDialogues: []
+  onMissionFinishedDialogues:
+  - My first job on this rock, and now, my last. Poetic, in a sick sort of way.
