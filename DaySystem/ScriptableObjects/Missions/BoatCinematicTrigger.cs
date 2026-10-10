@@ -125,14 +125,6 @@ public class BoatCinematicTrigger : MonoBehaviour
         {
             Animator animator = boatObject.GetComponent<Animator>();
             if (animator != null) Destroy(animator);
-
-            Rigidbody rb = boatObject.GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                rb.isKinematic = true;
-                rb.velocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-            }
         }
 
         if (targetMissionSO != null)

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D7T10_InformAdvisorAboutBoat_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 0
+  sequence:
+  - dialogueText: My boy, you're moving too slow. What's happening here?
+    buttonText: Our thing's ready
+  - dialogueText: So, you actually did it? You moved the damn thing without raising
+      an alarm?
+    buttonText: It's waiting
+  - dialogueText: Now? What's the signal? I can't just walk out the front door in
+      broad view
+    buttonText: Watch the door
+  - dialogueText: So when you step out of the tavern, I follow?
+    buttonText: Exactly
+  - dialogueText: Good, I'll be there.
+    buttonText: See you there
