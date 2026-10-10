@@ -15,7 +15,6 @@ MonoBehaviour:
   dayID: 6
   missions:
   - {fileID: 11400000, guid: 133d5b9cf3dbffc47a11c384dd9a1b54, type: 2}
-  - {fileID: 11400000, guid: 83fc4da9f682ff54aad09979d4d2683b, type: 2}
   - {fileID: 11400000, guid: c01948cd4bc8a054abde0ac53957038c, type: 2}
   - {fileID: 11400000, guid: 57d2ef2b54358d848b2fed7ad3ede3aa, type: 2}
   - {fileID: 11400000, guid: 99b18f75a0555a64786cec4b532bca22, type: 2}
@@ -36,4 +35,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 19dd0b930f2c3c34f9112f25c187e5f1, type: 2}
   - {fileID: 11400000, guid: e80bcd13b2b47bd4f8ed87b1c78e4d98, type: 2}
   - {fileID: 11400000, guid: ceb5aab10de11fd4283a2ae585f531be, type: 2}
+  - {fileID: 11400000, guid: 83fc4da9f682ff54aad09979d4d2683b, type: 2}
+  - {fileID: 11400000, guid: dfdbcb1ba5372a04c94359b8cb906d70, type: 2}
+  - {fileID: 11400000, guid: 757d4192eaa5b2348ba2d4b0be0e4ba4, type: 2}
+  - {fileID: 11400000, guid: f8029f7cdd32316409790b7f7290bd42, type: 2}
+  - {fileID: 11400000, guid: 896ec311ca2066943adeb49dee45da6f, type: 2}
+  - {fileID: 11400000, guid: 08ba8c085e6689e41a6b20c2d7bb9f36, type: 2}
+  - {fileID: 11400000, guid: ce41b47b23791414185f295e387c0d79, type: 2}
+  - {fileID: 11400000, guid: a26d6375f4d68814d928907c08a2136f, type: 2}
+  - {fileID: 11400000, guid: c6b7f291d74021b459e859b160146644, type: 2}
+  - {fileID: 11400000, guid: 17f1252b33cfb92438296a51f41a7a15, type: 2}
+  - {fileID: 11400000, guid: 30e6ce414fcd8904d8c5abce573fa093, type: 2}
   dialogues: []

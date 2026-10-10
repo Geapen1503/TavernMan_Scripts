@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512a72de08c75cf4e8a8424f7b75a271, type: 3}
+  m_Name: D7T12_InformBoatLady_Dialogue
+  m_EditorClassIdentifier: 
+  npc: 36
+  sequence:
+  - dialogueText: What's the news? Let me guess, we're done waiting?
+    buttonText: It's time
+  - dialogueText: This is really it? I'm ready. I'll slip out without making a sound.
+    buttonText: Go to deck
+  - dialogueText: Understood. But what about you? You're not standing next to me
+    buttonText: One last thing
+  - dialogueText: Don't do anything stupid. If you get caught now, we're all dead.
+    buttonText: I'll be quick
+  - dialogueText: I'll hold you to that. Don't leave me waiting out there.
+    buttonText: See you there
