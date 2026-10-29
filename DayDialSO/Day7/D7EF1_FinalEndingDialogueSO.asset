@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afcf72fb061a8b44dbcdbccf3f33e410, type: 3}
+  m_Name: D7EF1_FinalEndingDialogueSO
+  m_EditorClassIdentifier: 
+  sequence:
+  - speakerNPC: 4
+    npcDialogueText: Keep the wheel straight and sail. We'll be in open ocean daylight
+      in a few hours.
+    buttonText: Smooth waters
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 36
+    npcDialogueText: All that time wasted back there... when all we needed was a
+      damn boat.
+    buttonText: 
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 4
+    npcDialogueText: Anything is possible when you stop following the rules they
+      set for you.
+    buttonText: 
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: Speaking of rules... how did you actually get this boat? I know
+      the Indian gave you a job, but what was it?
+    buttonText: The new guy
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: The corpse in the stockroom? You cleared him out the second
+      he arrived?
+    buttonText: Indian's job
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: Does the Boss know?
+    buttonText: 
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 36
+    npcDialogueText: He'd be floating face down if the Boss knew
+    buttonText: He knows
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 36
+    npcDialogueText: He knows? And he just let you walk onto this deck?
+    buttonText: He covered me
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: Why would he put his own neck on the line for you?
+    buttonText: Island rules
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: The debts and the crooks? What do you mean?
+    buttonText: Nobody leaves
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 36
+    npcDialogueText: Right... You're either trapped by a debt that never shrinks,
+      or stuck in a feud with another crook
+    buttonText: Exactly
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: And when the people who run this rock find out the new guy was
+      murdered...
+    buttonText: We're dead apparently
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: So the Boss took the blame? Just to give us a shot?
+    buttonText: He sinks with his ship
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 4
+    npcDialogueText: A proper captain. May the ocean treat his soul gently.
+    buttonText: 
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: Guess those people will never collect our debts now. But at
+      least we're out.
+    buttonText: Pianist was right
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 36
+    npcDialogueText: Right about what?
+    buttonText: 
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: The green bottle? The emeralds?
+    buttonText: Found it
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: Then you're a rich man. You can enjoy the coconuts on an island
+      of your own once we hit land.
+    buttonText: No more islands
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 36
+    npcDialogueText: Wait... if what you said is true, you can only be sent there
+      for two reasons.
+    buttonText: ...
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 36
+    npcDialogueText: The three of us had debts. But what's your story, balcony guy?
+    buttonText: ...
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 4
+    npcDialogueText: No debt on my shoulders. Just a conflict.
+    buttonText: 
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: With who?
+    buttonText: 
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 4
+    npcDialogueText: ...
+    buttonText: Leave it
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 36
+    npcDialogueText: The island is fading behind us.
+    buttonText: 
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
+  - speakerNPC: 0
+    npcDialogueText: Time to finally start living.
+    buttonText: 
+    hasMonologue: 0
+    monologueLine:
+      text: 
+      duration: 0
+      pauseAfterDuration: 0
