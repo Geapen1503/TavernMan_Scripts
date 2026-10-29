@@ -1,11 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Game/Missions/Final Ending Mission")]
 public class FinalEndingMissionSO : MissionSO
 {
+    [Header("Dialogue Configuration")]
+    public FinalEndingDialogueSO dialogueSO;
+
     protected override void MissionContentPlaying()
     {
-        throw new System.NotImplementedException();
+        if (FinalEndingManager.Instance != null)
+        {
+            FinalEndingManager.Instance.StartFinalEnding(this);
+        }
+    }
+
+    public void FinishMission()
+    {
+        CompleteMission();
     }
 }
