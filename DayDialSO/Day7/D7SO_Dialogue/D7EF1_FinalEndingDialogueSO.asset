@@ -25,7 +25,7 @@ MonoBehaviour:
   - speakerNPC: 36
     npcDialogueText: All that time wasted back there... when all we needed was a
       damn boat.
-    buttonText: 
+    buttonText: ...
     hasMonologue: 0
     monologueLine:
       text: 
@@ -34,7 +34,7 @@ MonoBehaviour:
   - speakerNPC: 4
     npcDialogueText: Anything is possible when you stop following the rules they
       set for you.
-    buttonText: 
+    buttonText: ...
     hasMonologue: 0
     monologueLine:
       text: 
@@ -60,7 +60,7 @@ MonoBehaviour:
       pauseAfterDuration: 0
   - speakerNPC: 0
     npcDialogueText: Does the Boss know?
-    buttonText: 
+    buttonText: ...
     hasMonologue: 0
     monologueLine:
       text: 
@@ -126,7 +126,7 @@ MonoBehaviour:
       pauseAfterDuration: 0
   - speakerNPC: 4
     npcDialogueText: A proper captain. May the ocean treat his soul gently.
-    buttonText: 
+    buttonText: ...
     hasMonologue: 0
     monologueLine:
       text: 
@@ -143,7 +143,7 @@ MonoBehaviour:
       pauseAfterDuration: 0
   - speakerNPC: 36
     npcDialogueText: Right about what?
-    buttonText: 
+    buttonText: ...
     hasMonologue: 0
     monologueLine:
       text: 
@@ -185,7 +185,7 @@ MonoBehaviour:
       pauseAfterDuration: 0
   - speakerNPC: 4
     npcDialogueText: No debt on my shoulders. Just a conflict.
-    buttonText: 
+    buttonText: ...
     hasMonologue: 0
     monologueLine:
       text: 
@@ -193,7 +193,7 @@ MonoBehaviour:
       pauseAfterDuration: 0
   - speakerNPC: 0
     npcDialogueText: With who?
-    buttonText: 
+    buttonText: ...
     hasMonologue: 0
     monologueLine:
       text: 
@@ -209,7 +209,7 @@ MonoBehaviour:
       pauseAfterDuration: 0
   - speakerNPC: 36
     npcDialogueText: The island is fading behind us.
-    buttonText: 
+    buttonText: ...
     hasMonologue: 0
     monologueLine:
       text: 
@@ -217,7 +217,7 @@ MonoBehaviour:
       pauseAfterDuration: 0
   - speakerNPC: 0
     npcDialogueText: Time to finally start living.
-    buttonText: 
+    buttonText: ...
     hasMonologue: 0
     monologueLine:
       text: 
