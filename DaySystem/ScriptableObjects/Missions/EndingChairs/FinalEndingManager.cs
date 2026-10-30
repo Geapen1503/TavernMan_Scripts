@@ -13,6 +13,9 @@ public class FinalEndingManager : MonoBehaviour
     public GameObject decoyPlayer;
     public GameObject decoyCamera;
 
+    public GameObject moonGameobject;
+    public GameObject waveAudioSource;
+
     [System.Serializable]
     public class FinalEndingNPCSetup
     {
@@ -56,6 +59,8 @@ public class FinalEndingManager : MonoBehaviour
     {
         if (vThirdPersonInput.Instance != null) vThirdPersonInput.Instance.TogglePlayerForChairEnding(true);
 
+        if (waveAudioSource != null) waveAudioSource.SetActive(true);
+        if (moonGameobject != null) moonGameobject.SetActive(false);
         if (decoyPlayer != null) decoyPlayer.SetActive(true);
         if (decoyCamera != null) decoyCamera.SetActive(true);
         if (realPlayerCamera != null) realPlayerCamera.SetActive(false);
@@ -101,6 +106,8 @@ public class FinalEndingManager : MonoBehaviour
 
         _previousNPCAnchors.Clear();
 
+        if (waveAudioSource != null) waveAudioSource.SetActive(false);
+        if (moonGameobject != null) moonGameobject.SetActive(true);
         if (decoyCamera != null) decoyCamera.SetActive(false);
         if (decoyPlayer != null) decoyPlayer.SetActive(false);
         if (realPlayerCamera != null) realPlayerCamera.SetActive(true);
